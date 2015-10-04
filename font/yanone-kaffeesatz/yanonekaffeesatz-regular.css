@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'YanoneKaffeesatzRegular';
+    src: url('yanonekaffeesatz-regular.eot');
+    src: url('yanonekaffeesatz-regular.eot') format('embedded-opentype'),
+         url('yanonekaffeesatz-regular.woff2') format('woff2'),
+         url('yanonekaffeesatz-regular.woff') format('woff'),
+         url('yanonekaffeesatz-regular.ttf') format('truetype'),
+         url('yanonekaffeesatz-regular.svg#YanoneKaffeesatzRegular') format('svg');
+}

@@ -1,0 +1,71 @@
+<?	# variables initialization
+	$css['taskbar']['height'] = "40px";
+	$css['taskbar']['color'] = "rgba(136, 23, 152, 0.95)";
+
+?>
+
+footer {
+	background-color:	<?=$css['taskbar']['color']?>;
+	text-align: 		center;
+	position: fixed;
+	bottom: -30px;
+	width: 100%;
+	color: #fff;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+    border-bottom: 1px dashed #fff;
+}
+
+footer b, #contacts b {
+	padding-left:		20px;
+	line-height:		32px;
+	height:				20px;
+	display:			block;
+	text-align: 		center;
+}
+
+footer ul, #contacts ul {
+/* 	background-color:	#c2c7cc; */
+	padding:			5px 0;
+	max-width:			<?=$css['site']['width']?>px;
+	margin:				0 auto;
+}
+
+footer li {
+ 	max-width:			calc(50% - 35px);
+	display:			block;
+	margin:				5px;
+}
+
+#contacts li {
+/* 	max-width:			calc(50% - 35px); */
+	display:			block;
+	margin:				5px;
+}
+
+.system-message {
+	position:			fixed;
+	bottom:				50px;
+	right:				50px;
+	display:			inline-block;
+	z-index:			1;
+	min-height:			75px;
+	width:				300px;
+	background-color:	rgba(0,0,0,0.75);
+	border-radius:		10px;
+	color:				white;
+	padding:			10px;
+	display:			none;
+    white-space:		pre-wrap;
+}
+
+footer #map, #contacts #map {
+	float:	right;
+	margin:	0;
+	width:	50%;
+	height: 315px;
+}

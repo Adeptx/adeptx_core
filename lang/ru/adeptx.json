@@ -1,0 +1,144 @@
+{
+	"dic": {
+		"adeptx": {
+			"russian": "русский",
+			"luck": "успех",
+			"sign up": "регистрация",
+			"sign in": "авторизация",
+			"email": "e-mail",
+			"password": "пароль",
+			"file": "файл",
+			"append": "дозапись",
+			"any": "что-то",
+			"fail": "неудача",
+			"exit": "выход",
+			"source": "Источник",
+			"upload": "&#8613;&#8673;&#8613; Отправить &#8613;&#8673;&#8613;",
+			"see also": "Смотрите также",
+			"create new file": "Создать новый файл",
+			"uploading files": "Загрузка файлов на сервер:",
+			"replace all": "Заменить все",
+			"content": "Cодержимое",
+			"file size": "Размер файла",
+			"exceeds": "превышает",
+			"Mb": "Мб",
+			"all rights reserved": "все права защищены",
+			"copyright": "Сайт работает на php5, mysql, html5, css3 и ajax.",
+			"hosting": "Хостинг от Hostinger",
+
+			// context
+			"refresh": "Обновить",
+			"create link": "Добавить значок",
+			"create note": "Создать заметку",
+			"feedback": "Связаться с нами",
+			"change background": "Сменить фон",
+			"clear background": "Очистить фон",
+			"minimalism": "Минимализм",
+
+			"Our Works": "Портфолио",
+			"Bookmarks": "Закладки",
+			"Orders": "В разработке",
+
+			"replace from": "что",
+			"replace from": "чем",
+
+			"tpl/index.php#cmd-answer": "ожидание ответа...",
+
+			"tpl/tool/kurs.php#source": "Источник",
+			
+			"date": {
+				"day": {
+					"day_of_week_2": [
+						"0", "пн", "вт", "ср", "чт", "пт", "сб", "вс"
+					]
+				}
+			},
+
+			"date']['month": {
+				"month": "месяц",
+				"months": {
+					"1": "января",
+					"2": "февраля",
+					"3": "марта",
+					"4": "апреля",
+					"5": "мая",
+					"6": "июня",
+					"7": "июля",
+					"8": "августа",
+					"9": "сентября",
+					"10": "октября",
+					"11": "ноября",
+					"12": "декабря"
+				}
+			},
+
+			"timezone": {
+				"europe": {
+					 "Europe/Amsterdam"		: "Амстердам"
+					,"Europe/Andorra"		: "Андорра"
+					,"Europe/Athens"		: "Афины"
+					,"Europe/Belfast"		: "Белфаст"
+					,"Europe/Belgrade"		: "Белград"
+					,"Europe/Berlin"		: "Берлин"
+					,"Europe/Bratislava"	: "Братислава"
+					,"Europe/Brussels"		: "Брюсель"
+					,"Europe/Bucharest"		: "Бухарест"
+					,"Europe/Budapest"		: "Будапешт"
+					,"Europe/Busingen"		: "Бюзинген"
+					,"Europe/Chisinau"		: "Кишинёв"
+					,"Europe/Copenhagen"	: "Копенгаген"
+					,"Europe/Dublin"		: "Дублин"
+					,"Europe/Gibraltar"		: "Гибралтар"
+					,"Europe/Guernsey"		: "Гернси"
+					,"Europe/Helsinki"		: "Хельсинки"
+					,"Europe/Isle_of_Man"	: "о. Мэн"
+					,"Europe/Istanbul"		: "Истанбул"
+					,"Europe/Jersey"		: "о. Джерси"
+					,"Europe/Kaliningrad"	: "Калининград"
+					,"Europe/Kiev"			: "Киев"
+					,"Europe/Lisbon"		: "Лиссабон"
+					,"Europe/Ljubljana"		: "Любляна"
+					,"Europe/London"		: "Лондон"
+					,"Europe/Luxembourg"	: "Люксембург"
+					,"Europe/Madrid"		: "Мадрид"
+					,"Europe/Malta"			: "Мальта"
+					,"Europe/Mariehamn"		: "Мариехамн"
+					,"Europe/Minsk"			: "Минск"
+					,"Europe/Monaco"		: "Монако"
+					,"Europe/Moscow"		: "МСК"
+					,"Europe/Nicosia"		: "Никосия"
+					,"Europe/Oslo"			: "Осло"
+					,"Europe/Paris"			: "Париж"
+					,"Europe/Podgorica"		: "Подгорица"
+					,"Europe/Prague"		: "Прага"
+					,"Europe/Riga"			: "Рига"
+					,"Europe/Rome"			: "Рим"
+					,"Europe/Samara"		: "Самара"
+					,"Europe/San_Marino"	: "Сан Марино"
+					,"Europe/Sarajevo"		: "Сараево"
+					,"Europe/Simferopol"	: "Симферополь"
+					,"Europe/Skopje"		: "Скопье"
+					,"Europe/Sofia"			: "София"
+					,"Europe/Stockholm"		: "Стокгольм"
+					,"Europe/Tallinn"		: "Таллин"
+					,"Europe/Tirane"		: "Тирана"
+					,"Europe/Tiraspol"		: "Тирасполь"
+					,"Europe/Uzhgorod"		: "Ужгород"
+					,"Europe/Vaduz"			: "Вадуц"
+					,"Europe/Vatican"		: "Ватикан"
+					,"Europe/Vienna"		: "Вена"
+					,"Europe/Vilnius"		: "Вильнус"
+					,"Europe/Volgograd"		: "Волгоград"
+					,"Europe/Warsaw"		: "Варшава"
+					,"Europe/Zagreb"		: "Загреб"
+					,"Europe/Zaporozhye"	: "Запорожье"
+					,"Europe/Zurich"		: "Цюрих"
+				}
+			},
+
+			"quickdiff/try": "<p>Check out my new project - <a href=\"http:||convertable.com\">100% free tool to track web leads and conversions</a></p>",
+			"quickdiff/main_text": "<h1 style=\"clear:both;\">An Online Tool to do a \"quick and dirty\" diff of two text or code fragments</h1>"
+		
+		}
+	}
+}

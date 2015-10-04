@@ -1,0 +1,244 @@
+{
+// DON'T SAVE ANY PASSWORDS AT THE JSON AND ANY NOT *.PHP FILES
+
+	// BLOCK 1.2 - Pathes to the mover directories and main files
+
+	// for easy rename but moving not reccomend
+ 	// also in css files now you can see ../img/.*
+	"fold": {
+		"classes": "class/",
+		"configurations": "conf/",
+		"fonts": "font/",
+		"images": "img/",
+		"includes": "inc/",		// mysql, router, socket, ajax ...
+		"languages": "lang/",	// en, ru, ...
+		"scripts": "js/",
+			"javascripts": "js/",
+			"js": "js/",
+		"styles": "css/",
+			"css": "css/",
+		"templates": "html/",
+		"users": "user/",		// 1, 2, ...
+		//! use var !//
+		"cmd": "$fold[templates]cmd/",
+		"favicon": "$fold[images]favicon/"
+	},
+
+	// BLOCK 1.3 - Main Site Variables and files
+
+	"site": {
+		//! use var !//
+		"base": "http://$site[domain]/",	// all this vars can be rewrite with DB
+		//! use var and php syntax !//
+		"path": "dirname(realpath(__FILE__)) . /",
+
+		"extensions": ".php",
+		
+		//! use var !//
+		"settings": "$fold[configurations]settings.json",
+
+		"mysql": "$fold[includes]mysql$site[extensions]",
+		"router": "$fold[includes]router$site[extensions]",
+		"socket": "$fold[includes]socket$site[extensions]",
+		"ajax": "$fold[includes]ajax$site[extensions]",
+
+		"index": "$fold[templates]index$site[extensions]",
+		"header": "$fold[templates]$site[alias]/header$site[extensions]",
+		"footer": "$fold[templates]$site[alias]/footer$site[extensions]",
+
+		"cmd_log": "$fold[cmd]history$site[extensions]"
+		// don't used anywhere now
+		// "403": "$fold[templates]403$site[extensions]",
+		// "404": "$fold[templates]404$site[extensions]"
+	},
+
+	// $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+	// if (empty($lang)) $lang = $json_conf['user']['lang'];
+	// if (empty($_SESSION['lang'])) {
+	// 	$_SESSION['lang'] = 'en';
+	// }
+	// if (empty($_SESSION['timezone'])) {
+	// 	$_SESSION['timezone'] = 'Europe/Moscow';
+	// }
+
+	// BLOCK 3 - Site Administration and Author conf
+
+	"admins": {
+		"1": {
+			"email": "e.grinec@gmail.com",
+			"name": "Евгений",
+			"surname": "Гринец"
+		},
+		"2": {
+			"email": "gcorp.gcorp@gmail.com",
+			"name": "Алексей",
+			"surname": "Гринец"
+		}
+	},
+	// Author always must kept in Administration
+	// in this filt just default value, each site can have different value
+	"author": {
+		"id": "1"
+	},
+	// for backward compatibility
+	"admin": {
+		"email": "e.grinec@gmail.com",
+		"name": "Евгений",
+		"surname": "Гринец"
+	},
+
+  	// BLOCK 3 - User of Site (viewer) conf
+  	// this variables write to $_SESSION = $json_conf['user']
+
+	// if viewer lang exist in lang/ dir, include it
+	// else include lang/en, conf update to "en"
+	// if user registred, look to mysql, if not isset user lang, set up it for this line
+	"user": {
+		"lang": "en",
+		"timezone": "Europe/Moscow"
+	},
+	// all user configurations must be kept in mysql and session, not local variable
+	// aslo exists variable $_SESSION['status'] (stuff, admin, etc) which kept user, it's set at file ajax.php (after reading mysql with user conf, when user authed with ajax)
+
+  	// BLOCK 3.2 - User permissions
+
+  	"permissions": {
+  		// author kept all viewer, user, staff and admin permission and have all other :)
+  		// admin kept all viewer, user and staff permission and have this unique
+  		"admin": {
+  			"home": {
+  				"add_link": true
+  			},
+  			"cmd": {
+  				"fa": true
+  			},
+  			"fm": {
+  				"elfinder": true
+  			}
+  		},
+
+  		// staff kept all viewer and user permission and have this unique
+  		"staff": {
+  			"download": true,
+  			"cmd": {
+  				"tail": true
+  			},
+  			"view": {
+  				"tool": true,
+  				"order": true,
+  				"paletton": true,
+  				"lazy": true,
+  				"ordinary": true,
+  				"indigo": true,
+  				"god": true,
+  				"room": true,
+  				"sitemap": true,
+  				"setup": true,
+  				"upload": true
+  			}
+  		},
+
+  		"user": {
+  			"view": {
+  				"tool": false,	// but now this vars must equal "denied"
+  				"order": false,
+  				"paletton": false,
+  				"lazy": false,
+  				"ordinary": false,
+  				"indigo": false,
+  				"god": false,
+  				"room": false,
+  				"sitemap": false,
+  				"setup": false,
+  				"upload": false
+  			}
+  		}
+  		// viewer have only ghosts permissions
+  	},
+
+	// BLOCK 4 - Current Page conf
+
+	// all current page configuration retrofitted at the $site[router] and set up with admin panel to this files
+
+  	"page": {
+  		"favicon": "default.ico",
+  		// 1. it can be not only .ico, can be 16x16/*.png may be more
+  		// 2. user can set any ico from dir
+  		// 3. we try to read user ico, if is_readable we use it
+  		// 4. if not we try use $site['alias'].'.ico'
+  		// 5. if not use default.ico
+  		// 6. if not may be user have favicon.ico at the root folder and we not use tag for this user var
+
+		// if you need tag <base> on page (or site), uncomment this block and setup 'href' to $conf['site']['base'] (for example, or just '/' or any dir)
+  		// if tag <base> not need, just comment this block
+  		"base": {
+  			"target": "_self",
+  			"href": "/cms"
+  		},
+
+  		"cmd": false
+  		// if true, you can use cmd on this page
+  		// if false cmd was unavailable
+  		// default cmd unavailable on page
+		// этот параметр отвечает за то, чтобы консоль можно было открыть на запрошенной странице.
+  	},
+
+	// just alias for $page['base']
+	// ALIAS MUST KEPT $base = $page['base']
+	// "base": {
+	// 	"target": "_self",
+	// 	"href": "/cms"
+	// }
+
+	// also exist variables:
+	// $page['dir'] which kept folder of current project, but it need only if project in it's own dir and set at file $site['router'] file
+	// $page['path'] kept real path to the file and set at the $site['router'] file
+
+	// BLOCK 7.1 - Head (html <head>)
+
+	"head": {
+		"favicon": {
+			"open": "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"",
+			"close": "\">"
+		},
+		
+		"css": {
+			"open": "<link rel=\"stylesheet\" href=\"",
+			"close": "\">"
+		},
+		
+		"js": {
+			"open": "<script src=\"",
+			"close": "\"></script>"
+		}
+	},
+
+	// BLOCK 7.2 - Headers (php header())
+
+	"header": {
+		"download": "Content-Disposition: attachment; filename=",
+		//! use var !//
+		"css": "Content-type: text/css; charset=$page[charset]",
+		"js": "Content-type: text/javascript; charset=$page[charset]",
+		"html": "Content-type: text/html; charset=$page[charset]",
+
+		"200": "$_SERVER[SERVER_PROTOCOL] 200 Ok",
+		"403": "$_SERVER[SERVER_PROTOCOL] 403 Forbiden",
+		"404": "$_SERVER[SERVER_PROTOCOL] 404 Not Found"
+	},
+
+	// BLOCK 8 - Messages to user
+
+	// BLOCK 8.1 - MySQLi error messages
+	// structure: table `message`, type=error, package=mysqli, name=init, value=...
+
+	"msg": {
+		"error": {
+			"mysqli": {
+				"init": "MySQL error #0",
+				"real_connect": "MySQL error #1",
+				"select_db": "MySQL error #2"
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+section {
+	margin: 0;
+	width: calc(100% - 434px);
+}
+
+#code {
+	position: absolute;
+	width: calc(100% - 434px);
+	height: 100%;
+	min-height: 600px;
+	border: 0;
+	
+	z-index: -1;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#cheats input {
+	background: rgba(255, 255, 255, 0.7);
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	margin-top: 3px;
+	margin-left: 0;
+	margin-right: 0;
+	outline: none;
+}
+
+#global, #php, #js, #db, #file, #html, #replace, #vars {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 417px;
+	border-left: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	padding: 0 3px 3px;
+}
+
+#vars {
+	top: 132px;
+}
+
+#global {
+	top: 196px;
+}
+
+#php {
+	top: 417px;
+}
+
+#js {
+	top: 855px;
+}
+
+#db {
+	top: 887px;
+}
+
+#file {
+	top: 966px;
+}
+
+#html {
+	top: 1072px;
+}
+
+#replace input[type="text"], #replace input[type="button"] {
+	width: 200px;
+}
+
+#replace label {
+	display: inline-block;
+	width: 200px;
+}

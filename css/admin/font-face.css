@@ -1,0 +1,9 @@
+<?
+	$font->import('http://weloveiconfonts.com/api/?family=fontawesome');
+
+	# font directory, font-family, file name
+	$font->face('tinymce', 'tinymce', 'tinymce');
+	$font->face('tinymce', 'tinymce-small', 'tinymce-small');
+
+	$font->face('ubuntu-light', 'Ubuntu-Light', 'Ubuntu-L');
+	$font->face('myriad-pro', 'MyriadPro-Regular', 'MyriadPro-Regular');

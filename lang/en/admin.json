@@ -1,0 +1,225 @@
+{
+	"dic": {
+		"admin": {
+			 "title": "Admin Panel"
+			,"login": "Login"
+			,"password": "Password"
+			,"log-in": "SIGN IN"
+
+			,"title": {
+				"products": "ТОВАРЫ"
+				,"categories": "КАТЕГОРИИ"
+				,"infopages": "ИНФОРМАЦИОННЫЕ СТРАНИЦЫ"
+				,"news": "НОВОСТИ"
+				,"articles": "СТАТЬИ"
+				,"users": "ПОЛЬЗОВАТЕЛИ"
+				,"options": "НАСТРОЙКИ САЙТА"
+				,"lang": "Языковые соответствия"
+				,"html": "Структура страниц"
+				,"rout": "Маршрутизатор"
+				,"htaccess": "Настройки сервера"
+				,"robots.txt": "Указания для поисковых систем"
+				,"setup": "Управление модулями"
+				,"font": "Управление шрифтами"
+				,"conf": "Конфигурация системы"	// Некоторые дополнительные изменяемые параметры:
+				,"site": "Новый проект"
+			}
+
+			,"products-column-title": {
+				// если атрибут title не нужен, здесь можно использовать строку, например:
+				// "image": "Фото"
+				 "name": [
+					"Наименование",
+					"Сортировать по наименованию"
+				]
+				,"id": [
+					"Артикул",
+					"Состоит из уникального идентификатора и первый двух букв наименования"
+				]
+				,"category": [
+					"Категория",
+					"Сортировать по подкатегории"
+				]
+				,"subcategory": [
+					"Подкатегория",
+					"Сортировать по категории"
+				]
+				,"type": [
+					"Тип",
+					"Отображается на сайте в виде ленточки на товаре"
+				]
+				,"price": [
+					"Цена",
+					"Указывается в валюте ($), при отображении автоматически конвертируется в рубли"
+				]
+				,"old-price": [
+					"Старая",
+					"Старую цену можно устанавливать только если установлен тип \"Скидка\""
+				]
+				,"": [
+					"Опции",
+					"Добавление фотографий, удаление товара и подробности о товаре"
+				]
+			}
+
+			,"categories-column-title": {
+				 "move": ""
+				,"num": ""
+				,"name": "Название"
+				,"url": "URL"
+				,"options": ""
+			}
+
+			,"infopages-column-title": {
+				 "text": "Текст страницы (html, макс. длина ~65.000 символов)"
+				,"show": "Показывается"
+				,"views": "Просмотры"
+				,"options": ""
+			}
+
+			,"news-column-title": {
+				 "preview": "Предпросмотр"
+				,"title": "Заголовок"
+				,"text": "Текст новости"
+				,"public": "Показывается"
+				,"date": "Дата"
+				,"views": "Просмотры"
+				,"options": ""
+			}
+
+			,"articles-column-title": {
+				 "title": "Заголовок"
+				,"text": "Текст статьи"
+				,"public": "Показ."
+				,"date": "Дата"
+				,"views": "Просмотры"
+				,"options": ""
+			}
+
+			,"users-column-title": {
+				 "first-name": "Имя"
+				,"last-name": "Фамилия"
+				,"email": "E-mail"
+				,"sex": "Пол"
+				,"reset-pass": "Сброс пароля"
+				,"options": ""
+			}
+
+			,"options-column-title": {
+				 "name": "Опция"
+				,"value": "Значение"
+				// ,"editor": "Последним изменял"
+			}
+
+			,"lang-column-title": {
+				 "name": "Ключ"
+				,"value": "Значение"
+			}
+
+			,"rout-column-title": {
+				 "name": "Переменная"
+				,"value": "Значение"
+			}
+
+			,"htaccess-column-title": {
+				 "name": "Директива"
+				,"value": "Значение"
+			}
+
+			,"robots.txt-column-title": {
+				 "name": "Директива"
+				,"value": "Значение"
+			}
+
+			,"setup-column-title": {
+				 "name": "Модуль"
+				,"value": "Действие"
+			}
+
+			,"html-column-title": {
+				 "name": "Описание"
+				,"value": ""
+			}
+
+			,"font-column-title": {
+				 "name": "Семейство шрифтов"
+				,"value": "Действие"
+				,"options": ""
+				,"details": ""
+			}
+
+			,"conf-column-title": {
+				 "name": "Переменная"
+				,"value": "Значение"
+			}
+
+			,"site-column-title": {
+				 "name": "Переменная"
+				,"value": "Значение"
+			}
+
+			,"site-add-button": "Применить"
+
+			,"products-add-button": "Добавить новый товар"
+			,"categories-add-button": "Создать новую категорию"
+			,"infopages-add-button": "Создать страницу"
+			,"news-add-button": "Добавить новость"
+			,"articles-add-button": "Добавить статью"
+			// ,"users-add-button": "Применить изменения" 
+			// ,"users-add-button": "Зарегистрировать нового пользователя" 
+			// ,"users-add-button": "Сбросить всем пароли" 
+			// ,"users-add-button": "Отправить всем письмо" 
+			,"options-add-button": "Сохранить изменения"
+
+			,"msg-products-add-title": "Добавление товара"
+			,"msg-categories-add-title": "Добавление категории"
+			,"msg-news-add-title": "Добавить новость:"
+			,"msg-articles-add-title": "Добавить статью:"
+			,"msg-infopages-add-title": "Создание страницы"
+			// ,"msg-users-add-title": "Зарегистрировать пользователя" 
+			// ,"msg-options-add-title": "Создать новое переменное значение" 
+
+			,"products-name-fild": "Название товара:"
+			,"products-price-fild": "Цена:"
+			,"products-category-fild": "Категория:"
+			,"products-image-fild": "Изображение:"
+
+			,"news-text-fild": "Текст новости:"
+
+			,"infopages-url-placeholder": "Ссылка"
+			// Ссылка (имя, переводится в URL автоматически) 
+			,"infopages-text-placeholder": "HTML код новой информационной страницы"
+
+			,"category-name-fild": "Название:"
+			,"category-name-placeholder": "Название"
+			,"category-url-fild": "Ссылка:"
+			,"category-url-placeholder": "уникальный URL"
+			,"category-order-fild": "Номер:"
+			,"category-url2-fild": "URL:"
+			,"category-url2-placeholder": "(формируется автоматически)"
+
+			,"product-images-title": "Добавление фотографий"
+			,"product-images-photo-fild": "Добавить фото товара:"
+			,"product-images-photo-fild-title": "Можно добавлять сразу несколько фотографий товара одного цвета"
+			,"product-images-save-fild": "Обновить изображения"
+			,"product-images-save-fild-title": "Выбранные изображения не сохранятся если не нажать"
+			// Страница обновится, выбранные изображения не сохранятся если не нажать 
+			,"product-images-color-fild": "Цвет товара на загружаемых изображениях:"
+
+			,"product-details-title": "Детали товара"
+			,"product-details-rating-fild": "Рейтинг товара:"
+			,"product-details-rating-fild2": "голосов"
+			,"product-details-url-fild": "Ссылка на товар:"
+			,"product-details-url-placeholder": "Изменить ссылку на товар (не рекомендуется)"
+			,"product-details-colors-fild": "Цвета в наличии:"
+			,"product-details-characteristics-fild": "Характеристики товара:"
+			,"product-details-description-fild": "Описание товара:"
+			,"product-details-description-placeholder": "Еще нет подробного описания этого товара."
+			,"product-details-delivery-fild": "Информация о доставке:"
+			,"product-details-delivery-placeholder": "Доставка товара занимает от 4х недель."
+			,"product-details-reviews-fild": "Все отзывы к товару:"
+			,"product-details-reviews-placeholder": "... (редактировать, удалить) (в идеале на странице ттовара админ тоже могут это сделать...)"
+			,"product-details-save": "Сохранить изменения"
+		}
+	}
+}

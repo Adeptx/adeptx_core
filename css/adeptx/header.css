@@ -1,0 +1,253 @@
+<?	# variables initialization
+	$css['taskbar']['height'] = "40px";
+	$css['taskbar']['color'] = "rgba(136, 23, 152, 0.95)";
+
+	$ajax['id']['user']['messages']['new'] = 'user-new-messages-count';
+?>
+
+
+    header {
+		margin:		<?=$css['taskbar']['height']?> auto 5px;
+		max-width:	<?=$css['site']['width']-10?>px;
+		text-align: center;
+		position: fixed;
+    	height:	75px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: -1;
+	}
+
+	#taskbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 9999999999;
+		text-align: left;
+		height: <?=$css['taskbar']['height']?>;
+		color: #fff;
+		background-color: <?=$css['taskbar']['color']?>;
+		/*font-family: 'Open Sans', 'Open Sans', 'Open Sans', sans-serif;*/
+    	font-weight: 500;
+	}
+
+	#taskbar #<?=$ajax['id']['user']['messages']['new']?> {
+		display: inline-block;
+		min-width: 40px;
+		float: right;
+		text-align: center;
+		line-height: <?=$css['taskbar']['height']?>;
+		height: <?=$css['taskbar']['height']?>;
+		padding: 0 5px;
+		box-sizing: border-box;
+	}
+
+	#taskbar #<?=$ajax['id']['user']['messages']['new']?> {
+	}
+
+	#taskbar #<?=$ajax['id']['user']['messages']['new']?>::before {
+		margin-right: 5px;
+	}
+
+    #taskbar .date {
+/* 		margin-top: 3px; */
+		/* background-color: rgba(255, 255, 255, 0.4); */
+		/* text-align: right; */
+		/* padding-left: 5px; */
+		/* position: absolute; */
+		/* right: 0; */
+		float: right;
+		display: inline-block;
+		height: <?=$css['taskbar']['height']?>;
+		line-height: <?=$css['taskbar']['height']?>;
+		background-color: transparent;
+		position: relative;
+		right: 0px;
+    }
+	
+	select.timezone {
+		border: 0;
+		padding-right: 0;
+		margin-right: 0;
+		color: #fff;
+		font-family: 'Open Sans', serif;
+		font-weight: 500;
+		height: <?=$css['taskbar']['height']?>;
+		line-height: <?=$css['taskbar']['height']?>;
+		clip: rect(0px 85px 40px 0px);
+		top: 0px;
+		left: 200px;
+		background-color: transparent;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	select.timezone:focus {
+		outline: 0;
+	}
+    
+	select.timezone option {
+		background-color: <?=$css['taskbar']['color']?>; /* rgba(0, 204, 255, 0.2); */
+	}
+	select.timezone option:focus {
+		outline: 0;
+		background-color: rgba(136, 23, 152, 0.15);
+	}
+
+	#taskbar .omen {
+		position: relative;
+		/*display: inline-block;*/
+		float: right;
+	}
+
+	#taskbar .omen:hover {
+		background-color: #9F4EAB;
+	}
+
+	.sweetok {
+		display: none;
+		width: 300px;
+		position: absolute;
+		top: <?=$css['taskbar']['height']?>;
+		min-height: 100px;
+		background-color: rgba(118, 20, 132, 0.89);
+		border: 1px solid rgba(123, 22, 138, 0.95);
+		right: 0;
+		white-space: pre-wrap;
+		box-sizing: border-box;
+		padding: 10px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		height: auto;
+		max-height: 600px;
+	}
+
+    #logo {
+    	color: #FF0000;
+	}
+	#logolast {
+		color: rgb(0, 224, 0);
+	}
+    #nulldomen {
+/*     	color: #002A6C; */
+		color: rgb(66, 133, 244);
+	}
+    #logo, #nulldomen {
+		/* background-color: black; */
+		/* width: 45px; */
+		/* height: 45px; */
+		display: inline-block;
+		/* text-align: center; */
+		/* font-family: 'CatullBQ'; */
+		/* font-size: 2.5em; */
+		line-height: 50px;
+		/* border: 1px solid #fff; */
+		/* box-shadow: 2px 2px 5px 0 #000; */
+		/* text-shadow: -1px -1px 0 #fff, -1px 0px 0 #fff,-1px 1px 0 #fff,0px -1px 0 #fff,1px -1px 0 #fff,1px 1px 0 #fff,0px 1px 0 #fff,1px 0px 0 #fff; */
+		
+/*     	color: #fff;
+    	background-color: black;
+    	width: 45px;
+    	height: 45px;
+    	display: inline-block;
+    	text-align: center;
+    	font-family: 'CatullBQ';
+		font-size: 2.5em;
+    	line-height: 50px; */
+		/* border: 1px solid #fff; */
+/* 		box-shadow: 2px 2px 5px 0 #000; */
+		/* text-shadow: -1px -1px 0 #fff, -1px 0px 0 #fff,-1px 1px 0 #fff,0px -1px 0 #fff,1px -1px 0 #fff,1px 1px 0 #fff,0px 1px 0 #fff,1px 0px 0 #fff; */
+    }
+    
+    #logotype {
+    	color: #fff; /* #0f7fe6 */
+    	border: 0;
+    	line-height: 20px;
+    	color: #FFF200; /* #f7f7f7; */
+    	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.5);
+		font-family: 'Ubuntu', serif;
+		font-weight: 600;
+		font-size: 5em;
+/* 		width: 340px; */
+/* 		margin-top: 45px; */
+		margin-bottom: 10px;
+		display: inline-block;
+    }
+    
+    #<?=$ajax['id']['header']['epigraph']?> {
+/* 		float: right; */
+    	text-align: right;
+    	font-style: italic;
+/*     	margin-top: 45px; */
+		padding-right: 5px;
+		color: #fff;
+		/* background-image: linear-gradient(90deg, rgba(0,0,0,0), rgba(<?=mt_rand(128,255)?>, <?=mt_rand(128,255)?>, <?=mt_rand(128,255)?>, 1)); */
+/* 		width: 50%; */
+		text-shadow: 1px 1px 2px #000;
+    }
+	
+	nav, nav a, .puddle {
+		min-height: 30px;
+		display: inline-block;
+	}
+
+	nav a, .puddle {
+		width: 30px;
+		padding: 0;
+		color: #fff;
+		cursor: pointer;
+		background-color: #fff; /* #0C6C85 */
+	}
+	nav a:hover, .puddle:hover {
+		background-color: transparent;
+	}
+	
+<? foreach($bgs as $i=>$bg){ ?>
+	header nav a:nth-child(<?=$i+1?>) { background-image: url('<?=$page['base']['href'].$fold['images']?>30x30/<?=$bg?>.png'); }
+	#taskbar .<?=$bg?> { background-image: url('<?=$page['base']['href'].$fold['images']?>30x30/<?=$bg?>.png'); }
+<? } ?>
+
+	nav a:nth-last-child(1), nav a:nth-last-child(2) {
+ 		background-color: #0083ff; /* #A84F09; */
+	}
+	nav a:nth-last-child(1):hover, nav a:nth-last-child(2):hover {
+		background-color: transparent;
+	}
+    
+    #site_epigraph .footnote {
+    	font-size: 7px;
+    	color: #777;
+    }
+	
+	.auth-service {
+/* 		padding: 5px */
+	}
+	.loginza {
+		display: inline-block;
+		height: 20px;
+		padding-left: 20px;
+		background-repeat: no-repeat;
+		margin-right: 10px;
+	}
+	.loginza.google {
+		background-image: url(<?=$page['base']['href'].$fold['images']?>16x16/google.png);
+	}
+	.loginza.yandex {
+		background-image: url(<?=$page['base']['href'].$fold['images']?>16x16/yandex.png);
+	}
+	.loginza.facebook {
+		background-image: url(<?=$page['base']['href'].$fold['images']?>16x16/facebook.png);
+	}
+	.loginza.twitter {
+		background-image: url(<?=$page['base']['href'].$fold['images']?>16x16/twitter.png);
+	}
+	.loginza.vkontakte {
+		background-image: url(<?=$page['base']['href'].$fold['images']?>16x16/vk.png);
+	}
+	.loginza.webmoney {
+		background-image: url(<?=$page['base']['href'].$fold['images']?>16x16/wm.ico);
+	}

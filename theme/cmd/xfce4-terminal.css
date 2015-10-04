@@ -1,0 +1,89 @@
+#cmd {
+	display:			none;
+	position:			relative;
+	z-index:			99999999999999999999;
+}
+#cmd::selection,
+#cmd *::selection {
+	background: #fff;
+	color: #000;
+}
+#<?=$ajax['id']['cmd']['answer']?>::selection,
+#<?=$ajax['id']['cmd']['answer']?> *::selection {
+	background: #fff;
+	color: #000;
+}
+
+#cmd hr {
+	border: 0;
+	margin-left: 0;
+	max-width: 51em;
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+}
+
+#<?=$ajax['id']['cmd']['answer']?> {
+    tab-size:			4;
+    -o-tab-size:		4;
+    -moz-tab-size:		4;
+    white-space:		pre-wrap;
+	height:				calc(100% - 31px);			/* page height - #cmd-input height */
+	width:				100%;			/* page width - padding-left */
+	position:			fixed;
+	color:				#fff;
+ 	/*background-color:	rgba(0, 0, 0, 0.5); 			/* #002A6C */
+ 	background:			rgba(0, 0, 0, 0.75) url(<?=$page['base']['href'].$fold['images']?>bg/coringao_-_debian-anime.jpg);
+ 	background-blend-mode: soft-light;
+	bottom:				30px;				/* #cmd-line height */
+	top:				0;
+	left:				0;
+	padding-left:		5px;
+	overflow-x:			hidden;
+	overflow-y:			auto;
+	font-family:		Consolas, Monaco, Ubuntu Mono Regular, Ubuntu Mono, monospace;
+	z-index:			3;
+	box-sizing:			border-box;
+}
+
+#cmd-line {
+	height:			30px;
+	width:			100%;
+	position:		fixed;
+	background:		#242b33;
+	bottom:			0;
+	left:			0;
+	text-align:		center;
+	line-height:	30px;					/* #cmd-line height */
+	font-weight:	bold;
+	font-size:		16px;
+	color:			silver;
+	border-top:		1px solid #000;
+	z-index:		3;
+	user-select: text;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+#<?=$ajax['id']['cmd']['input']?> {
+	font-family:	Consolas, Monaco, Ubuntu Mono Regular, Ubuntu Mono, monospace;
+	border:		0;
+	width:		calc(100% - 60px);
+	height:		30px;				/* #cmd-line height */
+	color:		#fff;
+	background:	#242b33;
+	outline:	none;
+	padding: 	0;
+	margin: 	0;
+}
+
+.float-left {
+	float:	left;
+	width:	30px;				/* #cmd-line height */
+	cursor:	pointer;
+}
+
+.float-right {
+	float:	right;
+	width:	30px;				/* #cmd-line height */
+	cursor:	pointer;
+}

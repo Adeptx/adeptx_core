@@ -1,0 +1,74 @@
+* {
+	cursor: url(<?=$page['base']['href'].$fold['cursors']?>red/1.cur), default;
+}
+
+html, body {
+	height: 100vh;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+/* 	font-family: 'Open Sans Light2', 'Open Sans Light', 'Open Sans', sans-serif; */
+	font-weight: 300;
+	font-size: 13px;
+	overflow: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+/*	background-color: rgba(255, 255, 255, 0.3);
+	background-blend-mode: hard-light;*/
+}
+
+a {
+	color: #0844ff;
+	text-decoration: none;
+	/* border-bottom: 1px dashed #0844ff; #086ca2*/
+	outline:none;
+}
+
+a:active {
+	color: #086ca2;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	padding-left: 20px;
+}
+
+ul li {
+	background: url(<?=$page['base']['href'].$fold['images']?>16x16/ul.png) 0 1px no-repeat;
+}
+
+input {
+	height: 20px;
+}
+
+textarea {
+	resize: none;
+}
+
+select, input, textarea {
+	outline: none;
+	font-family: 'Open Sans Light2', 'Open Sans Light', 'Open Sans', sans-serif;
+	font-size: 13px;
+	height: 30px;
+	line-height: 1em;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+input[type="button"], input[type="submit"] {
+	cursor: pointer;
+}
+
+label {
+	display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}

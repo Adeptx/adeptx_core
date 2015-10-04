@@ -1,0 +1,30 @@
+---------- Date: 2014-01-01 01:33:47 ~ IP : 46.98.104.37 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=17f90f8f5903c4a0fad0cdac5fbb0f64&amp;product_id=35&amp;page=2
+MOD DETAILS:
+   modFile   : /home/u289090103/public_html/vqmod/xml/vqmod_admin_apply_button_admin_product_1.5.1.3.xml
+   id        : Admin Apply button (products, category, manufacturer, information, news)
+   version   : 1.0.0
+   vqmver    : 1.0.8
+   author    : stalker780
+VQModObject::parseMods - Could not resolve path for [admin/controller/catalog/news.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/model/catalog/news.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/catalog/news_form.tpl] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-01-01 01:38:10 ~ IP : 46.98.104.37 ----------
+REQUEST URI : /admin/index.php?route=common/login
+MOD DETAILS:
+   modFile   : /home/u289090103/public_html/vqmod/xml/vqmod_admin_apply_button_admin_product_1.5.1.3.xml
+   id        : Admin Apply button (products, category, manufacturer, information, news)
+   version   : 1.0.0
+   vqmver    : 1.0.8
+   author    : stalker780
+VQModObject::parseMods - Could not resolve path for [admin/controller/catalog/news.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/model/catalog/news.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/catalog/news_form.tpl] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

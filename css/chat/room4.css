@@ -1,0 +1,46 @@
+    article {
+    	padding-left: 5px;
+    	border-bottom: 1px solid gray;
+    }
+    
+    .creator {
+    	background-color: #e7efff;
+    }
+    
+    .admin, .answer {
+    	background-color: #e7ffef;
+    }
+    
+    .auto, .moder, .update {
+    	color: red;
+    }
+    
+    .update {
+    	text-decoration: line-through;
+    }
+    
+    .added {
+    	text-decoration: underline;
+    }
+    
+    .infoblock {
+    	border-left: 1px dotted black;
+    	float: right;
+    	padding: 0 5px;
+    }
+    
+    .time {
+    	cursor: pointer;
+    }
+    
+    footer {
+ 		width: 100%;
+    	// position: fixed;
+    	bottom: 0;
+    }
+    
+    footer textarea {
+ 		width: 100%;
+ 		height: 50px;
+ 		border: 0;
+    }

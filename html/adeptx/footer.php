@@ -1,0 +1,1 @@
+<? $asset->show('copyright2'); ?>

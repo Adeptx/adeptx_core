@@ -1,0 +1,1 @@
+2015-09-28 17:19:41 исполняемый файл /home/x-positive/srv/adeptx/ajax/adeptx.php вызванный файлом /index.php на 158 строке кода инициировал запись Adeptx `cd` Command Exception: <strong style="color:red">Указанного пути не существует</strong> in /home/x-positive/srv/adeptx/ajax/adeptx.php on line 158

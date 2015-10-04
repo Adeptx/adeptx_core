@@ -1,0 +1,295 @@
+.index-table {
+	width: 970px;
+	background-color: #FFFFFF;
+}
+.main-table {
+	width: 970px;
+	background-color: #FFFFFF;
+
+}
+.text-small-head {
+	font-family: Verdana;
+	font-size: 9px;
+	color: #999999;
+}
+.text-small-head2 {
+	font-family: Verdana;
+	font-size: 9px;
+	color: #333333;
+}
+.textblack {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #000000;
+
+}
+.text-bold {
+	font-family: Verdana;
+	font-size: 10pt;
+	font-weight: 900;
+}
+.text-small-gray {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #333333;
+}
+.text-red {
+	font-family: Verdana;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #D20000;
+}
+.text-gray {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #666666;
+}
+.textsmall {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #000000;
+}
+.search-select {
+	font-family: Verdana;
+	font-size: 9pt;
+	color: #000066;
+	font-style: normal;
+
+
+}
+.text-price {
+	font-family: Verdana;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #333333;
+}
+.text-big {
+	font-family: Verdana;
+	font-size: 11pt;
+
+}
+.searchtable {
+	background-image:url(http://www.holprop.es/images/resultbox.jpg);
+	height:173px;
+	background-repeat:no-repeat;
+	background-position:center;
+
+}
+.imagetable2 {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #CCCCCC;
+
+}
+.imagetable22 {
+	border: 3px solid #CCCCCC;
+	margin: 0px;
+	padding: 0px;
+}
+.heading2 {
+	font-family: Verdana;
+	font-size: 11pt;
+	color: #003D59;
+	line-height: 10pt;
+	background-position: center;
+	border-bottom-width: medium;
+	border-bottom-style: double;
+	border-bottom-color: #003D59;
+
+}
+.description {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #000000;
+	height: 380px;
+	overflow: auto;
+	width: 100%;
+	padding: 5px;
+
+}
+.descriptionsale {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #000000;
+	height: 426px;
+	overflow: auto;
+	width: 100%;
+	padding: 5px;
+
+}
+.notes {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #000000;
+	height: 124px;
+	overflow: auto;
+	width: 100%;
+	padding: 5px;
+
+}
+.prices {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #000000;
+	height: 186px;
+	overflow: auto;
+	width: 100%;
+	padding: 2px;
+
+}
+.addrates {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #000000;
+	height: 66px;
+	overflow: auto;
+	width: 100%;
+	padding: 2px;
+
+}
+.copyright {
+	font-family: Verdana;
+	font-size: 9px;
+	color: #333333;
+
+}
+.text-small-white {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #FFFFFF;
+}
+
+.text-gray-reject {
+	font-family: Verdana;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #999999;
+}
+.text-red-big {
+	font-family: Verdana;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #D20000;
+}
+.text-price {
+	font-family: Verdana;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #333333;
+}
+.text-green {
+	font-family: Verdana;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #006633;
+}
+.green-submit {
+	font-family: Verdana;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #006633;
+	width: 120pt;
+}
+.search-rss {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #333333;
+	height: 285px;
+	width: 100%;
+	overflow: auto;
+	padding: 2px;
+
+}
+.search-county {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #006699;
+	height: 52px;
+	width: 100%;
+	overflow: auto;
+	padding: 2px
+
+}
+.search-city {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #006699;
+	height: 100px;
+	width: 100%;
+	overflow: auto;
+	padding: 2px;
+
+}
+.search-town {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #006699;
+	height: 58px;
+	width: 100%;
+	overflow: auto;
+	padding: 2px;
+
+}
+.search-key {
+	font-family: Verdana;
+	font-size: 9px;
+	color: #0099FF;
+	height: 42px;
+	width: 100%;
+	overflow: auto;
+	padding: 2px;
+
+}
+.search-resutls-table {
+	border: thin solid #1396E8;
+	border-width: 1pt;
+}
+.search-fields {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #000066;
+	background-color: #EAEAEA;
+	text-indent: 4pt;
+
+}
+.text-red-search {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #D20000;
+}
+.text-2-s {
+	font-family: Verdana;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #003399;
+}
+.text-small3 {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000066;
+}
+.text-small {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #0099FF;
+
+}
+.quest-table {
+	width: 740px;
+	border: 4px double #CCCCCC;
+
+}
+
+.text-small-links {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #000000;
+
+}
+.search-table {
+	border-bottom-width: thin;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+
+
+}

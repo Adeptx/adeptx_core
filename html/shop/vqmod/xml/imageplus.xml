@@ -1,0 +1,145 @@
+<!-- Created using vQmod XML Generator by UKSB - http://www.opencart-extensions.co.uk //-->
+<modification>
+	<id><![CDATA[Image manager +]]></id>
+	<version><![CDATA[0.2]]></version>
+	<vqmver><![CDATA[]]></vqmver>
+	<author><![CDATA[pasha_st@ukr.net]]></author>
+	
+	<file name="admin/view/template/common/header.tpl">	
+		<operation>
+			<search position="after"><![CDATA[<script type="text/javascript" src="view/javascript/jquery/superfish/js/superfish.js"></script>]]></search>
+			<add><![CDATA[<script type="text/javascript" src="view/javascript/jquery/ui/external/jquery.bgiframe-2.1.2.js"></script>
+			<script type="text/javascript" src="view/javascript/jquery/dlgmax/dlgmax.js"></script>
+			]]></add>
+		</operation>		
+	</file>
+	
+	<file name="/admin/view/template/catalog/category_form.tpl">
+		<operation>
+			<search position="replace"><![CDATA[width: 800,]]></search>
+			<add><![CDATA[width: 960,]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[height: 400,]]></search>
+			<add><![CDATA[height: 620,]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[modal: false]]></search>
+			<add><![CDATA[,
+			dialogClass: 'dlg']]></add>
+		</operation>
+	</file>
+	
+	<file name="/admin/view/template/catalog/manufacturer_form.tpl">
+		<operation>
+			<search position="replace"><![CDATA[width: 800,]]></search>
+			<add><![CDATA[width: 960,]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[height: 400,]]></search>
+			<add><![CDATA[height: 620,]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[modal: false]]></search>
+			<add><![CDATA[,
+			dialogClass: 'dlg']]></add>
+		</operation>
+	</file>
+	
+	<file name="/admin/view/template/catalog/option_form.tpl">
+		<operation>
+			<search position="replace"><![CDATA[width: 800,]]></search>
+			<add><![CDATA[width: 960,]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[height: 400,]]></search>
+			<add><![CDATA[height: 620,]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[modal: false]]></search>
+			<add><![CDATA[,
+			dialogClass: 'dlg']]></add>
+		</operation>
+	</file>
+	
+	<file name="/admin/view/template/catalog/product_form.tpl">
+		<operation>
+			<search position="replace"><![CDATA[width: 800,]]></search>
+			<add><![CDATA[width: 960,]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[height: 400,]]></search>
+			<add><![CDATA[height: 620,]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[modal: false]]></search>
+			<add><![CDATA[,
+			dialogClass: 'dlg']]></add>
+		</operation>
+	</file>
+	
+	<file name="/admin/view/template/sale/voucher_theme_form.tpl">
+		<operation>
+			<search position="replace"><![CDATA[width: 800,]]></search>
+			<add><![CDATA[width: 960,]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[height: 400,]]></search>
+			<add><![CDATA[height: 620,]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[modal: false]]></search>
+			<add><![CDATA[,
+			dialogClass: 'dlg']]></add>
+		</operation>
+	</file>
+	
+	<file name="/admin/view/template/setting/setting.tpl">
+		<operation>
+			<search position="replace"><![CDATA[width: 800,]]></search>
+			<add><![CDATA[width: 960,]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[height: 400,]]></search>
+			<add><![CDATA[height: 620,]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[modal: false]]></search>
+			<add><![CDATA[,
+			dialogClass: 'dlg']]></add>
+		</operation>
+	</file>
+	
+	<file name="/admin/view/template/setting/store_form.tpl">
+		<operation>
+			<search position="replace"><![CDATA[width: 800,]]></search>
+			<add><![CDATA[width: 960,]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[height: 400,]]></search>
+			<add><![CDATA[height: 620,]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[modal: false]]></search>
+			<add><![CDATA[,
+			dialogClass: 'dlg']]></add>
+		</operation>
+	</file>
+
+	 <file name="admin/view/template/design/banner_form.tpl">
+		<operation>
+			<search position="replace"><![CDATA[width: 700,]]></search>
+			<add><![CDATA[width: 960,]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[height: 400,]]></search>
+			<add><![CDATA[height: 620,]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[modal: false]]></search>
+			<add><![CDATA[,
+			dialogClass: 'dlg']]></add>
+		</operation>
+	</file>
+	
+</modification>

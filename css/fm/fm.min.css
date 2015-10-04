@@ -1,0 +1,180 @@
+html * {
+	cursor: url(../<?=$fold['images']?>cur/red1.cur), url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), default;
+}
+
+body {
+	cursor: url(../<?=$fold['images']?>cur/red1.cur), url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), default;
+	user-select: text;
+	text-decoration: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+/*color:#09f;*/
+	padding-bottom: 60px;
+	margin-bottom: 60px;
+}
+
+a {
+	color: #000/*#09f*/;
+	text-decoration: none !important;
+	border: 0;
+}
+
+a:hover {
+/*color:#4de*/
+	cursor: url(../<?=$fold['images']?>cur/red1.cur), url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), default;
+}
+
+.line {
+	height: 9px;
+	border-bottom: 1px dotted rgba(75, 103, 131, 0.1);
+/*text-shadow:none;*/
+	font: 11px/15px Tahoma,Arial,Helvetica,sans-serif;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.line:hover {
+	background: rgba(151, 224, 224, 0.75);
+}
+
+a:hover, .line:hover, .line:hover .link, .line:hover .rename {
+	color: #fff; /* #0ab */
+/* 	background: rgba(151, 224, 224, 0.75); */
+}
+
+.link {
+	display: block;
+	font: 11px/15px Tahoma,Arial,Helvetica,sans-serif;
+	padding: 5px;
+}
+#first_link {
+	background-image: url(../<?=$fold['images']?>16x16/domain.png);
+	background-repeat: no-repeat;
+	background-position: 7px 50%;
+	padding-left: 30px;
+}
+/*  .link:visited{color:#65f;} */
+.knops {
+	text-align: center;
+	color: #444;	/*  #09f */
+	width: 20px;
+/* 	display: block; */
+	float: left;
+	vertical-align: middle;
+	line-height: 20px;
+}
+.knops.dir_ico {
+	background-image: url(../<?=$fold['images']?>16x16/dir-lg.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.file {
+	border: 1px dashed #def;
+	width: 100%;
+}
+
+.sel {
+	background: rgba(231, 247, 247, 0.75);
+}
+
+#keep {
+	font: 12px monospace,verdana;
+	background: #f7ffff;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	color: #005;
+	overflow-y: scroll;
+	padding: 0;
+	border: 2px #e7efef solid;
+	outline: none;
+	resize: none;
+}
+
+footer {
+	position: fixed;
+	margin-left: calc(50% - 250px);
+	width: 500px;
+	height: 58px;
+/* 	border: 1px solid #eee; */
+	bottom: 0;
+	z-index: 10;
+/* 	background: #cceeff; */
+	text-align: center;
+	font: 11px/17px Tahoma,Arial,Helvetica,sans-serif;
+	color: #fff;
+	padding: 10px 0 7px;
+}
+
+#files {
+	position: absolute;
+	width: 500px;
+/* 	border: 1px dashed #def; */
+	left: 50%;
+	margin-left: -250px;
+	margin-bottom: 74px;
+}
+
+.replace {
+	position: fixed;
+	right: 12px;
+	outline: none;
+	border: 1px solid #ccc;
+}
+
+#to {
+	top: 20px;
+}
+
+#replace {
+	top: 40px;
+	width: 153px;
+}
+
+.rename {
+	outline: none;
+	border: 0;
+	background: transparent;
+	font: 11px Tahoma,Arial,Helvetica,sans-serif;
+/*color:#09f;*/
+	width: 100%;
+	height: 13px;
+	cursor: default;
+	padding: 5px 0;
+}
+
+footer input {
+	font: 11px Tahoma,Arial,Helvetica,sans-serif;
+	cursor: url(../<?=$fold['images']?>cur/red1.cur), url(http://cur.cursors-4u.net/cursors/cur-2/cur125.cur), default;
+	border: 0;
+}
+
+footer .button {
+	width: 208px;
+	background: #09f;
+	color: #fff;
+	margin: 14px;
+	margin-top: 0;
+}
+
+<?='#'.$ajax['id']['fm']['preread']?>, #preview {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	width: calc(50% - 250px);
+	height: 100%;
+	font: 9px/8px monospace;
+/* 	color: #777; */
+	border: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	background-repeat: no-repeat;
+	padding: 0;
+}
+
+#preview {
+	width: calc(50% - 250px);
+}

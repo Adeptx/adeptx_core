@@ -1,0 +1,9 @@
+<?
+	$font->import('http://weloveiconfonts.com/api/?family=fontawesome');
+
+	# font directory, font-family, file name
+	$font->face('ubuntu-light', 'Ubuntu-Light', 'Ubuntu-L');
+	$font->face('myriad-pro', 'MyriadPro-Bold', 'MyriadPro-Bold');
+	$font->face('myriad-pro', 'MyriadPro-Regular', 'MyriadPro-Regular');
+	$font->face('yanone-kaffeesatz', 'YanoneKaffeesatz-Bold', 'YanoneKaffeesatz-Bold');
+	$font->face('yanone-kaffeesatz', 'YanoneKaffeesatz-Regular', 'yanonekaffeesatz-regular');

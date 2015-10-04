@@ -1,0 +1,216 @@
+<modification>
+	<id>Admin Apply button (products, category, manufacturer, information, news)</id>
+	<version>1.0.0</version>
+	<vqmver>1.0.8</vqmver>
+	<author>stalker780</author>
+//products
+	<file name="admin/controller/catalog/product.php">
+        <operation>
+            <search position="replace"><![CDATA[
+			$this->redirect($this->url->link('catalog/product', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+            ]]></search>
+            <add><![CDATA[
+			if(isset($this->request->post['apply']) and $this->request->post['apply'])
+			$this->redirect($this->url->link('catalog/product/update', 'token=' . $this->session->data['token'] . '&product_id=' . $this->request->get['product_id'] . $url, 'SSL'));
+			else
+			$this->redirect($this->url->link('catalog/product', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/model/catalog/product.php">
+        <operation>
+            <search position="after"><![CDATA[
+			$this->cache->delete('product');
+            ]]></search>
+            <add><![CDATA[
+			return (int)$product_id;
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/view/template/catalog/product_form.tpl">
+        <operation>
+            <search position="replace"><![CDATA[
+			<div class="buttons">
+            ]]></search>
+            <add><![CDATA[
+			<div class="buttons"><a onclick="apply()" class="button"><span>Применить</span></a>
+			<script language="javascript">
+				function apply(){
+				$('#form').append('<input type="hidden" id="apply" name="apply" value="1"  />');
+				$('#form').submit();
+				}
+			</script>
+            ]]></add>
+        </operation>
+	</file>
+//category
+	<file name="admin/controller/catalog/category.php">
+        <operation>
+            <search position="replace"><![CDATA[
+			$this->redirect($this->url->link('catalog/category', 'token=' . $this->session->data['token'], 'SSL')); 
+            ]]></search>
+            <add><![CDATA[
+			if(isset($this->request->post['apply']) and $this->request->post['apply'])
+			$this->redirect($this->url->link('catalog/category/update', 'token=' . $this->session->data['token'] . '&category_id=' . $this->request->get['category_id'], 'SSL'));
+			else
+			$this->redirect($this->url->link('catalog/category', 'token=' . $this->session->data['token'], 'SSL'));
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/model/catalog/category.php">
+        <operation>
+            <search position="after"><![CDATA[
+			$this->cache->delete('category');
+            ]]></search>
+            <add><![CDATA[
+			return (int)$category_id;
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/view/template/catalog/category_form.tpl">
+        <operation>
+            <search position="replace"><![CDATA[
+			<div class="buttons">
+            ]]></search>
+            <add><![CDATA[
+			<div class="buttons"><a onclick="apply()" class="button"><span>Применить</span></a>
+			<script language="javascript">
+				function apply(){
+				$('#form').append('<input type="hidden" id="apply" name="apply" value="1"  />');
+				$('#form').submit();
+				}
+			</script>
+            ]]></add>
+        </operation>
+	</file>
+//manufacturer
+	<file name="admin/controller/catalog/manufacturer.php">
+        <operation>
+            <search position="replace"><![CDATA[
+			$this->redirect($this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . $url, 'SSL')); 
+            ]]></search>
+            <add><![CDATA[
+			if(isset($this->request->post['apply']) and $this->request->post['apply'])
+			$this->redirect($this->url->link('catalog/manufacturer/update', 'token=' . $this->session->data['token'] . '&manufacturer_id=' . $this->request->get['manufacturer_id'] . $url, 'SSL'));
+			else
+			$this->redirect($this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/model/catalog/manufacturer.php">
+        <operation>
+            <search position="after"><![CDATA[
+			$this->cache->delete('manufacturer');
+            ]]></search>
+            <add><![CDATA[
+			return (int)$manufacturer_id;
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/view/template/catalog/manufacturer_form.tpl">
+        <operation>
+            <search position="replace"><![CDATA[
+			<div class="buttons">
+            ]]></search>
+            <add><![CDATA[
+			<div class="buttons"><a onclick="apply()" class="button"><span>Применить</span></a>
+			<script language="javascript">
+				function apply(){
+				$('#form').append('<input type="hidden" id="apply" name="apply" value="1"  />');
+				$('#form').submit();
+				}
+			</script>
+            ]]></add>
+        </operation>
+	</file>
+//information
+	<file name="admin/controller/catalog/information.php">
+        <operation>
+            <search position="replace"><![CDATA[
+			$this->redirect($this->url->link('catalog/information', 'token=' . $this->session->data['token'] . $url, 'SSL')); 
+            ]]></search>
+            <add><![CDATA[
+			if(isset($this->request->post['apply']) and $this->request->post['apply'])
+			$this->redirect($this->url->link('catalog/information/update', 'token=' . $this->session->data['token'] . '&information_id=' . $this->request->get['information_id'] . $url, 'SSL'));
+			else
+			$this->redirect($this->url->link('catalog/information', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/model/catalog/information.php">
+        <operation>
+            <search position="after"><![CDATA[
+			$this->cache->delete('information');
+            ]]></search>
+            <add><![CDATA[
+			return (int)$information_id;
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/view/template/catalog/information_form.tpl">
+        <operation>
+            <search position="replace"><![CDATA[
+			<div class="buttons">
+            ]]></search>
+            <add><![CDATA[
+			<div class="buttons"><a onclick="apply()" class="button"><span>Применить</span></a>
+			<script language="javascript">
+				function apply(){
+				$('#form').append('<input type="hidden" id="apply" name="apply" value="1"  />');
+				$('#form').submit();
+				}
+			</script>
+            ]]></add>
+        </operation>
+	</file>
+//news
+	<file name="admin/controller/catalog/news.php">
+        <operation>
+            <search position="replace"><![CDATA[
+			$this->redirect($this->url->link('catalog/news', 'token=' . $this->session->data['token'] . $url, 'SSL')); 
+            ]]></search>
+            <add><![CDATA[
+			if(isset($this->request->post['apply']) and $this->request->post['apply'])
+			$this->redirect($this->url->link('catalog/news/update', 'token=' . $this->session->data['token'] . '&news_id=' . $this->request->get['news_id'] . $url, 'SSL'));
+			else
+			$this->redirect($this->url->link('catalog/news', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/model/catalog/news.php">
+        <operation>
+            <search position="after"><![CDATA[
+			$this->cache->delete('news');
+            ]]></search>
+            <add><![CDATA[
+			return (int)$news_id;
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/view/template/catalog/news_form.tpl">
+        <operation>
+            <search position="replace"><![CDATA[
+			<div class="buttons">
+            ]]></search>
+            <add><![CDATA[
+			<div class="buttons"><a onclick="apply()" class="button"><span>Применить</span></a>
+			<script language="javascript">
+				function apply(){
+				$('#form').append('<input type="hidden" id="apply" name="apply" value="1"  />');
+				$('#form').submit();
+				}
+			</script>
+            ]]></add>
+        </operation>
+	</file>
+</modification>

@@ -1,0 +1,71 @@
+
+ //$(window).contextmenu(function(e){e=e||window.event;e.preventDefault();return false;});
+
+ $(window).contextmenu(function(e)	// '#bg'
+ {
+  $('#context').remove();
+  var $context_main;
+   $context_main = '<div class="context" id="context">\
+    <div id="context_main">\
+     <div class="context_line" id="refresh">Обновить</div>\
+     <div class="context_line" id="add_link">Добавить значок</div>\
+     <div class="context_line" id="add_note">Создать заметку</div>\
+     <div class="context_line" id="fond">Сменить фон</div>\
+     <div class="context_line" id="fond">Связаться с нами</div>\
+    </div>\
+   </div>';
+  $('body').append($context_main);
+  $('#refresh').click(function(){document.location.reload();});
+  $('#add_link').click(function(){add_link(++links.count);});
+  $('#add_note').click(function(){add_note(++notes.count);});
+  $('#fond').click(function(){change_bg();});
+  e = e || window.event;
+  var x = e.pageX || e.x;
+  var y = e.pageY || e.y;
+  $('.context').css({'left':x,'top':y});
+  if (x+$('.context').width() > $(document).width()) $('.context').css('left',x-$('.context').width());
+  if (y+$('.context').height() > $(document).height()) $('.context').css('top',y-$('.context').height());
+  $('.context').fadeIn('slow');
+  return false;
+ });
+
+
+ window.onclick = function(){$('#context').remove();};
+
+
+ $('.context_line').mouseover(function(){$(this).css({'border':'1px solid #daf7ff'});}); //,'text-shadow':''
+ $('.context_line').mouseout(function(){$(this).css('border-color','transparent');});
+
+
+
+ function link_context(e,t)
+ {
+  $('#context').remove();
+  var $context_main;
+   $context_main = '<div class=context id=context>\
+    <div id=context_main>\
+     <div class=context_line id=del_el>Удалить этот значок</div>\
+     <div class=context_line id=copy_link>Копировать значок</div>\
+     <div class=context_line id=rename>Переименовать</div>\
+     <div class=context_line>Открыть</div>\
+    </div>\
+   </div>';
+
+  var Tobj_id=t.id;
+  $('#del_el').click(function(){$('#'+Tobj_id).remove();});
+
+  $('body').append($context_main);
+ // $('#del_note_'+t.id).click(function(){$('#'+t.id.slice(9)).remove();});
+
+  $('#copy_link').click(function(){/*$link[$link.length][NAME]=$link[$link.length-3][NAME]; //нужно знать какой линк копируется */add_link($link.length);});
+
+  e = e || window.event;
+  var x = e.pageX || e.x;
+  var y = e.pageY || e.y;
+  $('.context').css({'left':x,'top':y});
+  if (x+$('.context').width() > $(document).width()) $('.context').css('left',x-$('.context').width());
+  if (y+$('.context').height() > $(document).height()) $('.context').css('top',y-$('.context').height());
+  $('.context').fadeIn('slow');
+  return false;
+
+ }

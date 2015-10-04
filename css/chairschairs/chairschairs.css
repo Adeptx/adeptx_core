@@ -1,0 +1,2406 @@
+@charset "utf-8";
+
+/************************************************************************************
+	RESET && GLOBAL
+************************************************************************************/
+
+input {
+	border: 0;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: MyriadPro-Regular;
+	position: relative;
+}
+/* 
+#page {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+} */
+
+#container {
+	margin: 0 auto;
+}
+
+#vk_groups {
+	margin: 0 auto;
+}
+
+img {
+	border: none;
+}
+
+input[type="button"],
+input[type="submit"] {
+	border-radius: 3px;
+	border: 0;
+	background-color: #EC8C52;
+	color: #fff;
+	margin-top: 15px;
+	height: 25px;
+	padding: 0 10px;
+	border: 1px solid #D26060;
+	text-transform: uppercase;
+}
+
+#header-partnership-link:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+	background-color: #FFA56F;
+	cursor: pointer;
+}
+#header-partnership-link:active,
+a:active input[type="button"]:hover,
+a:active input[type="submit"]:hover {
+	background-color: #EC8C52;
+}
+
+h3 {
+	background-color: #77624D;
+	font: 20px/30px YanoneKaffeesatz-Regular;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+/************************************************************************************
+	HEADER
+************************************************************************************/
+
+header,
+#header-top,
+#header-middle,
+#header-bottom {
+	width: 100%;
+/* 	position: relative;
+	top: 0;
+	left: 0; */
+}
+
+#header-top {
+	background-color: rgba(141, 98, 76, 0.62); /* rgba(131, 97, 79, 0.62) */
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
+	padding-bottom: 5px;
+	position: absolute;
+	top: 0;
+	height: 40px;
+}
+
+#header-middle {
+	min-height: 230px;
+	background: url(../../img/bg/chairschairs.jpg) no-repeat scroll 0 0 transparent;
+	background-size: 100% auto;
+	background-position: center;
+	/*background-position: 0 -35px;*/
+/*	background-color: #959595;/
+/* 	position: relative; */
+	padding-top: 65px;
+}
+
+#header-bottom {
+	background-color: #77624d;
+	text-align: center;
+}
+
+#header-middle-container {
+	padding-bottom: 12px;
+}
+
+#header-top-container,
+#header-middle-container,
+#header-bottom-container {
+	max-width: 980px;
+	margin: 0 auto;
+/* 	position: relative; */
+}
+
+#header-logo {
+	position: relative;
+/* 	top: 0;
+	left: 0;
+	z-index: 1; */
+	background: url(../../img/logo/chairschairs.png) no-repeat scroll 0 0 transparent;
+	background-size: 200px 146px;
+	background-position: center;
+	width: 188px;
+	height: 140px;
+	float: left;
+/* 	z-index: 1; */
+}
+
+#header-phone,
+#header-time,
+#header-email {
+	display: inline-block;
+	color: #fff;
+	font: 30px/35px YanoneKaffeesatz-Bold;
+	margin: 0 55px;
+}
+#header-email a {
+	color: #fff;
+}
+
+#header-description {
+/* 	position: relative;
+	top: 65px;
+	float: right; */
+	background-color: rgba(141, 98, 76, 0.62);
+	height: 93px;
+	max-width: 430px;
+	font: 40px/45px YanoneKaffeesatz-Regular;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 5px 10px 5px 5px;
+	text-align: right;
+/* 	margin-top: 65px; */
+	margin-left: calc(100% - 460px);
+	margin-top: 50px;
+}
+
+#header-search {
+/* 	position: absolute;
+	bottom: 10px;
+	right: 10px; */
+	width: 250px;
+	height: 34px;
+	color: #333;
+	border: 1px solid #E5E5E5;
+	border-radius: 5px;
+	margin-left: calc(100% - 458px);
+	margin-top: 75px;
+ /* calc(100% - 50px); */
+	background: #D5D5D5 url(../../img/search/search-input.png) 0 repeat-x;
+}
+
+#header-partnership-button {
+	height: 50px;
+	width: 200px;
+}
+
+.gsc-control-cse {
+	border: none !important;
+	background-color: transparent !important;
+	padding: 0 !important;
+}
+.gsib_a {
+	padding: 0 6px !important;
+}
+input.gsc-search-button-v2 {
+	padding: 5px !important;
+	margin-top: 4px !important;
+}
+td.gsc-search-button {
+	width: 15% !important;
+}
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+	font: 14px MyriadPro-Regular !important;
+	background-color: transparent !important;
+}
+#gsc-iw-id1,
+#header-search-input {
+	border: 1px solid #6FA7C0;
+	border-radius: 5px;
+	font: 16px MyriadPro-Regular;
+	color: #666;
+	padding: 5px;
+	margin-top: 4px;
+	height: 14px;
+	margin-left: 5px;
+	width: 180px;
+}
+
+#header-search-button {
+	margin: 0;
+	background: transparent url(../../img/search/search.png) no-repeat;
+	height: 19px;
+	margin-left: 15px;
+	vertical-align: middle;
+	border: 0;
+}
+#header-partnership-link {
+	display: inline-block;
+	position: absolute;
+}
+
+#header-menu {
+	display: inline-block;
+}
+
+#header-menu a {
+	display: inline-block;
+	height: 43px;
+}
+
+#header-menu ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#header-menu ul li {
+	float: left;
+	list-style: none;
+	text-align: center;
+}
+
+#header-menu ul li {
+	height: 45px;
+	border-bottom: 3px solid transparent;
+	color: #fff;
+	font: 20px/40px YanoneKaffeesatz-Regular;
+	text-transform: uppercase;
+	margin: 0 9px;
+}
+
+#header-menu a:hover li {
+	color: #ec8c52;
+	border-bottom: 3px solid #ec8c52;
+}
+
+#header-menu a:active li {
+	color: red;
+	border-bottom: 3px solid red;
+}
+#header-menu .menu-item {
+	position: relative;
+	padding: 5px;
+}
+#header-menu .submenu {
+	display: none;
+	position: absolute;
+	width: 200px;
+	top: 23px;
+	left: 0;
+	z-index: 1;
+	background-color: rgba(141, 98, 76, 0.62); /*rgba(0, 0, 0, 0.25)*/
+}
+#header-menu .submenu:hover,
+#header-menu .menu-item:hover .submenu {
+	display: inline-block;
+}
+#header-menu .submenu a {
+	display: block;
+	width: 100%;
+	height: 30px;
+}
+#header-menu .submenu a li {
+	height: 30px;
+	color: #fff;
+	display: block;
+	width: 100%;
+	margin: 0;
+	font: 20px/30px YanoneKaffeesatz-Regular;
+}
+#header-menu .submenu a li:hover {
+	background-color: #ec8c52;
+	color: #fff;
+	/*
+	background-color: #fff;
+	color: #ec8c52;*/
+	border-bottom-color: transparent;
+}
+
+/************************************************************************************
+	BLOCK-CENTER
+************************************************************************************/
+
+#so-sorry {
+	min-height: 80px;
+	padding-bottom: 50px;
+	color: rgb(153, 41, 41);
+	margin: 0 auto;
+	max-width: 500px;
+	font: 26px YanoneKaffeesatz-Regular;
+	text-align: justify;
+}
+
+#content {
+/* 	text-align: center; */
+	position: relative;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+#block-left,
+#block-right {
+	width: 150px;
+	display: inline-block;
+	text-align: center;
+}
+
+#block-left input[type="button"] {
+	font: 18px YanoneKaffeesatz-Regular;
+	padding: 0 5px;
+	text-transform: uppercase;
+}
+
+.cart-count {
+	font: 20px/30px YanoneKaffeesatz-Regular;
+	text-transform: uppercase;
+	color: #EC8C52;
+}
+a.cart-count:hover {
+	color: #EC8C52;
+}
+
+.product-page #block-right {
+	width: 300px;
+	position: relative;
+}
+
+/************************************************************************************
+	MODULES
+************************************************************************************/
+
+.module:first-child {
+	margin-top: 0;
+}
+
+.module {
+	margin-bottom: 20px;
+	border: 2px solid #77624D;
+	padding-bottom: 10px;
+	background-color: #fff;
+}
+#profile-module-block:target input a,
+#profile-module-block:target input {
+  animation: lower 5s linear 1;
+  -webkit-animation: lower 5s linear 1;
+  -moz-animation: lower 5s linear 1;
+  -ie-animation: lower 5s linear 1;
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {opacity: 1;} 19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {opacity:.7;background-color:rgba(255, 125, 0, 0.5);}
+}
+@-webkit-keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {opacity: 1;} 19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {opacity:.7;background-color:rgba(255, 125, 0, 0.5);}
+}
+@-moz-keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {opacity: 1;} 19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {opacity:.7;background-color:rgba(255, 125, 0, 0.5);}
+}
+@-ie-keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {opacity: 1;} 19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {opacity:.7;background-color:rgba(255, 125, 0, 0.5);}
+}
+
+
+
+#filters-block {
+	color: #77624D;
+}
+
+
+#avatar-block {
+	padding-bottom: 0px;
+}
+
+#avatar-block h3 {
+	margin-bottom: 0;
+	text-transform: none;
+	line-height: 32px;
+}
+
+#avatar-block h3:hover {
+	color: #EC8C52;
+}
+
+#avatar-block .photo {
+	width: 140px;
+	height: 140px;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#avatar-block .photo:hover {
+	opacity: 0;
+}
+
+[data-page="profile"] #block-center .module {
+	max-width: 450px;
+}
+
+#characteristics-block {
+	font: 24px YanoneKaffeesatz-Regular;
+	color: #595959;
+}
+
+#characteristics-block .line-big,
+#characteristics-block .line {
+	text-align: left;
+	padding: 15px 15px 0px;
+}
+#characteristics-block .line-big p {
+	margin: 0;
+	padding: 0;
+}
+#characteristics-block .line-big {
+	font-size: 20px;
+}
+#characteristics-block #cart-sum {
+	padding: 2px 10px 6px;
+}
+#characteristics-block #add-to-cart,
+#characteristics-block #buy-one-click {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+
+#cart-block {
+	font: 17px YanoneKaffeesatz-Regular;
+	color: #595959;
+	text-transform: uppercase;
+}
+#characteristics-block,
+#buymore-block {
+	min-width: 326px;
+	margin-left: -40px;
+}
+#characteristics-block {
+	/*margin-top: 30px;*/
+	padding-bottom: 15px;
+}
+#characteristics-block .rating {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+	width: 100px;
+	height: 28px;
+	background: url(../../img/rating/orange/rating_5.png) 0 0 no-repeat;
+}
+#characteristics-block .rating.stars_1 {
+	background: url(../../img/rating/orange/rating_1.png) 0 0 no-repeat;
+}
+#characteristics-block .rating.stars_2 {
+	background: url(../../img/rating/orange/rating_2.png) 0 0 no-repeat;
+}
+#characteristics-block .rating.stars_3 {
+	background: url(../../img/rating/orange/rating_3.png) 0 0 no-repeat;
+}
+#characteristics-block .rating.stars_4 {
+	background: url(../../img/rating/orange/rating_4.png) 0 0 no-repeat;
+}
+#buymore-block {
+	min-height: 275px;
+	max-width: 806px;
+	margin: 50px auto 0;
+	clear: both;
+	text-align: center;
+	width: 203%;
+	position: relative;
+}
+#characteristics-block h3,
+#buymore-block h3 {
+	font: 30px/37px YanoneKaffeesatz-Regular;
+	padding: 6px;
+}
+#buymore-block h3 {
+	font: 20px/30px YanoneKaffeesatz-Regular;
+	padding: 6px;
+}
+#characteristics-block h3 {
+	margin-bottom: 0;
+}
+#buymore-block .product-block {
+	margin: 10px 14px !important;
+}
+#cart-sum > span {
+	text-transform: none;
+}
+#cart-sum {
+	color: #EC8C52;
+	border-radius: 20px;
+	border: 2px solid #EC8C52;
+	padding: 2px 4px 4px;
+}
+#block-news p {
+	font-size: 14px;
+	text-align: left;
+	padding: 0 5px;
+}
+#block-news a {
+	color: #ec8c52;
+}
+#block-news a:hover {
+	text-decoration: underline;
+}
+#block-news .news_date {
+	text-align: right;
+	font: 12px/15px YanoneKaffeesatz-Regular;
+	margin-right: 5px;
+}
+
+/************************************************************************************
+	3 MAIN BLOCKS AND MODULES
+************************************************************************************/
+
+#block-left {
+	float: left;
+	margin-right: 20px;
+}
+
+#block-right {
+/*	position: absolute;
+	right: 0;
+	top: 0;*/
+ 	float: right; 
+	margin-left: 20px;
+}
+
+#block-center {
+	width: 100%;
+	max-width: calc(100% - 340px);
+	font-family: MyriadPro-Regular;
+	display: inline-block;
+/*	min-height: 1200px;*/
+	text-align: center;
+}
+
+.product-page #block-center {
+	max-width: calc(100% - 490px);
+	text-align: left;
+}
+
+#breadcrumbs,
+#breadcrumbs a {
+	font: 15px YanoneKaffeesatz-Regular;
+	color: black;
+}
+
+#breadcrumbs a:hover {
+	text-decoration: underline;
+	color: #ec8c52;
+}
+#breadcrumbs a:active {
+	color: red;
+}
+
+.product-page .plus-block {
+	width: 110px;
+}
+
+.product-page .plus-name {
+	font-size: 16px;
+}
+
+#content.product-page {
+	margin-top: 20px;
+}
+
+h1,
+h2 {
+	font: 30px/40px YanoneKaffeesatz-Regular;
+	color: #ec8c52;
+	text-transform: uppercase;
+	text-align: center;
+/* 	backgroung-image: url(../../img/left.png) 0 50% no-repeat, url(../../img/left.png) calc(50% + 100px) 50% no-repeat;
+	*/
+	background-size: 50% auto;
+	margin: 0 auto 5px;
+}
+
+#block-center-article aside {
+	max-width: 450px;
+	text-align: justify;
+	margin: 0 auto;
+	font-size: 12px;
+}
+
+/************************************************************************************
+	AUTH-MODULE
+************************************************************************************/
+
+#login {
+	background: #F1F1F1 url(../../img/profile/login.png) 6px 50% no-repeat;
+}
+
+#password {
+	margin-top: 5px;
+	background: #F1F1F1 url(../../img/profile/password.png) 6px 50% no-repeat;
+}
+
+#login,
+#password {
+	padding-left: 30px;
+	width: 100px;
+	font: 13px 'Ubuntu-Light', sans-serif;
+	font-weight: 200;
+	border-radius: 3px;
+	border: 0;
+	height: 25px;
+}
+
+#reg-in-button,
+#sign-in-button {
+	width: 130px;
+	font: 18px YanoneKaffeesatz-Regular;
+}
+.sign-link {
+	font: 18px YanoneKaffeesatz-Regular;
+	color: #595959;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	display: block;
+}
+#exit {
+	margin-bottom: 5px;
+}
+.sign-link:hover {
+	text-decoration: underline;
+	color: #ec8c52;
+}
+.sign-link-decree {
+	font: 18px YanoneKaffeesatz-Regular;
+	color: #ec8c52;
+	display: inline;
+}
+.sign-link-decree:hover {
+	text-decoration: underline;
+}
+
+#exit:active,
+.sign-link:active,
+.sign-link-decree:active {
+	color: red;
+}
+.view-reviews {
+	text-decoration: underline;
+	display: inline-block;
+}
+/************************************************************************************
+	FILTERS-BLOCK MODULE
+************************************************************************************/
+
+#filter-price-from,
+#filter-price-to {
+	background-color: #E1E1E1;
+	width: 50px;
+	height: 18px;
+	border: 0;
+	text-align: center;
+}
+
+/************************************************************************************
+	PRODUCT-BLOCK
+************************************************************************************/
+
+.product-block {
+	display: inline-block;
+	width: 130px;
+	min-height: 187px;
+	text-align: center;
+	margin: 15px 11px;
+	position: relative;
+	vertical-align: top;
+}
+.product-block:hover {
+	cursor: pointer;
+}
+
+.product-image {
+	width: 130px;
+	height: 130px;
+}
+.product-block a {
+	display: inline-block;
+	text-decoration: none;
+}
+.product-image-container:hover:before {
+	content: "";
+	display: block;
+	width: 29px;
+	height: 29px;
+	margin: 50px;
+	background: url(../../img/fancyzoom/product-look.png) no-repeat scroll 0 0 transparent;
+	background-position: center;
+	background-size: 28px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.discount .product-image-container:after {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: -7px;
+	width: 81px;
+	height: 81px;
+	background: transparent url(../../img/label/discount.png) no-repeat scroll 0;
+}
+
+.hit .product-image-container:after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	width: 70px;
+	height: 69px;
+	background: transparent url(../../img/label/hit.png) no-repeat scroll 0 0;
+}
+
+.actia .product-image-container:after {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	width: 70px;
+	height: 69px;
+	background: transparent url(../../img/label/actia.png) no-repeat scroll 0 0;
+}
+
+.product-name {
+	font: 20px YanoneKaffeesatz-Regular;
+	height: 28px;
+	line-height: 18px;
+	color: #332D26;
+	margin-top: -10px;
+	max-width: 140px;
+	width: 140px;
+}
+
+.product-price {
+	background-color: rgba(255, 255, 255, 0.8);
+	position: relative;
+	top: -25px;
+	height: 20px;
+	border-radius: 5px;
+	width: 90px;
+	margin: 0 auto;
+	line-height: 25px;
+}
+.product-old-price {
+	color: #E33D3D;
+	text-shadow: 0px 0 1px rgba(227, 61, 81, 0.2);
+	position: absolute;
+	top: 93px;
+	right: 0;
+}
+
+#block-left .product-block,
+#block-right .product-block {
+	margin-right: 0;
+}
+
+#block-left .product-block,
+#block-right .product-block {
+	margin: 0 auto 15px;
+}
+
+/************************************************************************************
+	ARROWS
+************************************************************************************/
+
+.arrows {
+	margin-bottom: 20px;
+}
+
+.arrows div {
+	display: inline-block;
+	background-color: #756757;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	box-shadow: 2px 3px 5px -2px rgba(0, 0, 0, 0.7);
+	color: #fff;
+	font: 25px/25px YanoneKaffeesatz-Bold;
+	user-select: none;
+	-ie-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.arrows div:hover,
+.arrows .active {
+	background-color: #EC8C52;
+	cursor: pointer;
+}
+
+.arrows a:active div {
+	margin: 0 1px;
+	width: 28px;
+	height: 28px;
+}
+
+#studio-banner,
+#hits-banner {
+	display: inline-block;
+	border: 1px solid #77624D;
+	min-width: 200px;
+	min-height: 100px;
+	width: 543px;
+	height: 238px;
+	max-width: 800px;
+	max-height: 400px;
+}
+
+/************************************************************************************
+	BANNERS
+************************************************************************************/
+
+#hits-banner {
+	background: url(../../img/banner/hits_banner.png);
+}
+
+#studio-banner {
+	background: url(../../img/banner/hits_banner.png);
+}
+
+/************************************************************************************
+	PLUSES-BLOCK
+************************************************************************************/
+
+#pluses-block {
+	/*clear: both;*/
+}
+
+.plus-block {
+	width: 125px;
+	height: 130px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.plus-name {
+	font: 18px YanoneKaffeesatz-Regular;
+	color: #ec8c52;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.plus-image {
+	width: 118px;
+	height: 60px;
+	border: none;
+}
+
+#plus0 {
+	background: url(../../img/advantage/pluses_0.png) 50% no-repeat;
+	-webkit-background-size: 50px;
+	background-size: 50px;
+}
+
+#plus1 {
+	background: url(../../img/advantage/pluses_1.png) 50% no-repeat;
+	-webkit-background-size: 50px;
+	background-size: 40px;
+	width: 127px;
+}
+
+#plus2 {
+	background: url(../../img/advantage/pluses_2.png) 50% no-repeat;
+	-webkit-background-size: 50px;
+	background-size: 50px;
+	width: 127px;
+}
+
+#plus3 {
+	background: url(../../img/advantage/pluses_3.png) 50% no-repeat;
+	-webkit-background-size: 50px;
+	background-size: 50px;
+}
+
+#block-right .plus-image {
+	width: 50px;
+	height: 50px;
+	border: none;
+}
+#block-right #plus1 {
+	background: url(../../img/advantage/pluses_1.png) 50% no-repeat;
+	-webkit-background-size: 50px;
+	background-size: 36px;
+	width: 58px;
+}
+#block-right #plus2 {
+	background: url(../../img/advantage/pluses_2.png) 50% no-repeat;
+	-webkit-background-size: 50px;
+	background-size: 36px;
+}
+
+/************************************************************************************
+	FOOTER-MENU
+************************************************************************************/
+
+footer {
+	clear: both;
+	background-color: #77624D;
+	width: 100%;
+	height: 180px;
+	font: 18px/45px YanoneKaffeesatz-Regular;
+	color: #fff;
+}
+
+#footer-container {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#footer-menu ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#footer-menu ul li {
+	text-align: center;
+	list-style: none;
+	color: #fff;
+	padding: 0 25px;
+	display: inline-block;
+}
+
+#footer-menu ul li:hover {
+	color: #ec8c52;
+}
+
+/************************************************************************************
+	FOOTER-COPY
+************************************************************************************/
+
+.footer-copy {
+	float: left;
+	margin-left: 30px;
+}
+
+.footer-address,
+.footer-phone {
+	float: right;
+	margin-right: 25px;
+	clear: right;
+}
+
+/************************************************************************************
+	CART-PAGE
+************************************************************************************/
+
+[data-page=cart] #breadcrumbs {
+	text-align: center;
+}
+#cart-product-table {
+	max-width: 770px;
+	margin: 20px auto 0;
+	width: 100%;
+	height: auto;
+	color: #333;
+	font-family: YanoneKaffeesatz-Regular;
+	font-size: 28px;
+}
+#cart-product-table .title {
+	background-color: #77624d;
+	height: 35px;
+	color: #fff;
+	font-size: 22px;
+}
+#cart-product-table .title-margin {
+	width: 135px;
+}
+#cart-product-table .title-wide {
+	width: 100%;
+	text-align: center;
+}
+#cart-product-table .cart-product {
+	border-bottom: 2px solid #77624d;
+}
+#cart-product-table .remove {
+	font-size: 22px;
+	color: #C91F1F;
+	font-weight: bold;
+	text-align: center;
+	width: 40px;
+	padding-right: 0px;
+	cursor: pointer;
+}
+#cart-product-table .image {
+	width: 75px;
+	height: 75px;
+	padding: 10px 10px 4px;
+}
+#cart-product-table .image img {
+	width: 75px;
+	height: 75px;
+}
+#cart-product-table .name {
+	padding-left: 10px 10px;
+}
+#cart-product-table .quantity,
+#cart-product-table .title .price,
+#cart-product-table .title .sum {
+	text-align: center;
+}
+#cart-product-table .quantity {
+
+}
+#cart-product-table .price {
+	text-align: right;
+	font-size: 24px;
+	width: 95px;
+}
+#cart-product-table .sum {
+	text-align: right;
+	font-size: 24px;
+	width: 105px;
+}
+#cart-product-table .total {
+	padding-top: 10px;
+	text-align: right;
+}
+#cart-product-table .total .total-sum {
+	color: #ec8c52;
+}
+#cart-product-table .button {
+	text-align: right;
+}
+#cart-product-table .separator {
+	height: 2px;
+	background-color: #77624d;
+}
+
+[data-page=cart] .button input[type=button] {
+	margin-bottom: 50px;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+/************************************************************************************
+	PAYMETHODS-PAGE
+************************************************************************************/
+
+[data-page=paymethods] #breadcrumbs {
+	text-align: center;
+}
+#paymethods-table {
+	max-width: 415px;
+	min-width: 210px;
+	min-height: 340px;
+	margin: 20px auto 50px;
+	width: 100%;
+	height: auto;
+	color: #333;
+	font-family: YanoneKaffeesatz-Regular;
+	font-size: 28px;
+	background-color: #77624d;
+}
+#paymethods-table tr,
+#paymethods-table td {
+	background-color: #fff;
+}
+#paymethods-table .title {
+	background-color: #77624d;
+	height: 35px;
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+}
+#paymethods-table .title td {
+	background-color: #77624d;
+}
+#paymethods-table tr > .body .paymethods {
+	width: 100%;
+	height: 170px;
+	width: 100%;
+	padding: 20px 0;
+	font: 20px YanoneKaffeesatz-Regular;
+}
+#paymethods-table .total {
+	font-size: 20px;
+	text-align: center;
+	color: #000;
+
+}
+#paymethods-table .total .total-sum {
+	color: #ec8c52;
+	font-weight: normal;
+}
+#paymethods-table .button {
+	text-align: center;
+}
+
+[data-page=paymethods] .button input[type=button] {
+	margin-bottom: 16px;
+	position: relative;
+	height: 32px;
+	padding: 0 30px 15px;
+	font-family: YanoneKaffeesatz-Regular;
+	text-transform: none;
+	font-size: 22px;
+	top: 0;
+	right: 0;
+}
+
+#paymethods-table .paymethod {
+	display: inline-block;
+	position: relative;
+	min-height: 42px;
+	width: 92%;
+	height: auto;
+	margin: 1% 4%;
+	background-color: #EDEDED;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+#paymethods-table .paymethod-body {
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	top: 0;
+	width: 84%;
+	height: 55px;
+	padding-top: 5px;
+	vertical-align: middle;
+}
+#paymethods-table .paymethod-desc {
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	top: 0;
+	width: 84%;
+	height: 40px;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #666;
+}
+#paymethods-table .paymethod-image {
+	display: inline-block;
+	margin: 0px;
+	position: absolute;
+	top: 20px;
+	width: 84%;
+	height: 40px;
+	vertical-align: middle;
+	left: 220px;
+}
+#paymethods-table .selector {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 9px;
+	background-color: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+#paymethods-table .active .selector:after,
+#paymethods-table .paymethod:hover .selector:after {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 4px;
+	left: 4px;
+	background-color: #EC8C52;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/************************************************************************************
+	AUTORIZATION-PAGE
+************************************************************************************/
+
+#autorization-table {
+	max-width: 220px;
+	min-height: 240px;
+	margin: 20px auto;
+	width: 100%;
+	height: auto;
+	color: #333;
+	font-family: YanoneKaffeesatz-Regular;
+	font-size: 28px;
+	background-color: #77624d;
+}
+#autorization-table tr,
+#autorization-table td {
+	background-color: #fff;
+}
+#autorization-table .title {
+	background-color: #77624d;
+	height: 35px;
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+}
+#autorization-table .title td {
+	background-color: #77624d;
+}
+#autorization-table .body {
+
+}
+#autorization-table .body .autorization {
+	width: 100%;
+	height: 140px;
+}
+#autorization-table .registration {
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	color: #ec8c52;
+	font-weight: normal;
+}
+#autorization-table .button {
+	text-align: center;
+}
+#autorization-table input[type=text] {
+	padding-left: 30px;
+	width: 100px;
+	font: 13px 'Ubuntu-Light', sans-serif;
+	font-weight: 200;
+	border-radius: 3px;
+	border: 0;
+	height: 25px;
+}
+[data-page=profile] #autorization-table input[type=button] {
+	margin-bottom: 16px;
+	position: relative;
+	height: 32px;
+	padding: 0 30px 15px;
+	font-family: YanoneKaffeesatz-Regular;
+	text-transform: none;
+	font-size: 22px;
+	top: 0;
+	right: 0;
+}
+
+/************************************************************************************
+	PRODUCT-PAGE
+************************************************************************************/
+
+#product-img-block {
+	width: 400px;
+	margin: 0 20px;
+	min-height: 630px;
+}
+#product-main-image,
+#product-main-image img {
+	max-width: 400px;
+	max-height: 400px;
+	width: auto;
+	height: auto;
+}
+#product-preview-img {
+	width: auto;
+	height: auto;
+	min-height: 80px;
+}
+.product-preview-image {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+.product-preview-image.nonactive {
+	opacity: 0.5;
+}
+#reviews-block {
+	max-width: 405px;
+	border: 2px solid #77624D;
+	margin: 0 20px 50px;
+	padding-bottom: 15px;
+	max-width: 980px;
+	margin: 20px auto;
+	clear: both;
+	width: 806px;
+}
+#reviews-block h4 {
+	background-color: #77624D;
+	font: 13px/15px MyriadPro-Regular;
+	/*font: 20px/30px YanoneKaffeesatz-Regular;*/
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 10px;
+}
+#reviews-block h4 a {
+	border-top: 2px solid transparent;h
+	height: 30px;
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+	text-align: center;
+	margin-top:-2px;
+	padding: 5px;
+	font: 20px/30px YanoneKaffeesatz-Regular;
+}
+#reviews-block h4 a:hover {
+	/*border-top-color: #ec8c52;*/
+	color: #ec8c52;
+	cursor: pointer;
+}
+#reviews-block-reviews {
+	font: 18px YanoneKaffeesatz-Regular;
+	color: #333;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+#reviews-block-description,
+#reviews-block-delivery {
+	font: 18px YanoneKaffeesatz-Regular;
+	color: #333;
+	padding: 0 10px;
+	min-height: 100px;
+}
+
+.reviews-block-review,
+#reviews-block-new-review-form form {
+	margin-top: 15px;
+	position: relative;
+	border-radius: 10px;
+}
+#reviews-block .review-image {
+	float: left;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+#reviews-block-new-review-author-photo {
+	display: block;
+}
+.reviews-block-name,
+#reviews-block-new-review-author {
+	background: #fff;
+	border: 0;
+	display: inline-block;
+	font: 11px MyriadPro-Regular;
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	width: 80px;
+	color: #77624D;
+	padding: 1px 6px;
+	text-align: center;
+	position: absolute;
+	left: 4px;
+	top: 85px;
+}
+.reviews-block-text,
+#reviews-block-new-review-fild {
+	display: inline-block;
+	outline: none;
+	width: 100%;
+	width: calc(100% - 122px);
+	padding: 0 10px;
+/*	position: absolute;
+	top: 0;
+	left: 70px;*/
+	min-height: 90px;
+	font: 14px MyriadPro-Regular;
+	padding-top: 10px;
+}
+.reviews-block-text {
+	background: #f5f5f5;
+	border-radius: 0 10px 10px 0;
+}
+#reviews-block-new-review-fild {
+	border: 1px solid #aaa;
+	min-height: 88px;
+	margin-left: -1px;
+	border-radius: 0 10px 10px 0;
+}
+#reviews-add-button {
+	margin-top: 10px;
+	font: 18px YanoneKaffeesatz-Regular;
+}
+#reviews-block .reviews-remove-button {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+}
+
+[data-page=product] #breadcrumbs {
+	margin-left: 23px;
+	margin-bottom: 10px;
+}
+[data-page=product] #pluses-block {
+	max-width: 100%;
+	margin: 20px 0 0;
+}
+[data-page=product] .plus-block {
+	width: 55px;
+	margin: 0px 10px;
+}
+[data-page=product] .plus-image {
+	margin-left: 5px;
+}
+[data-page=product] .plus-name {
+	width: 68px;
+}
+
+.add-to-cart {
+	width: 178px;
+	height: 44px;
+	background-color: #7CC576;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0 auto;
+	cursor: pointer;
+	font-size: 22px;
+	color: #fff;
+	text-transform: none;
+	line-height: 15px;
+	padding-top: 8px;
+	border: 1px solid #717271;
+}
+.add-to-cart:hover {
+	background-color: #8BD885;
+}
+#characteristics-block .button {
+	text-transform: none;
+	font-family: YanoneKaffeesatz-Regular;
+	font-size: 22px;
+	height: 30px;
+	padding-bottom: 32px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/************************************************************************************
+	WINDOWS 98
+************************************************************************************/
+
+#great-gatsby {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 98;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 10, 0, 0.5);
+}
+#window {
+	position: fixed;
+	min-width: 240px;
+	min-height: 180px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: #fff;
+	border: 15px solid rgb(236, 140, 82);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 0 10px rgba(4, 9, 71, 0.6);
+	box-shadow: 0 0 10px rgba(4, 9, 71, 0.6);]
+	z-index: 99;
+}
+#window .close {
+	z-index: 100;
+	cursor: pointer;
+}
+#window .window-title {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 35px;
+	text-align: center;
+	cursor: default;
+	border: 2px solid rgb(119, 98, 77);
+	background-color: rgb(119, 98, 77);
+	border-bottom: 0;
+	font: 25px/30px YanoneKaffeesatz-Regular;
+	color: #fff;
+	text-transform: uppercase;
+}
+#window .window-content {
+	font: 20px/30px YanoneKaffeesatz-Regular;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 288px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.window-close {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 0;
+	height: 0;
+	border: 12px solid #153053;
+	border-radius: 12px;
+}
+.window-close:after {
+	content: "×";
+	display: block;
+	position: absolute;
+	top: -13px;
+	left: -7px;
+	width: 24px;
+	height: 24px;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 24px;
+	color: #0C1E36;
+}
+
+.button-continue {
+}
+
+.invisible {
+	display: none;
+}
+
+/************************************************************************************
+	WINDOW ADD-TO-CART (PRODUCT-ADD)
+************************************************************************************/
+
+#msg-product-add-content {
+	width: 620px;
+	height: 320px;
+}
+#cart-preview-table {
+	position: absolute;
+	display: block;
+	min-width: 618px;
+	min-height: 240px;
+	max-width: 618px;
+	max-height: 290px;
+	font: 22px YanoneKaffeesatz-Regular;
+}
+#cart-preview-table .title {
+	font-size: 22px;
+}
+#cart-preview-table .remove {
+	min-width: 40px;
+	font-size: 22px;
+	color: #C91F1F;
+	font-weight: bold;
+	text-align: center;
+	padding-right: 0px;
+	cursor: pointer;
+}
+#cart-preview-table .image {
+	min-width: 60px;
+	max-height: 60px;
+	padding: 5px 0 1px;
+}
+#cart-preview-table .image img {
+	width: 60px;
+	height: 60px;
+}
+#cart-preview-table .name {
+	padding-left: 10px;
+	width: 232px;
+}
+#cart-preview-table .quantity,
+#cart-preview-table .title .price,
+#cart-preview-table .title .sum {
+	text-align: center;
+}
+#cart-preview-table .quantity {
+	min-width: 50px;
+
+}
+#cart-preview-table .price {
+	text-align: right;
+	min-width: 95px;
+}
+#cart-preview-table .sum {
+	text-align: right;
+	min-width: 105px;
+	padding-right: 10px;
+}
+#cart-preview-table .total {
+	padding-top: 10px;
+	text-align: right;
+}
+#cart-preview-table .total .total-sum {
+	color: #ec8c52;
+}
+#cart-preview-table .button {
+	text-align: right;
+}
+#cart-preview-table hr {
+	border-color: #77624d;
+	margin: 0;
+}
+#cart-preview-table input[type=button] {
+	margin: 10px 0 10px 68px;
+	font-family: YanoneKaffeesatz-Regular;
+	font-size: 18px;
+	text-transform: none;
+}
+#cart-preview-table input[type=number] {
+	width: 40px;
+}
+
+/************************************************************************************
+	MSG buy-one-click
+*************************************************************************************/
+
+/************************************************************************************
+	WINDOW BUY-TO-CLICK (BUY-ONE-CLICK)
+*************************************************************************************/
+/*
+#buy-one-click-table td {
+	padding: 0px;
+	height: 0px;
+	vertical-align: top;
+	border-bottom: 2px solid rgb(119, 98, 77);
+}
+#buy-one-click-table .line {
+	height: 30px;
+}
+#buy-one-click-table .left {
+	width: 40%
+}
+#buy-one-click-table .right {
+	width: 60%;
+}
+#buy-one-click-table .right input {
+	width: 96%;
+	height: 20px;
+	margin-top: -2px;
+	background-color: #fff;
+	border: 1px solid #0C1E36;
+	margin-left: -2px;
+	color: #0C1E36;
+	padding-left: 5px;
+}
+#buy-one-click-table #file_upload {
+	cursor: pointer;
+}
+#buy-one-click-table .right select {
+	width: 100%;
+	height: 26px;
+	margin-top: -1px;
+	background-color: #fff;
+	border: 1px solid #0C1E36;
+	margin-left: -2px;
+	color: #0C1E36;
+	padding-left: 3px;
+}
+#buy-one-click-button {
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+#buy-one-click-button:hover {
+	background-color: #8e44ad;
+	border: 0px solid #8e44ad;
+	color: #fff;
+}*/
+
+#msg-buy-one-click-content {
+	width: 300px;
+	height: 280px;
+}
+
+#one-shot-block {
+	padding: 18px 10px 0;
+	border: 2px solid rgb(119, 98, 77);
+}
+
+.one-shot-fild,
+.one-shot-button {
+	padding: 5px;
+	font: 18px YanoneKaffeesatz-Regular;
+}
+input.one-shot-button[type=button] {
+	margin: 15px auto;
+	display: block;
+	font: 22px YanoneKaffeesatz-Regular;
+	height: 35px;
+	text-transform: none;
+}
+.one-shot-fild {
+	width: 240px;
+	color: #444;
+	padding-left: 30px;
+	border-radius: 5px;
+	background-color: rgb(241, 241, 241);
+	margin: 10px 0 0;
+}
+
+#one-shot-block .incorrect {
+	border: 1px solid red;
+}
+
+[class*="fontawesome-"]:before { font-family: 'FontAwesome', sans-serif; }
+
+/*#one-shot-name {
+	background: rgb(241, 241, 241) url(../../img/name.png) 5px 50% no-repeat;
+}*/
+.fontawesome-user:before {
+	content:"\f007";
+}
+/*#one-shot-phone {
+	background: rgb(241, 241, 241) url(../../img/phone.png) 5px 50% no-repeat;
+}*/
+.fontawesome-phone-sign:before {
+	content: "\f095";
+}
+/*#one-shot-email {
+	background: rgb(241, 241, 241) url(../../img/email.png) 5px 50% no-repeat;
+}*/
+.fontawesome-email:before {
+	content: "\f095";
+}
+
+/************************************************************************************
+	PROFILE-PAGE
+************************************************************************************/
+[data-page=profile] #avatar-block {
+	min-height: 214px;
+}
+[data-page=profile] #profile-block {
+	width: 450px;
+}
+
+[data-page=profile] #costumer-orders {
+	width: 450px;
+}
+
+#profile-table #profile-settings {
+	background-color: transparent;
+}
+
+#profile-table .left {
+	width: 150px;
+	vertical-align: top;
+}
+
+#profile-table .right {
+	max-width: 415px;
+	width: 100%;
+	vertical-align: top;
+}
+
+#costumer-table {
+	max-width: 150px;
+	height: 188px;
+	min-height: 188px;
+	max-height: 188px;
+}
+
+#profile-settings {
+	color: #897765;
+}
+
+#profile-settings .head-line {
+	border-top: 1px solid #BDA287;
+}
+
+#profile-settings .option {
+	border-bottom: 1px solid rgb(189, 162, 135);
+	margin: 0 5px;
+}
+
+#profile-settings .option:first-child {
+	border-top: 1px solid rgb(189, 162, 135);
+}
+
+#profile-settings .option-name {
+	font: 20px/30px YanoneKaffeesatz-Regular;
+	width: 80px;
+	text-align: left;
+	display: inline-block;
+}
+
+#profile-settings #sex-on-fire,
+#profile-settings .option-value {
+	font: 20px/30px YanoneKaffeesatz-Regular;
+	width: 255px;
+	height: 30px;
+	color: #ec8c52;
+	outline: none;
+}
+#profile-settings #sex-on-fire {
+	border: 0;
+	background-color: transparent;
+}
+#profile-settings #sex-on-fire option {
+	border: 1px solid #aaa;
+	paddi
+}
+
+#profile-settings .button-field {
+	width: 92px;
+	cursor: pointer;
+}
+
+#profile-settings .button {
+	background-color: #AD9379;
+	width: 92px;
+	height: 23px;
+	border: 1px solid #77624D;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	text-transform: none;
+	font-family: YanoneKaffeesatz-Regular;
+	font-size: 16px;
+	color: #fff;
+}
+
+#profile-settings .button:hover {
+	background-color: #C7AA8E;
+}
+
+#profile-settings a:active .button {
+	background-color: #AD9379;
+}
+
+[data-page=profile] table input[type=button] {
+	margin-bottom: 16px;
+	position: relative;
+	width: 132px;
+	height: 24px;
+	margin: 6px;
+	font-family: YanoneKaffeesatz-Regular;
+	text-transform: uppercase;
+	font-size: 18px;
+	top: 0;
+	right: 0;
+}
+
+[data-page=profile] #content {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+[data-page=profile] #block-center {
+	max-width: 800px;
+}
+
+[data-page="profile"] .module {
+	width: 146px;
+	margin: 10px;
+	border: 2px solid #77624D;
+	background-color: #fff;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+[data-page="profile"] #profile-module-block,
+[data-page="profile"] #reg-module-block {
+	margin: 50px auto;
+	padding-bottom: 20px;
+}
+
+[data-page="profile"] .module input[type="button"] {
+	font: 18px YanoneKaffeesatz-Regular;
+	padding: 0 5px;
+}
+
+#costumer-orders .order {
+	border-bottom: 1px solid rgb(189, 162, 135);
+	margin: 0;
+}
+
+#costumer-orders .order:first-child {
+	border-top: 1px solid rgb(189, 162, 135);
+}
+
+#costumer-orders .order-image {
+	width: 50px;
+	height: 50px;
+	background: url(../../img/product/no-image.png) 0 0 no-repeat;
+	background-size: cover;
+	margin: 5px 0;
+}
+
+#costumer-orders .order > * {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#costumer-orders .order-desc {
+	padding-left: 5px;
+	width: 280px;
+	text-align: left;
+	font: 20px/30px YanoneKaffeesatz-Regular;
+}
+
+#costumer-orders .order-status-button {
+	margin-top: 0;
+}
+
+
+#costumer-orders input[type=button] {ч
+	text-transform: none;
+}
+
+[data-page="information"] #block-center-page,
+[data-page="news"] #block-center-page {
+	text-align: left;
+}
+
+
+
+.quantity {
+	position: relative;
+}
+.cart-product-quantity {
+	background-color: #ccc;
+	width: 28px;
+	height: 22px;
+	position: absolute;
+	top: 25px;
+	left: 10px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-family: YanoneKaffeesatz-Regular;
+	font-size: 22px;
+	text-align: center;
+	line-height: 28px;
+	padding-bottom: 5px;
+}
+.quantity-up,
+.quantity-down {
+	position: absolute;
+	width: 14px;
+	height: 9px;
+	color: #FFF;
+	font-size: 16px;
+	line-height: 0px;
+	cursor: pointer;
+	padding-top: 5px;
+}
+.quantity-up {
+	background-color: #555;
+	top: 25px;
+	left: 40px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+.quantity-down {
+	background-color: #7d7d7d;
+	top: 39px;
+	left: 40px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+
+/* на этой ширине ломается банер */
+@media all and (max-width: 900px) {
+	#studio-banner, #hits-banner {
+		width: 100%;
+		background-position: center;
+	}
+}
+/* на этой ширине ломаются страницы-вперед-назад */
+@media all and (max-width: 630px) {
+	.arrows div {
+		width: 22px;
+		height: 22px;
+		font: 21px/16px YanoneKaffeesatz-Bold;
+	}
+	#header-phone, #header-time, #header-email {
+		margin: 0px 10px 10px;
+	}
+}
+@media all and (max-width: 470px) {
+	#header-description {
+		width: 96%;
+		max-width: 96%;
+		margin: 0;
+		height: auto;
+		text-align: center;
+		padding: 0 2%;
+	}
+	#header-middle {
+		padding-top: 15px;
+		padding-bottom: 10px;
+		min-height: 0;
+	}
+	#header-logo {
+		float: none;
+		margin: 0 auto;
+	}
+	#header-search {
+		margin: 10px auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------
+    The file upload form
+-----------------------------*/
+
+
+#upload {
+    font-family:'PT Sans Narrow', sans-serif;
+    background-color:#373a3d;
+    padding: 16px 19px;
+    margin: 3px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+    box-shadow: 0px 0px 0 1px #fff, 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#drop {
+    background-color: #2E3134;
+    padding: 50px;
+    border: 4px dotted #252729;
+    // 20px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    // border-image: url('../../img/uploader/border-image.png') 25 repeat;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size:16px;
+    font-weight:bold;
+    color:#7f858a;
+}
+
+#drop a {
+    /*background-color:#007a96;*/
+    background-color: #77624D;
+    padding: 34px 0;
+    color:#fff;
+    font-size:14px;
+    cursor:pointer;
+    display:inline-block;
+    line-height:1;
+    position: absolute;
+	top: 0;
+	left: 0;
+	font: 20px YanoneKaffeesatz-Regular;
+}
+
+#drop a:hover{
+    /*background-color:#0986a3; */
+    /*background-color: #77624D;*/
+    background-color: #ec8c52;
+}
+
+#drop input{
+    display:none;
+}
+
+#upload ul{
+    list-style:none;
+    margin:0 -30px;
+    border-top:1px solid #2b2e31;
+    border-bottom:1px solid #3d4043;
+}
+
+#upload ul li{
+
+    background-color:#333639;
+
+    background-image:-webkit-linear-gradient(top, #333639, #303335);
+    background-image:-moz-linear-gradient(top, #333639, #303335);
+    background-image:linear-gradient(top, #333639, #303335);
+
+    border-top:1px solid #3d4043;
+    border-bottom:1px solid #2b2e31;
+    padding:15px;
+    height: 52px;
+
+    position: relative;
+}
+
+#upload ul li input{
+    display: none;
+}
+
+#upload ul li p{
+    width: 144px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+#upload ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+#upload ul li canvas{
+    top: 15px;
+    left: 32px;
+    position: absolute;
+}
+
+#upload ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('../../img/uploader/icons.png') no-repeat;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    cursor:pointer;
+}
+
+#upload ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#upload ul li.error p{
+    color:red;
+}
+
+#filter-colors {
+	padding: 0 10px;
+}
+
+#filter-colors .filter-color {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	border: 1px solid #77624D;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 1px 1px;
+}
+#filter-colors .filter-color:hover,
+#filter-colors .active {
+	border: 1px solid #0b3;
+}
+#filter-colors .active:after {
+	content: '';
+	width: 0;
+	height: 0;
+	display: block;
+	position: relative;
+	top: 0px;
+	right: -10px;
+	border-top: 7px solid #0b3;
+	border-left: 7px solid transparent;
+}
+#filter-colors #color-0 {
+	background-color: #DCD0B9;
+}
+#filter-colors #color-1 {
+	background-color: #000000;
+}
+#filter-colors #color-2 {
+	background-color: #2E2581;
+}
+#filter-colors #color-3 {
+	background-color: #5D3527;
+}
+#filter-colors #color-4 {
+	background-color: #F8F5F3;
+}
+
+#filter-colors #color-5 {
+	background-color: #A3BF76; /*#D6EAD6;*/
+}
+#filter-colors #color-6 {
+	background-color: #999B9A;
+}
+#filter-colors #color-7 {
+	background-color: #EE6F11;
+}
+#filter-colors #color-8 {
+	background-color: #DDB49F;
+}
+#filter-colors #color-9 {
+	background-color: #894BB5;
+}
+
+#filter-colors #color-10 {
+	background-color: #DC291B;
+}
+#filter-colors #color-11 {
+	background-color: #D3E8F3;
+}
+#filter-colors #color-12 {
+	background-color: #BBC3C9;
+}
+#filter-colors #color-13 {
+	background-color: #FDFDFD;
+}
+#filter-colors #color-14 {
+	background-color: #F7E049;
+}
+
+
+
+@media all and (max-width: 980px) {
+	#header-top-container > div {
+		margin: 0px 30px;
+	}
+}
+@media all and (max-width: 830px) {
+	#header-top {
+		height: 74px;
+	}
+	#header-top-container > div {
+		margin: 0px 35px;
+		float: right;
+	}
+}
+@media all and (max-width: 620px) {
+	#header-top {
+		height: 110px;
+	}
+	#header-top-container > div {
+		margin: 0px 45px;
+	}
+	#header-description {
+		max-width: 97%;
+		width: 100%;
+		margin-left: 0;
+		margin-top: 60px;
+		padding-right: 20px;
+	}
+}
+
+
+#header-partnership-link {
+	border-radius: 3px;
+	background-color: #EC8C52;
+	color: #FFF;
+	height: 40px;
+	border: 1px solid #D26060;
+	text-transform: uppercase;
+	width: 170px;
+	padding: 0px;
+	margin: -5px 25px;
+	font-family: "YanoneKaffeesatz-Regular";
+	text-align: center;
+	border: 2px solid rgba(141, 98, 76, 0.5);
+}
+
+.product-color > span {
+	width: 45px;
+	height: 45px;
+	border: 1px solid #77624D;
+	margin: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+.product-color > span:hover,
+.product-color > .active {
+	box-shadow: 0 0 2px 2px #77624d;
+}
+.product-color .color_0 {
+	background-color: #DCD0B9;
+}
+.product-color .color_1 {
+	background-color: #000000;
+}
+.product-color .color_2 {
+	background-color: #2E2581;
+}
+.product-color .color_3 {
+	background-color: #5D3527;
+}
+.product-color .color_4 {
+	background-color: #F8F5F3;
+}
+
+.product-color .color_5 {
+	background-color: #A3BF76; /*#D6EAD6;*/
+}
+.product-color .color_6 {
+	background-color: #999B9A;
+}
+.product-color .color_7 {
+	background-color: #EE6F11;
+}
+.product-color .color_8 {
+	background-color: #DDB49F;
+}
+.product-color .color_9 {
+	background-color: #894BB5;
+}
+
+.product-color .color_10 {
+	background-color: #DC291B;
+}
+.product-color .color_11 {
+	background-color: #D3E8F3;
+}
+.product-color .color_12 {
+	background-color: #BBC3C9;
+}
+.product-color .color_13 {
+	background-color: #FDFDFD;
+}
+.product-color .color_14 {
+	background-color: #F7E049;
+}
+
+
+
+#block-bottom {
+	clear: both;
+	background-color: #77624D;
+	width: 100%;
+	height: 180px;
+	font: 18px/45px YanoneKaffeesatz-Regular;
+	color: #fff;
+}

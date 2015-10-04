@@ -1,0 +1,61 @@
+article {
+	margin: 0 auto;
+	padding-left: 5px;
+	border-bottom: 1px solid gray;
+	width: 800px;
+}
+
+.creator {
+	background-color: #e7efff;
+}
+
+.admin, .answer {
+}
+
+.auto, .moder, .update {
+	color: red;
+}
+
+.update {
+	text-decoration: line-through;
+}
+
+.added {
+	text-decoration: underline;
+}
+
+.infoblock {
+	border-left: 1px dotted black;
+	float: right;
+	padding: 0 5px;
+}
+
+.time {
+	cursor: pointer;
+}
+
+textarea {
+ 	width: calc(100% - 12px);
+ 	height: 200px;
+	border: 1px dashed #aaa;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+label {
+	width: calc(33.3333333% - 12px);
+	margin-right: 10px;
+}
+
+input, #format, input[type="file"] {
+	width: calc(100% - 6px);
+	border: 1px dashed #aaa;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+label:nth-last-child(-1) {
+	margin-right: 0;
+}
+
+input:nth-last-child(-1) {
+	width: calc(100% - 13px);	/* border-left = 1px + border-right = 1px + padding-left = 5px + padding-right = 5px + margin-right = 5px */
+}

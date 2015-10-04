@@ -1,0 +1,29 @@
+{
+	"dic": {
+		// what about $page[path]? (now only $site[path] used)
+		"chairschairs": {
+			"-title": "Главная",
+			"index-title": "Главная",
+			"profile-title": "Личный кабинет",
+			"registration-title": "Личный кабинет",
+			"product-title": "Страница товара",
+			"category-title": "Страница категории",
+			"subcategory-title": "Страница подкатегории",
+			"cart-title": "Корзина",
+			"paymethods-title": "Способы оплаты",
+			
+			"button_product_buy": "Заказать",
+			
+			"heading-profile": "Личный кабинет",
+			"heading-registration": "Личный кабинет",
+			"heading-hits": "Хиты продаж",
+			"heading-random-products": "Разные товары из категорий",
+			"heading-partnership": "Стать партнером",
+			"heading-contacts": "Контакты",
+			"heading-about_us": "О нас",
+			"heading-service": "Сервис",
+			"heading-sitemap": "Карта сайта",
+			"heading-vacancies": "Вакансии"
+		}
+	}
+}

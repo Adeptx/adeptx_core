@@ -1,0 +1,11 @@
+.currency_tab {
+	display: inline-block;
+	width: calc(33.333% - 4px);
+	text-align: center;
+	font: 36px/36px 'CatullBQ';
+	text-shadow: 0 0 1px rgba(255, 255, 255, 1);
+	vertical-align: top;
+}
+.kurs_graph {
+	width: 100%;
+}

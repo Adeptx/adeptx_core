@@ -1,0 +1,74 @@
+# Эти стоки просто для тестирования того, работают ли директивы файла htaccess или в apache не подключен файл, просто раскоментируйте и тогда при обновлении страницы сервер попросит вас авторизоваться, браузер должен отобразить окно ввода логина-пароля ещё до того, как сайт загрузится. Если этого не происходит файл .htaccess не подключен, нужно в настройках apache подключить его, как это сделать ищите в интернете 
+#AuthType Basic
+#AuthName admin
+#require valid-user
+
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+
+# BLOCK 0 - Some abbreviatures
+# NC - Nocase (WWW.GRINEC.TK/SETUP => grinec.tk/index.php?page=SETUP, but not process GRINEC.TK/MAIN.CSS
+# L - Last (block of rule work only in this block, in not L, its work on all blocks)
+# R - Redirect (R=301 - redirect with code 301)
+# QSA - Qsappend (not replace url, just append the request)
+
+# BLOCK 1 - WWW 301 redirect
+# in this block all requests with "www." will redirected with code 301 to URL without "www."
+# e.g.: www.grinec.tk => 301 redirect => grinec.tk
+# if you need some like grinec.tk => 301 redirect => www.grinec.tk
+# just inverse comments
+
+RewriteCond %{HTTP_HOST} ^www.grinec.tk$ [NC]
+RewriteRule ^(.*)/?$ http://grinec.tk/$1 [R=301,L]
+# RewriteCond %{HTTP_HOST} ^grinec\.tk$ [NC]
+# RewriteRule ^(.*)$ http://www.grinec.tk/$1 [R=301,L]
+
+# BLOCK 2 - Friendly url redirect (dynamic half-friendly url)
+# in this block all requests from any users will redirected (without code) to index.php (but exceptions will not redirected, it's just do as is)
+# js/.+|css/ files not in exceptions list, becouse some files generate dinamically. if you think, that site will busy, it's NOT, becouse user-browser cashed .css
+# we just will add some code with command to cash
+# special for cashing we use .css file expect included css, that use in .php files
+# just read it's as alternative to SCSS, that use php power and syntax
+# but, yes, it's calculate every request of new others or when cash timeout. but we can do some things, that calculating was 1 time, form .css file and only then use it for requests. we can do it, and we do it in future, I hope
+# robots.txt can generate from admin/setup
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond $1 !^(js/(.*)\.js|img/|user/|repo/|font/.+|robots\.txt$|sitemap\.xml$|favicon\.ico$|.*\.php([\?\&]page=.*)*$) [NC]
+RewriteRule ^(.*)$ /index.php?page=$1 [L,QSA]
+
+# now it's fail with duplicated of pages:
+# both url duplicated:
+# http://grinec.tk/setup
+# http://grinec.tk/index.php?page=setup
+# next lne don't work
+# RewriteRule ^index.php?page=(.*)$ $1 [R=301]
+# and I must thik about slah at the end of requests
+
+# BLOCK 3 - Some php.ini configurations
+# it's just some requared configuration, to be sure, that all is ok
+
+<IfModule mod_php5.c>
+	php_value session.auto_start 1
+	php_value session.name user_hash
+	php_value short_open_tag 1
+	# php_value display_errors On
+
+	# BLOCK 4 - Compression
+	# just optional too, becouse compress always on, but some servers need it's cofiguration
+
+	php_value zlib.output_compression On
+	php_value zlib.output_compression_level 5
+</IfModule>
+
+# BLOCK 5 - Cache
+# so, as I say, I do
+
+<ifmodule mod_expires.c>
+ <filesmatch ".(jpg|jpeg|gif|png|ico|css|js)$">
+  ExpiresActive on
+  ExpiresDefault "access plus 1 month"
+ </filesmatch>
+</ifmodule>

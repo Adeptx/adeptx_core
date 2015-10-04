@@ -1,0 +1,57 @@
+<?php
+
+$database['driver'] = 'mysql';
+$database['host'] = 'localhost';
+$database['port'] = '3306';
+$database['user'] = 'root';
+$database['pass'] = '';
+$database['name'] = 'adeptx';
+$database['prefix'] = 'adeptx_';
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* gcorp.esy.es */
+
+/*
+$database['host'] = 'mysql.hostinger.com.ua';
+$database['user'] = 'u323912911_gcorp';
+$database['pass'] = 'USAmustdie2050';
+$database['name'] = 'u323912911_gcorp';
+$database['prefix'] = 'adeptx_';
+*/
+
+/* chat.fenix.dp.ua */
+
+/*
+$database['host'] = 'ticher.mysql.ukraine.com.ua';
+$database['user'] = 'ticher_chat';
+$database['pass'] = 'vwl345nl';
+$database['name'] = 'ticher_chat';
+$database['prefix'] = 'adeptx_';
+*/
+
+/* localhost */
+
+
+
+// в index.php я прописал:
+// require_once 'conf/'.$_SERVER['HTTP_HOST'].'.conf.php';
+// так что этот файл вообще больше не грузится
+
+// if ( $_SERVER['DOCUMENT_ROOT'] == 'G:/server/domains/adeptx') {
+// 	$database['host'] = 'adeptx';
+// 	$database['user'] = 'root';
+// 	$database['pass'] = '';
+// 	$database['name'] = 'adeptx';
+// 	$database['prefix'] = 'adeptx_';
+// }
