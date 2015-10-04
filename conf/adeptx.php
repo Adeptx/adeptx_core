@@ -5,6 +5,28 @@
 	
 	$site['allow_outdir_files']	= false;	# Эта опция указывает на то, что сервер может сохранять файлы вне рабочей директории (то биь той, которая не доступна никому из пользователей, с целью сохранения данных при любых обстоятельствах, в первую очередь это такие файлы, которые хранят пароли от БД например)
 
+	# BLOCK 1.5 - Database setup
+
+	$drop_if_exist = true;
+
+	$database['table']['session'] = 'session';				# хранит данные об открытых окнах, и всем необходимом для последующего запуска после внезапного прекращения работы -- восстановления сеанса на новом устройстве, с другой системой, браузером и вообще всем
+	$database['table']['user'] = 'user';					# хранит авторизационную инфу о юзерах и некоторые подробности об профилях. больше подросбностей скорее всего будет в другой таблице, а может и вообще в БД самого пользователя по его желанию
+	$database['table']['user_message'] = 'user_message';	# хранит сообщения пользователей между собой в системе
+	$database['table']['epigraph'] = 'epigraph';			# хранит цитаты дня и избранные высказывания пользователей и прочих людей. обычно используются в качестве эпиграфов и прочего
+	$database['table']['package'] = 'package';				# хранит информацию о системных пакетах для вызова справки о них
+	$database['table']['phrase'] = 'phrase';				# хранит всевозможные речевые сообщения на разных языках для вывода мультиязычных сообщений на сайте
+
+	# BLOCK 1.6 - Prefer packages and repositories package link-address
+
+	$module['prefer']['text-editor'] = 'ace';
+	$module['prefer']['code-editor'] = 'ace';
+	$module['prefer']['file-manager'] = 'elfinder';
+	$module['prefer']['database-manager'] = 'phpmyadmin';
+
+	$module['ace']['url'] = '/repo/ace/';
+	$module['phpmyadmin']['url'] = '/repo/pma/';
+	$module['elfinder']['url'] = '/repo/elfinder/';
+
 	# BLOCK 2 - Site conf
 	
   	$site['domain'] = 'adeptx.tk';	# need also some match for reg.exp.: ^(http(s)?://)?(www\.)?([a-z0-9_-]+\.)?$site['domain'](/(.)*)?$

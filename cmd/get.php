@@ -28,14 +28,16 @@
 			case 'my':
 			case 'current':
 			case 'user':
+				switch ($property) {
+					case 'version':
+						return '0.732';
+					case 'mail':
+						return run('select mail');
+				}
 				if (!isset($_SESSION[$property])) {
 					echo $property;
 					throw new Exception('Значение свойства не установлено. Возможно также, что такого свойства вообще нет у объекта. Возможно даже, что такого объекта вообще не существует.', 5796);
 					# id, nickname, email, msg, timezone, new_mail_count, mail
-				}
-				switch ($property) {
-					case 'mail':
-						run('select mail');
 				}
 				return $_SESSION[$property];
 				break;
@@ -67,6 +69,7 @@
 				}
 				break;
 			case 'last':
+			case 'latest':
 				switch ($property) {
 					case 'dump':
 						customization('default');
@@ -85,8 +88,16 @@
 						$return .= $fileContents;
 						return $return;
 						break;
+					case 'version':
+						return '0.732';
+						break;
 				}
 				break;
+			case 'var':
+				if (!isset($_SESSION['var'][ $property ])) {
+					return '\\0';
+				}
+				return $_SESSION['var'][ $property ];
 			default:
 				switch ($property) {
 					case 'code':

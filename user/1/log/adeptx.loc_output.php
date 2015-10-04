@@ -2254,4 +2254,2094 @@ x-positive pts/1        2015-10-03 17:56 (:0)
 <hr>who<hr>
 
 1		x-positive		admin
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>open fm<hr>
+
+1
+<hr>open fm<hr>
+
+1
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>open fm<hr>
+
+1
+<hr>open fm<hr>
+
+1
+<hr>open fm<hr>
+
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>open fm<hr>
+
+
+<hr>open fm<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>open fm<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>id<hr>
+
+1
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>add table \adeptx_phrase<hr>
+
+Таблица `adeptx_phrase` успешно <strong style="color:green">создана</strong> в текущей базе данных
+<hr>add table \adeptx_phrase<hr>
+
+Таблица `adeptx_phrase` успешно <strong style="color:green">создана</strong> в текущей базе данных
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>php eval 1;<hr>
+
+
+<hr>php 1;<hr>
+
+
+<hr>eval echo 1;<hr>
+
+
+<hr>eval return 1;<hr>
+
+
+<hr>eval "return 1;"<hr>
+
+
+<hr>eval return 1;<hr>
+
+1
+<hr>eval return "some_text";<hr>
+
+some_text
+<hr>eval return `coming`;<hr>
+
+
+<hr>ls<hr>
+
+Содержимое текущей директории:
+
+./README.md
+./ajax/
+./class/
+./cmd/
+./conf/
+./css/
+./db/
+./extra/
+./font/
+./handler/
+./html/
+./img/
+./index-2.php
+./index.php
+./index.php~
+./js/
+./lang/
+./log/
+./repo/
+./robots.txt
+./rout/
+./setup/
+./sftp-config.json
+./sql/
+./temp/
+./theme/
+./user/
+
+<hr>eval return `ls`;<hr>
+
+
+<hr>id<hr>
+
+1
+<hr>id<hr>
+
+1
+<hr>eval return `id`<hr>
+
+1
+<hr>whoami<hr>
+
+x-positive
+<hr>eval return `whoami`<hr>
+
+0
+<hr>whoami<hr>
+
+x-positive
+<hr>whoami<hr>
+
+x-positive
+<hr>eval return `whoami`<hr>
+
+x-positive
+<hr>whoami<hr>
+
+x-positive
+<hr>eval return "id";<hr>
+
+id
+<hr>get my id<hr>
+
+1
+<hr>eval return "id";<hr>
+
+id
+<hr>eval return "id";<hr>
+
+id
+<hr>get my `eval return "id";`<hr>
+
+1
+<hr>Array<hr>
+
+
+<hr>Array<hr>
+
+
+<hr>Array<hr>
+
+
+<hr>eval return "id";<hr>
+
+id
+<hr>eval return "id";<hr>
+
+id
+<hr>get my `eval return "id";`<hr>
+
+1
+<hr>eval return "i" . "d";<hr>
+
+id
+<hr>get my `eval return "i" . "d";`<hr>
+
+1
+<hr>whoami<hr>
+
+x-positive
+<hr>who am i<hr>
+
+1		x-positive		admin
+<hr>phpinfo<hr>
+
+
+<hr>phpinfo<hr>
+
+
+<hr>phpinfo<hr>
+
+
+<hr>phpinfo<hr>
+
+1
+<hr>ip-to-country<hr>
+
+1
+<hr>exec ls<hr>
+
+
+<hr>exec ls<hr>
+
+
+<hr>cd user/1<hr>
+
+Текущий каталог изменён на <strong style="color:lightgreen">/home/x-positive/srv/adeptx</strong>, узнать текущий каталог: <strong><em>pwd</em></strong>
+<hr>ls<hr>
+
+Содержимое текущей директории:
+
+./README.md
+./ajax/
+./class/
+./cmd/
+./conf/
+./css/
+./db/
+./extra/
+./font/
+./handler/
+./html/
+./img/
+./index-2.php
+./index.php
+./index.php~
+./js/
+./lang/
+./log/
+./repo/
+./robots.txt
+./rout/
+./setup/
+./sftp-config.json
+./sql/
+./temp/
+./theme/
+./user/
+
+<hr>cd cmd<hr>
+
+Текущий каталог изменён на <strong style="color:lightgreen">/home/x-positive/srv/adeptx</strong>, узнать текущий каталог: <strong><em>pwd</em></strong>
+<hr>cd user/1/cmd<hr>
+
+Текущий каталог изменён на <strong style="color:lightgreen">/home/x-positive/srv/adeptx</strong>, узнать текущий каталог: <strong><em>pwd</em></strong>
+<hr>cd cmd<hr>
+
+Текущий каталог изменён на <strong style="color:lightgreen">/home/x-positive/srv/adeptx/cmd</strong>, узнать текущий каталог: <strong><em>pwd</em></strong>
+<hr>cd<hr>
+
+Текущий каталог изменён на <strong style="color:lightgreen">/home/x-positive/srv/adeptx</strong>, узнать текущий каталог: <strong><em>pwd</em></strong>
+<hr>cd user/1/cmd<hr>
+
+Текущий каталог изменён на <strong style="color:lightgreen">/home/x-positive/srv/adeptx/user/1/cmd</strong>, узнать текущий каталог: <strong><em>pwd</em></strong>
+<hr>ls<hr>
+
+Содержимое текущей директории:
+
+./check.php
+./email-7.php
+./eval-s.php
+./help-s.php
+./ii.php
+./shell.php
+
+<hr>get latest version<hr>
+
+0.732
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>get latest version<hr>
+
+0.732
+<hr>get latest versio<hr>
+
+
+<hr>get latest version<hr>
+
+0.732
+<hr>get current version<hr>
+
+0.732
+<hr>var a 123<hr>
+
+123
+<hr>get var a<hr>
+
+123
+<hr>get var b<hr>
+
+
+<hr>get var b<hr>
+
+
+<hr>get var b<hr>
+
+NULL
+<hr>get var b<hr>
+
+NULL
+<hr>var a 0<hr>
+
+0
+<hr>get var b<hr>
+
+NULL
+<hr>get var a<hr>
+
+0
+<hr>var a false<hr>
+
+false
+<hr>get var a<hr>
+
+false
+<hr>var a<hr>
+
+
+<hr>get var a<hr>
+
+NULL
+<hr>var a <hr>
+
+
+<hr>get var a<hr>
+
+NULL
+<hr>get var a<hr>
+
+\0
+<hr>var a 1234<hr>
+
+1234
+<hr>get var a<hr>
+
+1234
+<hr>var a 14<hr>
+
+14
+<hr>var b 2<hr>
+
+2
+<hr>get var a/b<hr>
+
+\0
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`;   var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`  ;   var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>   var current_version `get current version`  ;   var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>whoami; get my id; ls;<hr>
+
+x-positive
+<hr>whoami; get my id; ls;<hr>
+
+x-positive1
+<hr>whoami; get my id; ls;<hr>
+
+x-positive1Содержимое текущей директории:
+
+./check.php
+./email-7.php
+./eval-s.php
+./help-s.php
+./ii.php
+./shell.php
+
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+get current version
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+get current versionget latest version
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+0.7320.732
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>if `get current version` != `get latest version` -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+
+<hr>get current version<hr>
+
+0.732
+<hr>get latest version<hr>
+
+0.732
+<hr>whoami; get my id; ls;<hr>
+
+x-positive
+<hr>whoami; get my id; ls;<hr>
+
+x-positive1
+<hr>whoami; get my id; ls;<hr>
+
+x-positive1Содержимое текущей директории:
+
+./check.php
+./email-7.php
+./eval-s.php
+./help-s.php
+./ii.php
+./shell.php
+
+<hr>if `get current version` != `get latest version` -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+x-positive1Содержимое текущей директории:
+
+./check.php
+./email-7.php
+./eval-s.php
+./help-s.php
+./ii.php
+./shell.php
+
+<hr>get latest version<hr>
+
+0.732
+<hr>whoami; get my id; ls;<hr>
+
+x-positive
+<hr>whoami; get my id; ls;<hr>
+
+x-positive1
+<hr>whoami; get my id; ls;<hr>
+
+x-positive1Содержимое текущей директории:
+
+./check.php
+./email-7.php
+./eval-s.php
+./help-s.php
+./ii.php
+./shell.php
+
+<hr>if 0 != `get latest version` -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+x-positive1Содержимое текущей директории:
+
+./check.php
+./email-7.php
+./eval-s.php
+./help-s.php
+./ii.php
+./shell.php
+
+<hr>get latest version<hr>
+
+0.732
+<hr>if "" != `get latest version` -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"<hr>
+
+RU: Комманда "" не существует или её файл (/home/x-positive/srv/adeptx//home/x-positive/srv/adeptx/cmd/.php) переименован, перемещён, недоступен, скрыт настройками приватности или повреждён. Воспользуйтесь командой help чтобы узнать список доступных команд.
+EN: Command "" not useful for this site/profile, command-package not install, rename or moved. Use command "help" for access commands list.
+<hr>exec <hr>
+
+
+<hr>linux<hr>
+
+ls: cannot access file_not_exist: No such file or directory
+
+<hr>linux<hr>
+
+
+<hr>linux<hr>
+
+total 40
+-rwxrwxrwx 1 x-positive x-positive  520 Sep 19 22:30 shell.php
+-rwxrwxrwx 1 x-positive x-positive 1883 Sep 19 22:30 help-s.php
+-rwxrwxrwx 1 x-positive x-positive 2495 Sep 19 22:30 eval-s.php
+-rwxrwxrwx 1 x-positive x-positive 9927 Sep 19 22:30 email-7.php
+-rwxrwxrwx 1 x-positive x-positive 2392 Sep 19 22:30 check.php
+-rwxrwxrwx 1 x-positive x-positive   19 Sep 28 02:47 ii.php
+drwxrwxrwx 2 x-positive x-positive 4096 Oct  2 09:28 .
+drwxrwxrwx 4 x-positive x-positive 4096 Oct  2 09:32 ..
+
+<hr>pwd<hr>
+
+Текущим какталогом сейчас является /home/x-positive/srv/adeptx/user/1/cmd
+<hr>cd ../../../<hr>
+
+Текущий каталог изменён на <strong style="color:lightgreen">/home/x-positive/srv/adeptx</strong>, узнать текущий каталог: <strong><em>pwd</em></strong>
+<hr>linux<hr>
+
+total 164
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 rout
+-rwxrwxrwx  1 x-positive x-positive    22 Sep 19 22:30 robots.txt
+drwxrwxrwx  4 x-positive x-positive  4096 Sep 19 22:30 lang
+-rwxrwxrwx  1 x-positive x-positive  8723 Sep 19 22:30 index.php~
+-rwxrwxrwx  1 x-positive x-positive 11251 Sep 19 22:30 index-2.php
+drwxrwxrwx 31 x-positive x-positive  4096 Sep 19 22:30 img
+drwxrwxrwx 45 x-positive x-positive  4096 Sep 19 22:30 html
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 handler
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 19 22:30 extra
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 db
+drwxrwxrwx  5 x-positive x-positive  4096 Sep 19 22:30 conf
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 class
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 ajax
+-rwxrwxrwx  1 x-positive x-positive    78 Sep 19 22:30 README.md
+-rwxrwxrwx  1 x-positive x-positive    68 Sep 19 22:30 .flooignore
+-rwxrwxrwx  1 x-positive x-positive    59 Sep 19 22:30 .floo
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 27 05:01 theme
+drwxrwxrwx 20 x-positive x-positive  4096 Sep 27 05:34 css
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 28 05:05 log
+drwxrwxrwx 23 x-positive x-positive  4096 Sep 28 22:34 font
+-rwxrwxrwx  1 x-positive x-positive 17761 Oct  1 02:04 index.php
+-rwxrwxrwx  1 x-positive x-positive  1351 Oct  2 08:40 sftp-config.json
+drwxrwxrwx 15 x-positive x-positive  4096 Oct  2 09:07 js
+drwxrwxrwx 10 x-positive x-positive  4096 Oct  2 09:23 user
+-rwxrwxrwx  1 x-positive x-positive  3640 Oct  2 09:36 .htaccess
+drwxr-xr-x  2 x-positive x-positive  4096 Oct  3 16:51 sql
+drwxrwxrwx 14 x-positive x-positive  4096 Oct  4 00:33 ..
+drwxr-xr-x  8 root       root        4096 Oct  4 08:24 .git
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 19:54 repo
+drwxrwxrwx 24 x-positive x-positive  4096 Oct  4 21:02 .
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  4 21:03 temp
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 23:46 setup
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  5 02:35 cmd
+
+<hr>linux ls<hr>
+
+README.md
+ajax
+class
+cmd
+conf
+css
+db
+extra
+font
+handler
+html
+img
+index-2.php
+index.php
+index.php~
+js
+lang
+log
+repo
+robots.txt
+rout
+setup
+sftp-config.json
+sql
+temp
+theme
+user
+
+<hr>linux -lart<hr>
+
+
+<hr>linux ls -lart<hr>
+
+total 164
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 rout
+-rwxrwxrwx  1 x-positive x-positive    22 Sep 19 22:30 robots.txt
+drwxrwxrwx  4 x-positive x-positive  4096 Sep 19 22:30 lang
+-rwxrwxrwx  1 x-positive x-positive  8723 Sep 19 22:30 index.php~
+-rwxrwxrwx  1 x-positive x-positive 11251 Sep 19 22:30 index-2.php
+drwxrwxrwx 31 x-positive x-positive  4096 Sep 19 22:30 img
+drwxrwxrwx 45 x-positive x-positive  4096 Sep 19 22:30 html
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 handler
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 19 22:30 extra
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 db
+drwxrwxrwx  5 x-positive x-positive  4096 Sep 19 22:30 conf
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 class
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 ajax
+-rwxrwxrwx  1 x-positive x-positive    78 Sep 19 22:30 README.md
+-rwxrwxrwx  1 x-positive x-positive    68 Sep 19 22:30 .flooignore
+-rwxrwxrwx  1 x-positive x-positive    59 Sep 19 22:30 .floo
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 27 05:01 theme
+drwxrwxrwx 20 x-positive x-positive  4096 Sep 27 05:34 css
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 28 05:05 log
+drwxrwxrwx 23 x-positive x-positive  4096 Sep 28 22:34 font
+-rwxrwxrwx  1 x-positive x-positive 17761 Oct  1 02:04 index.php
+-rwxrwxrwx  1 x-positive x-positive  1351 Oct  2 08:40 sftp-config.json
+drwxrwxrwx 15 x-positive x-positive  4096 Oct  2 09:07 js
+drwxrwxrwx 10 x-positive x-positive  4096 Oct  2 09:23 user
+-rwxrwxrwx  1 x-positive x-positive  3640 Oct  2 09:36 .htaccess
+drwxr-xr-x  2 x-positive x-positive  4096 Oct  3 16:51 sql
+drwxrwxrwx 14 x-positive x-positive  4096 Oct  4 00:33 ..
+drwxr-xr-x  8 root       root        4096 Oct  4 08:24 .git
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 19:54 repo
+drwxrwxrwx 24 x-positive x-positive  4096 Oct  4 21:02 .
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  4 21:03 temp
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 23:46 setup
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  5 02:35 cmd
+
+<hr>linux ls -lat<hr>
+
+total 164
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  5 02:35 cmd
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 23:46 setup
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  4 21:03 temp
+drwxrwxrwx 24 x-positive x-positive  4096 Oct  4 21:02 .
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 19:54 repo
+drwxr-xr-x  8 root       root        4096 Oct  4 08:24 .git
+drwxrwxrwx 14 x-positive x-positive  4096 Oct  4 00:33 ..
+drwxr-xr-x  2 x-positive x-positive  4096 Oct  3 16:51 sql
+-rwxrwxrwx  1 x-positive x-positive  3640 Oct  2 09:36 .htaccess
+drwxrwxrwx 10 x-positive x-positive  4096 Oct  2 09:23 user
+drwxrwxrwx 15 x-positive x-positive  4096 Oct  2 09:07 js
+-rwxrwxrwx  1 x-positive x-positive  1351 Oct  2 08:40 sftp-config.json
+-rwxrwxrwx  1 x-positive x-positive 17761 Oct  1 02:04 index.php
+drwxrwxrwx 23 x-positive x-positive  4096 Sep 28 22:34 font
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 28 05:05 log
+drwxrwxrwx 20 x-positive x-positive  4096 Sep 27 05:34 css
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 27 05:01 theme
+-rwxrwxrwx  1 x-positive x-positive    59 Sep 19 22:30 .floo
+-rwxrwxrwx  1 x-positive x-positive    68 Sep 19 22:30 .flooignore
+-rwxrwxrwx  1 x-positive x-positive    78 Sep 19 22:30 README.md
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 ajax
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 class
+drwxrwxrwx  5 x-positive x-positive  4096 Sep 19 22:30 conf
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 db
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 19 22:30 extra
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 handler
+drwxrwxrwx 45 x-positive x-positive  4096 Sep 19 22:30 html
+drwxrwxrwx 31 x-positive x-positive  4096 Sep 19 22:30 img
+-rwxrwxrwx  1 x-positive x-positive 11251 Sep 19 22:30 index-2.php
+-rwxrwxrwx  1 x-positive x-positive  8723 Sep 19 22:30 index.php~
+drwxrwxrwx  4 x-positive x-positive  4096 Sep 19 22:30 lang
+-rwxrwxrwx  1 x-positive x-positive    22 Sep 19 22:30 robots.txt
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 rout
+
+<hr>linux ls -la<hr>
+
+total 164
+drwxrwxrwx 24 x-positive x-positive  4096 Oct  4 21:02 .
+drwxrwxrwx 14 x-positive x-positive  4096 Oct  4 00:33 ..
+-rwxrwxrwx  1 x-positive x-positive    59 Sep 19 22:30 .floo
+-rwxrwxrwx  1 x-positive x-positive    68 Sep 19 22:30 .flooignore
+drwxr-xr-x  8 root       root        4096 Oct  4 08:24 .git
+-rwxrwxrwx  1 x-positive x-positive  3640 Oct  2 09:36 .htaccess
+-rwxrwxrwx  1 x-positive x-positive    78 Sep 19 22:30 README.md
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 ajax
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 class
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  5 02:35 cmd
+drwxrwxrwx  5 x-positive x-positive  4096 Sep 19 22:30 conf
+drwxrwxrwx 20 x-positive x-positive  4096 Sep 27 05:34 css
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 db
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 19 22:30 extra
+drwxrwxrwx 23 x-positive x-positive  4096 Sep 28 22:34 font
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 handler
+drwxrwxrwx 45 x-positive x-positive  4096 Sep 19 22:30 html
+drwxrwxrwx 31 x-positive x-positive  4096 Sep 19 22:30 img
+-rwxrwxrwx  1 x-positive x-positive 11251 Sep 19 22:30 index-2.php
+-rwxrwxrwx  1 x-positive x-positive 17761 Oct  1 02:04 index.php
+-rwxrwxrwx  1 x-positive x-positive  8723 Sep 19 22:30 index.php~
+drwxrwxrwx 15 x-positive x-positive  4096 Oct  2 09:07 js
+drwxrwxrwx  4 x-positive x-positive  4096 Sep 19 22:30 lang
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 28 05:05 log
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 19:54 repo
+-rwxrwxrwx  1 x-positive x-positive    22 Sep 19 22:30 robots.txt
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 rout
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 23:46 setup
+-rwxrwxrwx  1 x-positive x-positive  1351 Oct  2 08:40 sftp-config.json
+drwxr-xr-x  2 x-positive x-positive  4096 Oct  3 16:51 sql
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  4 21:03 temp
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 27 05:01 theme
+drwxrwxrwx 10 x-positive x-positive  4096 Oct  2 09:23 user
+
+<hr>linux ls -lt<hr>
+
+total 140
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  5 02:35 cmd
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 23:46 setup
+drwxrwxrwx  3 x-positive x-positive  4096 Oct  4 21:03 temp
+drwxrwxrwx  5 x-positive x-positive  4096 Oct  4 19:54 repo
+drwxr-xr-x  2 x-positive x-positive  4096 Oct  3 16:51 sql
+drwxrwxrwx 10 x-positive x-positive  4096 Oct  2 09:23 user
+drwxrwxrwx 15 x-positive x-positive  4096 Oct  2 09:07 js
+-rwxrwxrwx  1 x-positive x-positive  1351 Oct  2 08:40 sftp-config.json
+-rwxrwxrwx  1 x-positive x-positive 17761 Oct  1 02:04 index.php
+drwxrwxrwx 23 x-positive x-positive  4096 Sep 28 22:34 font
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 28 05:05 log
+drwxrwxrwx 20 x-positive x-positive  4096 Sep 27 05:34 css
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 27 05:01 theme
+-rwxrwxrwx  1 x-positive x-positive    78 Sep 19 22:30 README.md
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 ajax
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 class
+drwxrwxrwx  5 x-positive x-positive  4096 Sep 19 22:30 conf
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 db
+drwxrwxrwx  3 x-positive x-positive  4096 Sep 19 22:30 extra
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 handler
+drwxrwxrwx 45 x-positive x-positive  4096 Sep 19 22:30 html
+drwxrwxrwx 31 x-positive x-positive  4096 Sep 19 22:30 img
+-rwxrwxrwx  1 x-positive x-positive 11251 Sep 19 22:30 index-2.php
+-rwxrwxrwx  1 x-positive x-positive  8723 Sep 19 22:30 index.php~
+drwxrwxrwx  4 x-positive x-positive  4096 Sep 19 22:30 lang
+-rwxrwxrwx  1 x-positive x-positive    22 Sep 19 22:30 robots.txt
+drwxrwxrwx  2 x-positive x-positive  4096 Sep 19 22:30 rout
+
+<hr>linux ls -at<hr>
+
+cmd
+setup
+temp
+.
+repo
+.git
+..
+sql
+.htaccess
+user
+js
+sftp-config.json
+index.php
+font
+log
+css
+theme
+.floo
+.flooignore
+README.md
+ajax
+class
+conf
+db
+extra
+handler
+html
+img
+index-2.php
+index.php~
+lang
+robots.txt
+rout
+
+<hr>linux ls -art<hr>
+
+rout
+robots.txt
+lang
+index.php~
+index-2.php
+img
+html
+handler
+extra
+db
+conf
+class
+ajax
+README.md
+.flooignore
+.floo
+theme
+css
+log
+font
+index.php
+sftp-config.json
+js
+user
+.htaccess
+sql
+..
+.git
+repo
+.
+temp
+setup
+cmd
+
+<hr>linux ls -at<hr>
+
+cmd
+setup
+temp
+.
+repo
+.git
+..
+sql
+.htaccess
+user
+js
+sftp-config.json
+index.php
+font
+log
+css
+theme
+.floo
+.flooignore
+README.md
+ajax
+class
+conf
+db
+extra
+handler
+html
+img
+index-2.php
+index.php~
+lang
+robots.txt
+rout
+
+<hr>linux ls<hr>
+
+README.md
+ajax
+class
+cmd
+conf
+css
+db
+extra
+font
+handler
+html
+img
+index-2.php
+index.php
+index.php~
+js
+lang
+log
+repo
+robots.txt
+rout
+setup
+sftp-config.json
+sql
+temp
+theme
+user
+
+<hr>linux git<hr>
+
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+<hr>linux git add .<hr>
+
+
+<hr>linux git commit -m "Add `linux ...` command, `open ...` command, db phrase etc" -a<hr>
+
+
+<hr>linux git push<hr>
+
+
+<hr>linux git push origin master<hr>
+
+
+<hr>help<hr>
+
+Добро пожаловать в Adeptx Driver!
+
+	Этот туториал призван помочь вам сориентироваться на самом начальном этапе. Ниже приведён список самых основных команд, с кратким описанием предназначения скрипта. Чтобы унать информацию о конкретной команде есть команда `about $command_name` (где $command_name = имя скрипта, например `about aliases`).
+
+	Команды можно использовать как прямо в этой оболочке, так и вызывать в своих скриптах или программах через встроенную команду run($command_with_arguments_string) или подлключив исполняемый файл команды в свои проекты через include_once/require_once (once - потому что в этом файле объявляется функция, повторное обьявление приведет к ошибке), после подключения в любое удобное время вызвав функцию с соответствующим названием.
+
+	Многие команды имеют синонимы для того, чтобы упростить запоминание и уменьшить количество ошибок при вводе. Однако рекомендуется всё же использовать оригинальное имя команды при вызове, это поможет избежать некоторых возможных недочетов.
+
+	Для начала работы, первое что можно сделать - зарегистрироваться. Для этого выполните `reg $email $password`. После регистрации вы будете автоматически авторизованы. В дальнейшем вам необходимо будет авторизовываться самостоятельно используя команду `auth $login $password`, когда это необходимо (при открытии сайта на новом устройстве, истечения срока дейтсвия сессий и т.п.; $login это ваш $email или $nickname указанные при регистрации или позже) для того чтобы вытянуть из базы данных информацию о сессии и всё что связано с персонализацией системы и получить больше возможностей для выполнения команд. Всё, что необходимо запомнить о сессии и вашем профиле будет записываться в базу данных по возможности или вы можете обращаться к базе данных вручную.
+
+	Каждый пользователь получает в распоряжение свою собственную базу данных `adeptx_user$USERID_customdb` (для доступа к ней вам не придётся указывать всё это, вы можете обращаться к ней через ~ или вообще не упоминая, по умолчанию всегда подразумевается, что вы обращаетесь в этой базе данных, если из контекста не следует иное) с персональными таблицами и полный доступ к своей базе данных. Кроме того, предоставленный доступ к публичным базам данных позволяет обращаться к расшаренным таблицам и другим пользователям (по установленным правилам: только для чтения или чтение и запись...).
+	Также дела обстоят и с файлами, каждый пользователь получает в распоряжение свою папку и так далее. Кроме того в вашем распоряжении общий репозиторий файлов и скриптов, вы можете добавлять в него свои удачные скрипты, выкладывая их в общий доступ, помогая другим своими разработками. Также для выполнения доступны многие команды linux-терминала, только выполнение всех этих функций ограничено только вашим рабочим каталогом выделенной вам базой данных, за исключением комманд обращения к общедоступным директориям и базам, в частности репозиторию. Пытаясь достучаться до каталогов более высокого уровня через ../ вы получите ошибку безопасности. Разумеется, при таком наборе функциональности, ни о какой безопасности не может идти и речи, хоть мы и стараемся максимально свести на нет возможные уязвимости. Так что обход этих ограничений тем или иным методом всё равно доступен, но помните, что подобное поведение вредит другим пользователям, поэтому за проделки вы будете забанены с удалением всех ваших данных.
+	Вот поэтому не забывайте делать бекапы своих данных и сохранять их в безопасном от уязвимостей месте, повышать разными средствами безопасность данных и делясь своими наработками в области безопасности данных со всеми.
+
+	После того, как вы авторизуетесь, вызовите это окно снова, чтобы увидеть перечень доступных вам команд, поскольку сейчас вы видите только список команд, доступных для всех посетителей, авторизованные пользователи имеют более широкий функционал.
+
+	Отдельно хочу отметить специфическую реализацию в системе функционала синонимов вызываемых команд, а кое-какие из них даже имеют синтаксический сахар. Попробуйте посмотреть на синонимы разных команд (`aliases $cmd`, например `aliases help`) и вы сами всё поймёте. Например, цитату дня, которая используется в качестве эпиграфа, можно получить такими способами: `epigraph`, `quote`, `цитата` или даже `"цитата дня"`. Если вы создадите или возьмете из репозитория исполняемый файл с названием, которое уже имеется в списке псевдонимов, то псевдоним будет проигнорирован, будет выполнена команда имеющая исполняемый файл со своим именем. Так что ни один псевдоним не может перезаписать название реальной функции и подменить оригинал, help всегда останется help-ом. Для того, чтобы изменить функционал по умолчанию для существующей команды нужно будет ковырять файлы программы.
+
+	<em><b>Будьте бдительны, если передаваемый аргумент должен содержать пробел, заключите его в одинарные или двойные кавычки; косые кавычки используются для выполнения команды, которая в них заключена и возвращения результата её выполнения качестве передаваемого аргумента в другую команду. Если в выражение, заключенное в одинарные кавычки нужно добавить выражение в двойных кавычках, их не требуется экранировать, обратное также верно. Однако если вам понадобится указать двойные кавычки в выражении заключенном в двойные кавычки, их нужно экранировать обратным слешем вот так: \", при этом слеш не добавится к строке. если же вам необходимо использовать слеш в конце строки, вам необходимо экранировать сам слеш вот так: \\", тогда у вас стрка закончится на слеш. если у вас строка вида "C:\\", вам достаточно указать два слеша, обратные слеши не нужно экранировать до тех пор, пока их не будет нечетное количество в конце строки, но даже при этом экранировать нужно будет только последний слеш. то есть любое количество обратных слешей будет просто добавлено как есть, кроме последнего нечетного, он будет сьеден и к строке добавится кавычка, если вы не проэкранируете его. Кроме того у eval и shell несколько специфическая интерпретация введённых команд, кавычки могут чудесным образом вырезаться там, где это не должно происходить. Довести все эти моменты до ума находится в первоочередных задачах, когда это произойдёт данное уведомление исчезнет.</b></em>
+
+	Приятной работы!
+
+Перечень доступных клавиатурных сочетаний и горячих клавиш в этом окне:
+
+<style>.help_table td {padding: 5px 10px;} .help_table tr:nth-child(2n) {background-color:rgba(255,255,255,0.05);} .help_table, .help_table * { box-sizing: border-box; } .help_table { max-width: 51em;
+	    box-sizing: border-box;
+	    font-size: 13px; }</style><table class="help_table"><tbody valign="top"><tr style="color:green"><td><b>Сочетание&nbsp;клавиш</b></td><td><b>Действие</b></td></tr><tr><td>Esc</td><td>Очистить экран и строку ввода команд</td></tr><tr><td>Ctrl + Enter</td><td>Показать/скрыть окно ввода команд в котором вы сейчас находитесь</td></tr><tr><td>Enter</td><td>Отправить команду на сервер для выполнения (POST)</td></tr><tr><td>Ctrl + H</td><td>Показать это руководство</td></tr></tbody></table>
+Перечень всех доступных скриптов (в квадратных скобках указываются необязательные параметры):
+
+<table class="help_table"><tbody valign="top"><tr style="color:green"><td><b>Имя&nbsp;скрипта</b></td><td><b>Параметры</b></td><td><b>Краткое&nbsp;описание</b></td></tr><tr><td>about</td><td>[$command]</td><td>Посмотреть справку по конкретному скрипту (на самом деле это псевдоним команды help)</td></tr><tr><td>add</td><td>$arg1 $arg2 $arg3 [$arg4] [$arg5] [$arg6]</td><td>Просто приведу примеры использования команды: `add hotkey "Ctrl + V" paste`, `add hotkey Ctrl+L ls`, `add alias pro about`, `add user test@test.com qwerty123`. Данная команда первая и пока единственная оснащена синтаксическим сахаром (можно ввести `add new alias "my_alias_name" for command help` или `add user alex with password qwerty321` и несколько ещё вариантов в том же духе)</td></tr><tr><td>aliases</td><td>$command</td><td>Посмотреть все возможные синонимы (алиасы) команды</td></tr><tr><td>auth</td><td>$email $pass</td><td>Авторизация в системе. Эта команда относится к командам со вводом пароля. Такие команды проводятся в два этапа: 1. Ввод команды со всеми параметрами и отправка на исполнение (Enter). 2. Ввод и отправка пароля (пароль при вводе отображаться не будет)</td></tr><tr><td>cal</td><td>[$year]</td><td>RU: Выводит календарь на $year год (по умолчанию на текущий год). EN: show calendar on YYYY year</td></tr><tr><td>cat</td><td>$file</td><td>RU: Вывести содержимое файла. Синтаксис: cat $file. EN: print $file content</td></tr><tr><td>cd</td><td>[$dir]</td><td>RU: Устанавливает $dir текущей директорией. Если $dir не указана делает текущим корневой каталог (каталог, в который установлен движок). Синтаксис: cd [$dir]. Посмотреть текущий каталог можно командой pwd. EN: go to home dir or change dir to [..|../..|-|/dir|dir/dir|~user]</td></tr><tr><td>chmod</td><td>$file $mode.</td><td>Осуществляет попытку изменения режима доступа файла $file на режим $mode. Синтаксис: chmod $file $mode.</td></tr><tr><td>copy</td><td>$file $copyname</td><td>RU: Создаёт копию файла $file с именем $copyname. Не забывайте, что второй параметр содержит не только путь, куда сохранить копию файла, но и содержит новое имя создаваемой копии! Синтаксис: copy $file $copyname. EN: copy file $from to file $to</td></tr><tr><td>create_backup</td><td></td><td>RU: Создает в папке  архив с дампом базы и файлами всего сайта (полный бекап), после создания архив отправляет на скачивание.</td></tr><tr><td>date</td><td>[$format]</td><td>RU: Выводит текущую дату, время и часовой пояс (селектором, позволяющим его изменить) в заданном формате. Синтаксис: date [$format]. EN: Show current date and time or set the $format of date</td></tr><tr><td>dump</td><td></td><td>Создание дампа текущей базы данных. Дамп создаётся в текущем каталоге. Просмотр содержимого последнего созданного дампа: `get last dump`. Создание дампа с просмотром содержимого в консоли: `get new dump`</td></tr><tr><td>epigraph</td><td>[$id]</td><td>Выводит случайную цитату или цитату с номером $id (для использования в качестве эпиграфа, но впринципе не только)</td></tr><tr><td>eval</td><td>$code</td><td>Временное решение нехватки функционала путём дыры в уязвимости - все недостающие команды можно выполнить через eval. Но при каждом применении не забывайте создать скрипт, который решает ту же задачу и тогда нехватка функционала быстро ликвидируется и можно будет не прибегать к прямому выполнени кода, достаточно будет использовать внутренне API. Подсказака: можно использовать eval также в качестве калькулятора, достаточно начать ввод с eval echo и можно писать любую математическую операцию на PHP, например: eval echo pow(398/4, 2);</td></tr><tr><td>exit</td><td></td><td>Обратный авторизации процесс, переход в режим стороннего наблюдателя (ghost-статус. Всего на сайте сейчас три статуса: ghost, staff, admin. Неавторизованные пользователи имеют статус ghost, авторизованные staff или admin, разница между которыми лишь в том, что admin может выполнять действия с профилями участников staff</td></tr><tr><td>get</td><td>$obj $info</td><td>RU: Выводит запрошенную информацию $info об объекте $obj. Синтаксис: get $obj $info. Примеры: get my nickname, get my status, get my email, get my id, get new dump, get last dump</td></tr><tr><td>group</td><td></td><td>Выполняет операции над пользовательскими группами</td></tr><tr><td>help</td><td>[$command]</td><td>Вызов этой справки</td></tr><tr><td>history</td><td></td><td>RU: Выводит историю всех введённых команд всеми пользователями. Позже будут добавлены параметры и проверки, чтобы выводить для указанного/текущего пользователя. Из списка удаляются дубли команд, пустые строки, некорректные команды записываются в отдельный лог и не выводятся здесь. Все команды сортируются и выводится первое вхождение команды, если требуется посмотреть историю без изменений, вводите cat </td></tr><tr><td>killallprocesses</td><td></td><td>RU: Собственно, название говорит само за себя: принудительно завершает все процессы.</td></tr><tr><td>lang</td><td></td><td>Указать предпочтительный язык</td></tr><tr><td>ls</td><td>[$dir]</td><td>RU: Выводит список файлов и папок в директории $dir (если не указано, то содержимое текущей директории). Синтаксис: ls [$dir] EN: Show content of current dir with some $regular expression or options</td></tr><tr><td>message</td><td>$user $subject $message</td><td>RU: Отправляет письмо пользователю $user с темой $subject. Синтаксис: message $user $subject $message. Отправленное письмо может быть прочитано любым ридером из репозитория. EN: send message to $user</td></tr><tr><td>names</td><td></td><td>Выводит список мужских и женских русских имён</td></tr><tr><td>permission</td><td>$user_id $key $value</td><td>Устанавливает параметр доступа $key в значение $value для пользователя с ID $user_id</td></tr><tr><td>pwd</td><td></td><td>RU: Выводит текущий каталог. EN: present working directory.</td></tr><tr><td>reg</td><td>$email $pass [$nickname]</td><td>Регистрация нового пользователя, некорректная запись email воспринимается как nickname, при этом символ @ вырезается, если он был включен. Эта команда относится к командам со вводом пароля, см. `about auth`</td></tr><tr><td>rename</td><td>$oldname $newname</td><td>RU: Пытается переименовать файл или директорию $oldname в $newname, переместив в конечную директорию, если необходимо. Если $newname существует, то он будет перезаписан. Синтаксис: rename $oldname $newname. EN: rename $oldname to $newname</td></tr><tr><td>select</td><td>mail</td><td>RU: Команда для получения данных из БД. На данный момент полный функционал не реализован, стоит плашка select mail для выборки LIMIT 50 последних непрочитанных писем.</td></tr><tr><td>source</td><td>$command</td><td>Выводит исходный код исполняемого файла программы</td></tr><tr><td>tail</td><td>$n $file</td><td>RU: Выводит $n последних строк файла $file. Синтаксис: tail $n $file. show $n last lines of $file.</td></tr><tr><td>tree</td><td>[$dir]</td><td>RU: Выводит дерево файлов и каталогов в директории $dir. Синтаксис: tree [$dir]. EN: show files tree from /</td></tr><tr><td>unreg</td><td>$email $pass [$nickname]</td><td>Удалить свою учётную запись пользователя, требуется указать свой пароль также как и при регистрации/авторизации. Польностью удаляет все данные пользователя из системы</td></tr><tr><td>unzip</td><td>$source_archive $destination_path [$file1 $file2 $fileN]</td><td>RU: Распаковывает содержимое архива pwd().$zip_archive.zip в директорию pwd().$destination (по умолчанию текущая директория). Если указаны дополнительные параметры $file1, $file2..$fileN то распакует только перечисленные файлы.</td></tr><tr><td>user</td><td>$user_id $act $param</td><td>Выполняет действие $act с пользователем $user_id. Позволяет выполнить блокировку пользователей, удалять пользователей, менять их профили и т.п.</td></tr><tr><td>zip</td><td>$source_path $destination_path</td><td>RU: Создает в произвольной директории архив из заданного файла или директории, после создания архив отправляет на скачивание. Известный баг: архив создается корректно из файла, но из папки создаётся пустой архив.</td></tr></tbody></table>
 <hr>

@@ -1,5 +1,5 @@
 <?
-	return help($argv $argc):
+	return help($argv, $argc);
 
 	function help($argv, $argc) {
 		$hotkeys['ru'] = [

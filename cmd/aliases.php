@@ -21,14 +21,18 @@
 		$aliases['unreg']	= 'hfphtubcnhbhjdfnm|разрегистрировать|гткуп';
 
 		$aliases['del']		= 'drop|вуд|вкщз|дел|дроп|удал|удалить';
-		$aliases['eval']	= 'php|';
+		$aliases['eval']	= 'php';
 		$aliases['is']		= 'isnt';
 		$aliases['add']		= 'new|фвв|туц';
 		$aliases['names']	= 'тфьуы|имена|bvtyf';
 		$aliases['aliases']	= 'фдшфыуы|псевдонимы|синонимы|алиасы';
 		$aliases['help']	= 'about|man|info|штащ|ьфт|рудз|manual|про|о|об|?|tutorial|hotkeys|keys|reference|inquiry|enquiry|помощь|справка|руковоство|мануал|мануэль|мануил|эмануэль|исмаил|измаил|иммануил|ман|мэн|чаво|faq|факью|omg|motherofgod|godhelpme|helpme|sos|introduce';
 		$aliases['logout']	= 'exit|quit|учше|signout|sign-out|выход|ds[jl';
-		$aliases['cat']		= 'file_get_contents|content|file_content|file_get_content|содержимое|cjlth;bvjt|сфе|open|fopen|read|fread';
+		$aliases['cat']		= 'file_get_contents|content|file_content|file_get_content|содержимое|cjlth;bvjt|сфе|fopen|read|fread';
+		$aliases['open']	= 'run';
+		$aliases['fm']		= 'file-manager|файловый менеджер|фм|explorer|проводник|файлы';
+		$aliases['ace']		= 'text-editor|code-editor|code|editor';
+		$aliases['pma']		= 'phpmyadmin|пма|пхпмойадмин|пшп мой администратор|мой администратор php';
 		$aliases['cd']		= 'chdir|св|change_dir|current_dir|путь|genm';
 		$aliases['output']	= 'щгезге|усрщ|print|зкште|вывести|dsdtcnb|сказать';
 		$aliases['ls']		= 'glob|dir|scandir|ысфтвшк|ды|пдщы|файлы|пути|pathes|afqks|genb';

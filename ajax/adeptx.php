@@ -115,9 +115,11 @@
 						# обрезаем оба символа дефиса, значение параметра после считывания дублируется как ключ ассоциативного массива, а следующий за ним параметр интерпретируется как значение элемента массива параметров с этим ключем
 						$arg_is_its_key = true;
 						# $cmds[$cmdc][$argc] = '';
-						echo $sign . $quoted_str;
+						// echo $sign . $quoted_str;
 					} else {
-						$cmds[$cmdc][$argc] .= $sign;
+						if ($sign != $arguments_separator) {
+							$cmds[$cmdc][$argc] .= $sign;
+						}
 					}
 				# a если это не первый символ аргумента
 				} else {
@@ -128,11 +130,14 @@
 						if ($arg_is_its_key) {
 							$arg_is_its_key = false;
 							$arg_key = $cmds[$cmdc][$argc];
-							$cmds[$cmdc][$argc] = null;
+							$cmds[$cmdc][$argc] = '';
+							// $arg_has_key = true;
+							// echo '$arg_val = ' . $cmds[$cmdc][$argc];
 							# unset($cmds[$cmdc][$argc]);
 						} elseif ($arg_key) {
-							$arg_key = false;
 							$cmds[$cmdc][ $arg_key ] = $cmds[$cmdc][$argc];
+							$arg_key = '';
+							$argc++;
 						} else {
 							$argc++;
 						}
@@ -148,7 +153,7 @@
 					if ($sign == $executing_quotemarks) {
 						# run($argv, $argc);	# $command_name
 						# выполняем выражение и подтавляем результат на его место
-						$cmds[$cmdc][$argc] = run($cmds[$cmdc][$argc], $argc);
+						$cmds[$cmdc][$argc] = run($cmds[$cmdc][$argc]);
 					}
 				# а если символ соответсвует, но предварительно экранирован, не выходим из блока, а сам символ экранирования заменяем на символ кавычек (то же самое что добавить символ кавычек к строке, но мы перед этим записали символ экранирования, его надо стереть)
 				} elseif ($sign == $quoted_str && $prev_sign == $escape_character) {	# определяет поведение для \" в "строке"
@@ -248,7 +253,7 @@
 						# как вариант ещё можно сделать двойной запрос - сначала получать значение ID для фразы на разных языках, а потом по ID найти перевод на соответствующий язык. Ну, это требует и соотв. структуры БД
 						$query = sprintf('SELECT `%s` FROM `%s` WHERE noconflict_hash="adeptx.cmd.exception" AND unique_key="%s" OR ru="%s" limit 1',
 							$db->escape($_SESSION['lang']),
-							$database['prefix'] . 'lang',
+							$database['prefix'] . $database['table']['phrase'],
 							$db->escape($e->getCode()),
 							$db->escape($e->getMessage())
 						);

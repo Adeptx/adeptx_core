@@ -17,27 +17,30 @@
 	* @return string $return - список файлов и папок, каждый с новой строки
 	*/
 
-	return ls($arg[1]);
-
-	function ls($source) {
-		if (!$source) $source = './';
-		$source = str_replace('\\', '/',  $source);
-		if (substr($source, -1) != '/') {
-			$source .= '/';
-		}
-
-		if (file_exists($source)) {
-			if (is_dir($source)) {
-				if ($source == './') $return = "Содержимое текущей директории:\n\n";
-				else $return = "Содержимое директории \"$source\":\n\n";
-
-				foreach (glob("$source*", GLOB_MARK | GLOB_NOESCAPE) as $file_name) {
-					$file_name = str_replace('\\', '/',  $file_name);
-					$return .= $file_name . "\n";
-				}
-				return $return;
-			}
-			throw new Exception("<strong style=\"color:orange\">Путь является файлом, а не директорией; вывод вложенных файлов и директорий неприменим.</strong>");
-		}
-		throw new Exception("<strong style=\"color:red\">Указанного пути не существует!</strong>");
+	$source = $argv[1];
+	if (empty($source)) $source = './';
+	$source = str_replace('\\', '/',  $source);
+	if (substr($source, -1) != '/') {
+		$source .= '/';
 	}
+
+	if (!file_exists($source)) {
+		// return "<strong style=\"color:red\">Указанного пути не существует!</strong>";
+		throw new Exception("<strong style=\"color:red\">Указанного пути не существует!</strong>", 1648);
+	}
+	if (!is_dir($source)) {
+		throw new Exception("<strong style=\"color:orange\">Путь является файлом, а не директорией; вывод вложенных файлов и директорий неприменим.</strong>", 1649);
+	}
+
+	if ($source == './') {
+		$return = "Содержимое текущей директории:\n\n";
+	}
+	else {
+		$return = "Содержимое директории \"$source\":\n\n";
+	}
+
+	foreach (glob("$source*", GLOB_MARK | GLOB_NOESCAPE) as $file_name) {
+		$file_name = str_replace('\\', '/',  $file_name);
+		$return .= $file_name . "\n";
+	}
+	return $return;

@@ -2114,3 +2114,285 @@ get my status
 select mail
 add table some2
 add table some2
+hello
+hello
+select mail
+hello
+select mail
+hello
+select mail
+open fm
+open fm
+hello
+select mail
+open fm
+open fm
+open fm
+select mail
+hello
+open fm
+open fm
+hello
+select mail
+hello
+select mail
+open fm
+hello
+hello
+id
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+id
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+add table \adeptx_phrase
+add table \adeptx_phrase
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+php eval 1;
+php 1;
+eval echo 1;
+eval return 1;
+eval "return 1;"
+eval return 1;
+eval return "some_text";
+eval return `coming`;
+ls
+eval return `ls`;
+id
+id
+eval return `id`
+whoami
+eval return `whoami`
+whoami
+whoami
+eval return `whoami`
+whoami
+eval return "id";
+get my id
+eval return "id";
+eval return "id";
+get my `eval return "id";`
+Array
+Array
+Array
+eval return "id";
+eval return "id";
+get my `eval return "id";`
+eval return "i" . "d";
+get my `eval return "i" . "d";`
+whoami
+who am i
+phpinfo
+phpinfo
+phpinfo
+phpinfo
+ip-to-country
+exec ls
+exec ls
+cd user/1
+ls
+cd cmd
+cd user/1/cmd
+cd cmd
+cd
+cd user/1/cmd
+ls
+get latest version
+hello
+select mail
+get latest version
+get latest versio
+get latest version
+get current version
+var a 123
+get var a
+get var b
+get var b
+get var b
+get var b
+var a 0
+get var b
+get var a
+var a false
+get var a
+var a
+get var a
+var a 
+get var a
+get var a
+var a 1234
+get var a
+var a 14
+var b 2
+get var a/b
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`;   var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`  ;   var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+get current version
+get latest version
+   var current_version `get current version`  ;   var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+whoami; get my id; ls;
+whoami; get my id; ls;
+whoami; get my id; ls;
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+var current_version `get current version`; var latest_version `get latest version`; if current_version != latest_version -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+if `get current version` != `get latest version` -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get current version
+get latest version
+whoami; get my id; ls;
+whoami; get my id; ls;
+whoami; get my id; ls;
+if `get current version` != `get latest version` -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get latest version
+whoami; get my id; ls;
+whoami; get my id; ls;
+whoami; get my id; ls;
+if 0 != `get latest version` -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+get latest version
+if "" != `get latest version` -then "whoami; get my id; ls;" -else "who am i; ls; get my nickname;"
+exec 
+linux
+linux
+linux
+pwd
+cd ../../../
+linux
+linux ls
+linux -lart
+linux ls -lart
+linux ls -lat
+linux ls -la
+linux ls -lt
+linux ls -at
+linux ls -art
+linux ls -at
+linux ls
+linux git
+linux git add .
+linux git commit -m "Add `linux ...` command, `open ...` command, db phrase etc" -a
+linux git push
+linux git push origin master
+help
