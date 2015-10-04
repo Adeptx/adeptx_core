@@ -84,9 +84,9 @@
 							throw new Exception('<strong style="color:red">Ошибка обращения к базе данных</strong>', 3655);
 						}
 						if (!$res->num_rows) {
-							return 0;
+							return false;
 						}
-						return 1;
+						return true;
 					case 'table':
 					case 'dbtable':
 					case 'bdtable':

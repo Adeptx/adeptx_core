@@ -60,7 +60,7 @@
 		}
 		
 		if ($hash != md5($salt).md5($pass).md5($salt.$pass)) {
-			if ($_SESSION['left_wrong_login_attempts'] && $_SESSION['left_wrong_login_attempts']--) {
+			if ($_SESSION['left_wrong_login_attempts']--) {
 				throw new Exception("Неверный пароль, у вас осталось {$_SESSION['left_wrong_login_attempts']} попыток до автовосстановления пароля", 9847); // $err_auth_wrong_pass = $msg['cmd']['auth']['wrong_pass'];
 				# $return .= '$err_auth_wrong_pass';
 			}
@@ -88,7 +88,10 @@
 		$_SESSION['nickname'] = $nickname;
 		$_SESSION['email'] = $email;
 		$_SESSION['left_wrong_login_attempts'] = $module['auth']['max_fail_count'];
-		if ($id < 3) {
+		$_SESSION['dbpass'] = 'USAmustdie2050';
+
+		# нужно вписать в БД инфу о том, что юзер авторизовался, с какого устройства, во сколько и прочую инфу по соображениям безопасности
+		if ($id < 2) {
 			$_SESSION['status'] = 'admin';
 		}
 		else {

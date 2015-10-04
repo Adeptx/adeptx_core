@@ -114,52 +114,6 @@
 	if (empty($_SESSION['timezone'])) {
 		$_SESSION['timezone'] = 'Europe/Moscow';
 	}
-
-	# BLOCK 3.2 - User permissions
-
-	if (!$_SESSION['status']) {
-		$_SESSION['status'] = 'ghost';
-		$_SESSION['id'] = $_SERVER['REMOTE_ADDR'];
-		$_SESSION['left_wrong_login_attempts'] = $module['auth']['max_fail_count'];
-	}
-	if ($_SESSION['status'] == 'admin') {
-		$_SESSION['permissions']['home']['add_link'] = true;
-		$_SESSION['permissions']['cmd']['fa'] = true;
-		$_SESSION['permissions']['fm']['elfinder'] = true;
-	}
-	if ($_SESSION['status'] == 'staff' || $_SESSION['status'] == 'admin') {
-		$_SESSION['permissions']['download'] = true;
-		
-		$_SESSION['permissions']['cmd']['tail'] = true;
-		
-		$_SESSION['permissions']['view']['tool'] = true;
-		$_SESSION['permissions']['view']['order'] = true;
-		$_SESSION['permissions']['view']['paletton'] = true;
-		$_SESSION['permissions']['view']['adeptx/lazy'] = true;
-		$_SESSION['permissions']['view']['adeptx/ordinary'] = true;
-		$_SESSION['permissions']['view']['adeptx/indigo'] = true;
-		$_SESSION['permissions']['view']['adeptx/god'] = true;
-		$_SESSION['permissions']['view']['room'] = true;
-		$_SESSION['permissions']['view']['sitemap'] = true;
-		$_SESSION['permissions']['view']['admin/setup'] = true;
-		$_SESSION['permissions']['view']['upload'] = true;
-	}
-	if ($_SESSION['status'] != 'staff' && $_SESSION['status'] != 'admin') {
-		$_SESSION['permissions']['view']['tool'] = 'denied';
-		$_SESSION['permissions']['view']['order'] = 'denied';
-		$_SESSION['permissions']['view']['paletton'] = 'denied';
-		$_SESSION['permissions']['view']['adeptx/lazy'] = 'denied';
-		$_SESSION['permissions']['view']['adeptx/ordinary'] = 'denied';
-		$_SESSION['permissions']['view']['adeptx/indigo'] = 'denied';
-		$_SESSION['permissions']['view']['adeptx/god'] = 'denied';
-		$_SESSION['permissions']['view']['room'] = 'denied';
-		$_SESSION['permissions']['view']['sitemap'] = 'denied';
-		$_SESSION['permissions']['view']['admin/setup'] = 'denied';
-		$_SESSION['permissions']['view']['upload'] = 'denied';
-	}
-
-# all user configurations must be kept in mysql and session, not local variable
-# aslo exists variable $_SESSION['status'] (stuff, admin, etc) which kept user, it's set at file update.php (after reading mysql with user conf, when user authed with ajax)
 	
 	# BLOCK 4 - Current Page conf
 # all current page configuration set up at the router.php file
@@ -525,159 +479,6 @@ $page['epigraph'] = [
 	,'Гораздо больше людей сдавшихся, чем побежденных.'
 	,'Мой секрет успеха заключается в умении понять точку зрения другого человека и смотреть на вещи и с его и со своей точек зрения.'
 	,'Я никогда не говорю: «Мне нужно, чтоб вы это сделали». Я говорю: «Мне интересно, сумеете ли вы это сделать».'];
-// $page['epigraph'] = array(
-// 	"Машины должны работать. Люди должны думать.<br>(Лозунг IBM)"
-// #	,"На свете феньки есть такие, брат Горацио, которых лохи просто не секут (Шекспир, «Гамлет», вольный перевод)<br><span class='footnote'>есть многое в природе, друг Горацио, что и не снилось нашим мудрецам</span>"
-// #	,"<strike>Нар</strike>котики крадут твои лучшие годы (социальная реклама)<br><span class='footnote'>с поправкой на учитывание «изменения сознания»...</span>"
-// 	,"Почта должна доставляться вовремя.<br>(Из причины запрета на учебник математики в РФ)"
-// 	,"Вам были даны другие качества.<br>Вы тот, кто не может сыграть то, чего на самом деле не чувствует.<br>(Мария)"
-// 	,"Вы вызываете у меня искреннюю улыбку...<br>В этом есть романтика нашего времени, Вы не находите?<br>(Мария)"
-// 	,"Smile! Why? Becouse you can."
-// 	,"Никогда не заставляйте родителей сомневаться в однажды принятом решении."
-// 	,"Тот, кто лишен чувства юмора, может быть абсолютно свободен и ничего не бояться, так как самое страшное с ним уже произошло."
-// 	,"Фразы бесподобны, только они вторичны. Мой дорогой человек, я желаю Вам меньше думать о том, как произвести впечатление, Вы — стоящее доказательство всему вышесказанному.<br>(Мария)"
-// 	,"Не принимай подачки, а бьют — давай сдачи.<br>(Mizz Paper)"
-// 	,"Никогда не благодарите за искренность.<br>(Мария)"
-// 	,"Вы слишком интересны и идеальны, будто искусственные.<br>(Мария)"
-// 	,"Если не любите рисковать, не начинайте свое дело. Наймитесь к тем людям, которые рисковать готовы.<br>(<a href='http://habrahabr.ru/company/yandex/blog/208886/#comment_7198828'>Ксения Елкина</a>)"
-// #	,"Каждый охотник знать желает, где фазаны обитают. (Не помогло)"
-// 	,"Мы все притворщики.<br>Кто-то маски носит лучше, кто-то - хуже.<br>(Мария)"
-// 	,"Дисциплина — это не ограничение свободы.<brЭто отсечение всего лишнего.<br(Брюс Ли)"
-// 	,"Оболочка не важна, никогда.<br>(Яна Толмачева)"
-// 	,"Слова пусты, но суть велика и значительна.<br (Мария Малиновская)"
-// 	,"Хочешь популярности — научись удивлять, хочешь познать — умей удивляться."
-// 	,"Не все парни забывают.<br>(Виталий Омельченко)"
-// 	,"Успешные люди меняются сами, остальных меняет жизнь.<br>(Джим Рон)"
-// 	,"никогда свобода суицид<br>(Марти Кан)"
-// 	,"If all objects and people in daily life were equipped with identifiers,<br>they could be managed and inventoried by computers (Концепция IoT)"
-// 	,"Раз все объекты и люди в быту оснащены идентификаторами,<br>их можно регулировать и инвентаризовать компьютерами.<br>(Концепция «Интернета вещей»)"
-// 	,"Если не можешь простить, вспомни, сколько прощено тебе."
-// 	,"Если вы до сих пор не поняли, чем мы занимаемся, значит мы хорошо справляемся."
-// 	,"Наши любимые игры: Business, Development, Sales & Marketing."
-// #	,"О погоде. Бабушка гадала, да надвое сказала: то ли дождь, то ли снег; то ли будет, то ли нет."
-// 	,"Вся проблема современной системы образования в том, что учителя преимущественно женщины, при том, что парни и девушки учатся вместе."
-// 	,"Любящий многих — познает женщин.<br>Любящий одну — познает любовь."
-// 	,"Когда молчание вдвоем не напрягает, ты понимаешь, что нашел кого-то особенного."
-// 	,"Богатство — это состояние ума."
-// 	,"Все так бояться остаться никем в этой жизни, что становятся кем попало."
-// 	,"Люди действительно готовы продать все, если цена их устроит.<br>(Чак Паланик)"
-// 	,"Там, где все горбаты, стройность становится уродством.<br>(Оноре де Бальзак)"
-// 	,"Неважно сколько у вас ресурсов. Если вы не умеете их правильно использовать, их никогда не будет достаточно.<br>(Анна Бурхович)"
-// 	,"Нельзя приходить и уходить, когда вздумается.<br>Нельзя просто оставлять человека на улице в дождь, а на следующее утро ждать, что он бросится к тебе на шею."
-// 	,"Если вы думаете, что сможете — вы сможете,<br>если думаете, что нет — вы правы.<br>(Мао Цзэдун)"
-// 	,"Пройдёмте в сад?<br>Я покажу Вас розам...<br>(Ричард Шеридан)"
-// 	,"Да не о том думай, что спросили, а о том, для чего?<br>Догадаешься, для чего, тогда и поймешь, как надо ответить.<br>(Максим Горький)"
-// 	,"Будьте добрее, когда это возможно.<br>А это возможно всегда."
-// 	,"Будьте добрее, а то как лохи.<br>(Даша Солнцева)"
-// 	,"Жизнь пролетает моментально,<br>А мы живем, как будто пишем черновик,<br>Не понимая в суете скандальной,<br>Что наша жизнь — всего лишь только миг."
-// 	,"Неуверенность разрушила столько возможностей.<br>(Эрих Мария Ремарк)"
-// 	,"Лучшее что нам доступно, это самопознание."
-// 	,"Когда часто выходишь за зону комфорта, становится скучно, а спастись от скуки ещё сложнее, чем почувствовать себя свободным<br>(Евгения Матросова)"
-// 	/* 			,"Nunc est bibendum!"
-// 	,"Quae nocent docent."
-// 	,"Tibi et igni."
-// 	,"Res tua agitur."
-// 	,"Sic dicta."
-// 	,"Sic transit gloria mundi."
-// 	,"Natura sic voluit."
-// 	,"Tale quale."
-// 	,"Sic itur ad astra."
-// 	,"Sic passim."
-// 	,"Magni nominis umbra."
-// 	,"Perfer et obdura."
-// 	,"Tritum per tritum."
-// 	,"Idem per idem."
-// 	,"Modo vir, modo femina."
-// 	,"Materia subtilis."
-// 	,"Dimidium facti, qui eoepit, habet."
-// 	,"Taurum toilet, qui vitulum sustulerit."
-// 	,"Tertius gaudens."
-// 	,"Tertium non datur."
-// 	,"Tres faciunt collegium."
-// 	,"Vana est sapientia nostra."
-// 	,"Debes, ergo potes."
-// 	,"Sine ira et studio."
-// 	,"Sine ргесе, sine pretio, sine poculo."
-// 	,"Cave ne cadas."
-// 	,"Inutile terrae pond us."
-// 	,"Pia causa."
-// 	,"Pia desideria."
-// 	,"Sal us populi suprema lex."
-// 	,"Abyssus abyssum invocat."
-// 	,"Nulla ratione."
-// 	,"Beati pauperes spirilu."
-// 	,"Beatus ille, qui procul negotiis."
-// 	,"Censor morum."
-// 	,"Deus ex machina."
-// 	,"Dis aliter visum."
-// 	,"Primus in orbe deos fecit timor."
-// 	,"Perdissima republica plurimae legis."
-// 	,"Barbam video, sed philosophum non video."
-// 	,"Onus probandi."
-// 	,"Onus proferendi."
-// 	,"Gaudeamus igitur! Gaudeamus igitur, juvenes dum sumus."
-// 	,"Fac fideli sis fidelis."
-// 	,"Vale et me ama."
-// 	,"Vale."
-// 	,"Esse quam videri."
-// 	,"Vestra salus - nostra salus."
-// 	,"In aere piscari, in mare venari."
-// 	,"Procul negotiis."
-// 	,"Ex dono."
-// 	,"Bis dat, qui cito dat."
-// 	,"Cloaca maxima."
-// 	,"Mysterium magnam."
-// 	,"Certum, quia impossibile est."
-// 	,"Amicus certus in re incerta cernitur."
-// 	,"Crede experto."
-// 	,"Credite, posteri!"
-// 	,"Credo, quia absurdum (est)."
-// 	,"Mundus universus exercet histrioniam."
-// 	,"Credo ut intelligam."
-// 	,"Aeterna historia."
-// 	,"Aeterna nox."
-// 	,"Aeternae veritates."
-// 	,"Aeterna urbs."
-// 	,"Pro re nata."
-// 	,"Mens sana in corpore sano."
-// 	,"Video meliora proboque, deteriora sequor."
-// 	,"Sub alia forma."
-// 	,"In brevi."
-// 	,"Imperare sibi maximum imperium est."
-// 	,"In parvo."
-// 	,"In minimis maximus."
-// 	,"In расе."
-// 	,"In optima forma."
-// 	,"Sensu obsceno."
-// 	,"Sine dubio."
-// 	,"In nubibus."
-// 	,"In saecula saeculorum."
-// 	,"De omnibus dubito."
-// 	,"Onmi casu."
-// 	,"Aqua vitae."
-// 	,"Aqua et panis, vita canis."
-// 	,"In una persona."
-// 	,"Gaudium magnum nuntio vobis."
-// 	,"Bellum omnium contra omnes."
-// 	,"Volens-nolens."
-// 	,"Lupus pilum mutat, non mentem."
-// 	,"Sub umbra."
-// 	,"In came."
-// 	,"Contra rationem."
-// 	,"Contra spem spero!"
-// 	,"Illud erat vivere!"
-// 	,"Quovis modo."
-// 	,"In usum et abusum."
-// 	,"In statu quo."
-// 	,"In rerum natura."
-// 	,"Medice, cura te ipsum."
-// 	,"Tempora mutantur."
-// 	,"Tempora mutantur, et nos mutamur in illis."
-// 	,"Tempus fugit." */
-// 	# ,"http://skio.ru/latin/dict-vr.php"
-// 	# ,"undefined"
-// );
-
 
 # MODULE X - BACKGROUNDS
 
@@ -721,3 +522,60 @@ $page['bg-images'] = array(
 #	 ,'world network' => 'https://lh5.googleusercontent.com/-5_LEBau-L_U/VG6e_UA--UI/AAAAAAAAAdk/Y-Iq1VHq0Ek/s1600/Facebook.png'
 	,'blue diamond' => 'https://lh6.googleusercontent.com/-xq88onqlEic/VG6egbCJ3MI/AAAAAAAAAis/GcwvlRt-hfs/s1600/women-paint-blue-hair-fresh-hd-wallpaper.jpg'
 );
+
+
+
+
+
+
+
+	# BLOCK 3.2 - User permissions
+
+	if (!$_SESSION['status']) {
+		$_SESSION['status'] = 'ghost';
+	}
+	if (!$_SESSION['id']) {
+		$_SESSION['id'] = $_SERVER['REMOTE_ADDR'];
+	}
+	if (!$_SESSION['left_wrong_login_attempts']) {
+		$_SESSION['left_wrong_login_attempts'] = $module['auth']['max_fail_count'];
+	}
+
+	if ($_SESSION['status'] == 'admin') {
+		$_SESSION['permissions']['home']['add_link'] = true;
+		$_SESSION['permissions']['cmd']['fa'] = true;
+		$_SESSION['permissions']['fm']['elfinder'] = true;
+	}
+	if ($_SESSION['status'] == 'staff' || $_SESSION['status'] == 'admin') {
+		$_SESSION['permissions']['download'] = true;
+		
+		$_SESSION['permissions']['cmd']['tail'] = true;
+		
+		$_SESSION['permissions']['view']['tool'] = true;
+		$_SESSION['permissions']['view']['order'] = true;
+		$_SESSION['permissions']['view']['paletton'] = true;
+		$_SESSION['permissions']['view']['adeptx/lazy'] = true;
+		$_SESSION['permissions']['view']['adeptx/ordinary'] = true;
+		$_SESSION['permissions']['view']['adeptx/indigo'] = true;
+		$_SESSION['permissions']['view']['adeptx/god'] = true;
+		$_SESSION['permissions']['view']['room'] = true;
+		$_SESSION['permissions']['view']['sitemap'] = true;
+		$_SESSION['permissions']['view']['admin/setup'] = true;
+		$_SESSION['permissions']['view']['upload'] = true;
+	}
+	if ($_SESSION['status'] != 'staff' && $_SESSION['status'] != 'admin') {
+		$_SESSION['permissions']['view']['tool'] = 'denied';
+		$_SESSION['permissions']['view']['order'] = 'denied';
+		$_SESSION['permissions']['view']['paletton'] = 'denied';
+		$_SESSION['permissions']['view']['adeptx/lazy'] = 'denied';
+		$_SESSION['permissions']['view']['adeptx/ordinary'] = 'denied';
+		$_SESSION['permissions']['view']['adeptx/indigo'] = 'denied';
+		$_SESSION['permissions']['view']['adeptx/god'] = 'denied';
+		$_SESSION['permissions']['view']['room'] = 'denied';
+		$_SESSION['permissions']['view']['sitemap'] = 'denied';
+		$_SESSION['permissions']['view']['admin/setup'] = 'denied';
+		$_SESSION['permissions']['view']['upload'] = 'denied';
+	}
+
+# all user configurations must be kept in mysql and session, not local variable
+# aslo exists variable $_SESSION['status'] (stuff, admin, etc) which kept user, it's set at file update.php (after reading mysql with user conf, when user authed with ajax)

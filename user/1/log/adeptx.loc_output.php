@@ -2096,4 +2096,162 @@ SET FOREIGN_KEY_CHECKS = 1;
 <hr>is exists db \adeptx_lang<hr>
 
 0
+<hr>is exists db \user_2_default<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>is exists db lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists dsb \lang<hr>
+
+0
+<hr>is exists db \adeptx_session<hr>
+
+0
+<hr>is exists db \adeptx<hr>
+
+1
+<hr>is exists db \adeptx_driver<hr>
+
+1
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>is exists db \lang<hr>
+
+0
+<hr>add db \lang<hr>
+
+База данных `lang` успешно <strong style="color:green">создана</strong>
+<hr>is exists db \user_2_default<hr>
+
+0
+<hr>add db \user_2_default<hr>
+
+База данных `user_2_default` успешно <strong style="color:green">создана</strong>
+<hr>is exists db \user_2_custom<hr>
+
+0
+<hr>add db \user_2_custom<hr>
+
+База данных `user_2_custom` успешно <strong style="color:green">создана</strong>
+<hr>is exists db \user_2_test<hr>
+
+0
+<hr>add db \user_2_test<hr>
+
+База данных `user_2_test` успешно <strong style="color:green">создана</strong>
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>is exists db myp<hr>
+
+0
+<hr>add db myp<hr>
+
+База данных `myp` успешно <strong style="color:green">создана</strong>
+<hr>drop db myp<hr>
+
+База данных `myp` успешно <strong style="color:orange">удалена</strong>
+<hr>whoami<hr>
+
+1
+<hr>whoami<hr>
+
+x-positive
+<hr>whoami<hr>
+
+x-positive
+<hr>id<hr>
+
+1
+<hr>who am i<hr>
+
+x-positive pts/1        2015-10-03 17:56 (:0)
+<hr>who is he<hr>
+
+
+<hr>who<hr>
+
+1 x-positive admin
+<hr>who is he<hr>
+
+
+<hr>who<hr>
+
+1 x-positive admin
+<hr>who<hr>
+
+1	x-positive	admin
+<hr>who<hr>
+
+1		x-positive		admin
 <hr>

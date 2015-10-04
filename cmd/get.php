@@ -17,20 +17,27 @@
 		// $epitet = $argv[2];	# $epitet = current, new, last etc
 		$property = $argv[2];
 
+		if (isset($argv['s'])) {
+			$property = $argv['s'];
+		}
+		if (isset($argv['session'])) {
+			$property = $argv['session'];
+		}
+
 		switch ($object) {
 			case 'my':
 			case 'current':
 			case 'user':
-				if (isset($_SESSION[$property])) {
-					$return .= $_SESSION[$property];
+				if (!isset($_SESSION[$property])) {
+					echo $property;
+					throw new Exception('Значение свойства не установлено. Возможно также, что такого свойства вообще нет у объекта. Возможно даже, что такого объекта вообще не существует.', 5796);
 					# id, nickname, email, msg, timezone, new_mail_count, mail
-				} else {
-					switch ($property) {
-						case 'mail':
-							# run('select mail');
-					}
-					throw new Exception('Значение свойства не установлено. Возможно также, что такого свойства вообще нет у объекта. Возможно даже, что такого объекта вообще не существует.');
 				}
+				switch ($property) {
+					case 'mail':
+						run('select mail');
+				}
+				return $_SESSION[$property];
 				break;
 			case 'bd':
 			case 'db':
@@ -47,7 +54,7 @@
 						$dumps_count = count($dumps);
 
 						if (!$dumps_count) {
-							throw new Exception('Ошибка создания и открытия дампа, нет прав?');
+							throw new Exception('Ошибка создания и открытия дампа, нет прав?', 5797);
 						}
 						
 						$return .= file_get_contents($dumps[count($dumps) - 1]);

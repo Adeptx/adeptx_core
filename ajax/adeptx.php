@@ -274,9 +274,10 @@
 					}
 				}
 			}
-			if (substr($result, -1) != "\n") {
-				$result .= "\n";
-			}
+			# no-no-no, ни за что!
+			// if (substr($result, -1) != "\n") {
+			// 	$result .= "\n";
+			// }
 		}
 		return $result;
 	}

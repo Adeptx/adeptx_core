@@ -80,6 +80,9 @@
 		touch($GLOBALS['fold']['users'] . $new_user_id . $GLOBALS['fold']['user_log'] . $_SERVER['HTTP_HOST'] . '_' . $new_user_id . '_output.log' . $GLOBALS['site']['extensions']);
 		# больше свободы! просто оставить приставку с юзерайди и пусть все базы с этой приставкой принадлежат юзеру!
 		$query = sprintf("CREATE DATABASE IF NOT EXISTS `user_%s_default` CHARACTER SET utf8 COLLATE utf8_general_ci", $db->last_insert_id());
+		# для использования выделенной юзеру БД он может использовать всевозможные скрипты, например, phpmyadmin: http://adeptx.tk/repo/pma/
+        $cfg['Servers'][$i]['user'] = 'user_'.$_SESSION['id'];
+        $cfg['Servers'][$i]['password'] = $_SESSION['dbpass'];
 		$status = $db->query($query);
 		# авторизация последняя в силу того, что после авторизации скрипт прекращает свою работу
 		# (не отдаём результат обратно, чтобы избежать записи в журнал логов, сразу возвращаем данные пользователю)

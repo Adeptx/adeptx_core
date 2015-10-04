@@ -89,8 +89,9 @@
 			case 'mysql':
 			case 'database':
 				$prefix = "user_{$_SESSION['id']}_";
+
 				if (run("is exists db $arg2")) {
-					throw new Exception("Databade \"$arg2\" <strong style=\"color:red\">already exists</strong>", 6894);
+					throw new Exception("Database \"$arg2\" <strong style=\"color:red\">already exists</strong>", 6894);
 				}
 				if ($_SESSION['status'] == 'admin' && preg_match('!^\\\\!', $arg2)) {
 					$prefix = '';
@@ -99,6 +100,37 @@
 				$query = sprintf("CREATE DATABASE IF NOT EXISTS `%s%s` CHARACTER SET utf8 COLLATE utf8_general_ci", $prefix, $arg2);
 				$db->call($query);
 				return "База данных `$arg2` успешно <strong style=\"color:green\">создана</strong>";
+			case 'table':
+				// $db_prefix = "user_{$_SESSION['id']}_";
+				$db_tables_prefix = '';
+
+				# проверить существование такой таблицы
+				// if (run("is exists db $arg2")) {
+				// 	throw new Exception("Database \"$arg2\" <strong style=\"color:red\">already exists</strong>", 6894);
+				// }
+				if ($_SESSION['status'] == 'admin' && preg_match('!^\\\\!', $arg2)) {
+					$db_prefix = '';
+					$arg2 = substr($arg2, 1);
+				}
+				if (isset($argv['drop-if-exists'])) {
+					$db->call("DROP TABLE IF EXISTS `{$db_tables_prefix}$arg2`;");
+				}
+				$query = "
+				CREATE TABLE IF NOT EXISTS `{$db_tables_prefix}$arg2` (
+				`id` int(15) NOT NULL auto_increment,
+				`to_uid` int(9) NOT NULL,
+				`subject` varchar(255) NOT NULL,
+				`message` text,
+				`from_uid` int(9) NOT NULL,
+				`sender_ip` varchar(255),
+				`date_sent` timestamp DEFAULT '".date('Y-m-d H:i:s')."' NOT NULL,
+				`was_read` tinyint(1),
+				  PRIMARY KEY  (`id`)
+				) ENGINE=MyISAM AUTO_INCREMENT=1;
+				";
+				$db->call($query);
+				return "Таблица `$arg2` успешно <strong style=\"color:green\">создана</strong> в текущей базе данных";
+
 		}
 		return $return;
 	}

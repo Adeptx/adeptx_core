@@ -2056,3 +2056,61 @@ is exists db \adeptx_lang
 hello
 hello
 hello
+hello
+hello
+get my left_wrong_login_attempts
+is exists db \user_2_default
+is exists db \lang
+select mail
+is exists db lang
+is exists db \lang
+is exists dsb \lang
+is exists db \adeptx_session
+is exists db \adeptx
+is exists db \adeptx_driver
+is exists db \lang
+is exists db \lang
+is exists db \lang
+is exists db \lang
+is exists db \lang
+is exists db \lang
+is exists db \lang
+is exists db \lang
+is exists db \lang
+is exists db \lang
+is exists db \lang
+add db \lang
+is exists db \user_2_default
+add db \user_2_default
+is exists db \user_2_custom
+add db \user_2_custom
+is exists db \user_2_test
+add db \user_2_test
+select mail
+is exists db myp
+add db myp
+drop db myp
+whoami
+whoami
+whoami
+id
+who am i
+who is he
+who
+who is he
+who
+who
+who
+get my nickname
+get my id
+get my status
+drop db tr
+drop db test
+drop db test2
+hello
+hello
+get
+get my status
+select mail
+add table some2
+add table some2
