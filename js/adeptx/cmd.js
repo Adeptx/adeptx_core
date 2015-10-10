@@ -74,14 +74,14 @@ function run($command_vs_args, $mode) {
 		$history = [];
 		update({cmd: $command_vs_args}, $mode);
 	} else if ($command == 'js') {
-		eval($command_args[1]);
+		console.log('Command Line Output: ' + eval($command_vs_args.substr(3)));
 	} else if ($command == 'auth' || $command == 'reg' || $command == 'unreg') {
-		// порядок действий при авторизации (и любых операциях, требующиз запрос пароля):
+		// порядок действий при авторизации (и любых операциях, требующих запрос пароля):
 		// меняем тип поля ввода команд с text на password
 		// ставим флаг, запоминаем команду, логин
 		// команду с паролем вместе отправляем на сервак, естественно в обход любых логов
 		// профит
-		$command_vs_pass = $command_vs_args;
+		$command_vs_pass = $command_vs_args;	// флаг/запоминаем команду
 		$('#cmd-line-input').attr({'type':'password'});
 		append_line('Пароль:');
 			// systemMessage('ajax.js:x1\nУ вас ' + up["#user-new-messages-count"] + ' непрочитанных сообщений.\n`select mail`', 300, 5000, 1000);
@@ -93,7 +93,18 @@ function run($command_vs_args, $mode) {
 			$command_vs_pass = false;
 		}
 		else {
-			update({cmd: $command_vs_args}, $mode);
+			// было бы очень кстати кешировать некоторые запросы, о чём инфа может предоставляться самим сервером при получении ответа. например, если сервер указал "cache: true" для запроса "epigraph 60", мы просто записываем полученную команду в js массив и при следующем запросе "epigraph 60" выводим значение из массива. Ну на сервере своё кеширование, на клиенте своё - во избежание повторных обращений к серверу лишний раз.
+			if ($cache[$command_vs_args] !== undefined) {
+				append_line($cache[$command_vs_args]);
+			} else {
+				// блокируем поле ввода до получения ответа сервера, для создания дополнительных паралельных запросов, если выполняется процесс с длительным периодом ожидания, можно открыть паралельно несколько окон для ввода команд
+
+				// #$ajax['id']['cmd']['line']
+				$('#cmd-line').css({'background-color':'#676767'});
+				$('#cmd-line-input').css({'background-color':'#676767'});
+				$('#cmd-line-input').prop({'disabled':true});
+				update({cmd: $command_vs_args}, $mode);
+			}
 		}
 	}
 	$('#cmd-line-input').val('').focus();

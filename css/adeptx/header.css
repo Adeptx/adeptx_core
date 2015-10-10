@@ -191,19 +191,22 @@
     }
 	
 	nav, nav a, .puddle {
-		min-height: 30px;
+		min-height: 40px;
 		display: inline-block;
 	}
 
 	nav a, .puddle {
-		width: 30px;
+		width: 40px;
 		padding: 0;
 		color: #fff;
 		cursor: pointer;
-		background-color: #fff; /* #0C6C85 */
+		/*background-color: #fff;*/	/* #0C6C85 */
 	}
 	nav a:hover, .puddle:hover {
 		background-color: transparent;
+	}
+	.puddle.calc {
+	    background: url(/img/32x32/white/calc.png) center no-repeat;
 	}
 	
 <? foreach($bgs as $i=>$bg){ ?>

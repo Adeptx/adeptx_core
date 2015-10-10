@@ -97,36 +97,27 @@ $(document).on('click', '#taskbar .puddle', function(e){
 	$cloud = $('.cloud[data-pid="' + window.focus + '"]');
 	$cloud.toggle();
 	
-	// $('section.cloud').removeClass('focus');
+	// $('.cloud').removeClass('focus');
 	// $cloud.addClass('focus');
 	
-	$('section.cloud').css('z-index', 1);
+	$('.cloud').css('z-index', 1);
 	$cloud.css('z-index', 2);
 });
 
-$(document).on('click', 'section.cloud .top .minimize', function(e){
+$(document).on('click', '.cloud .top .minimize', function(e){
 	// window.previous_focus = window.process;
 	window.focus = window.previous_focus;
 	$(this).parent().parent().hide();
 	$('body').removeClass('overflow');
 });
-$(document).on('click', 'section.cloud .top .maximize', function(e){
+$(document).on('click', '.cloud .top .maximize', function(e){
 	window.previous_focus = window.process;
 	window.focus = $(this).parent().parent().data('pid');
 	$(this).parent().parent().toggleClass('fullscreen');
 	$('body').toggleClass('overflow');
 });
-$(document).on('click', 'section.cloud .top .close', function(e){
-	// window.previous_focus = window.process;
-	window.focus = window.previous_focus;
-	$process_window = $(this).parent().parent();
-	$process_window.remove();
-	$('#taskbar .puddle[data-pid="' + $process_window.data('pid') + '"]').remove();
-	$.ajax({
-		url: 'update',
-		type: 'post',
-		data: 'cloud_close=' + $process_window.data('pid')
-	});
+$(document).on('click', '.cloud .top .close', function(e){
+	cloude_close( $(this).parent().parent().data('pid') );
 });
 // $(function() {
 // 	$(".resizable").resizable();
@@ -159,12 +150,12 @@ $(document).on('mousedown', function(e){
 	if ($aim.is('.cloud .top')) {
 		window.previous_focus = window.process;
 		window.focus = $(this).parent().data('pid');
-		mouse($(this).parent(), 'move', 'xy');
+		// mouse($(this).parent(), 'move', 'xy');
 	}
 	if ($aim.is('.cloud .resize')) {
 		window.previous_focus = window.process;
 		window.focus = $(this).parent().data('pid');
-		mouse($aim.parent(), 'resize', 'xy');
+		// mouse($aim.parent(), 'resize', 'xy');
 	} else if ($aim.is('.cloud') || $aim.parents().is('.cloud')) {
 		window.previous_focus = window.process;
 		if ($aim.is('.cloud')) {
@@ -299,10 +290,13 @@ window.onkeydown = function(e) {
 		if (e.keyCode == 13) {		// Enter
 			e.preventDefault();
 			if ($('#cmd-line-input').val()) run();
+			// на тот случай, если мы перемещались стрелками по истории и затем нажали выполнить, надо скинуть счетчик строк
+			$line = $history.length;
 		}
 		if (e.keyCode == 27) {		// Esc
 			e.preventDefault();
 			clrscr();
+			$line = $history.length;
 		}
 		// if (e.keyCode == 32) {	// Space
 		// 	e.preventDefault();

@@ -67,6 +67,7 @@
 		"styles": "css/",
 			"css": "css/",
 		"templates": "html/",
+		"repository": "repo/",
 		"cmd": "cmd/",
 		"images": "img/",
 		"fonts": "font/",

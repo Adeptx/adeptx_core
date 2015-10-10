@@ -193,7 +193,7 @@
 		,'adeptx/footer.css'
 		,'../theme/cmd/' . $module['cmd']['theme'] . '.css'
 #		,'jquery-ui' => 'jquery-ui-1.10.4.css'
-		#,'jquery-ui' => '//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css'
+		,'jquery-ui' => '//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css'
 		,'google_fonts' => array(
 			 'font/google/mix-1.min.css')
 		,'font-awesome'	=> 'font/font-awesome/font-awesome.min.css'
@@ -383,6 +383,7 @@ $bgs = array(
 	# BLOCK 9.1 - Global id of the elements, that have ajax class
 
 	$ajax['id']['cmd']['answer'] = 'cmd-answer';		# in one place it also was ".answer:last" (mail)
+	$ajax['id']['cmd']['line'] = 'cmd-line';
 	$ajax['id']['cmd']['input'] = 'cmd-line-input';
 	$ajax['id']['user']['messages']['new'] = 'user-new-messages-count';
 	$ajax['id']['fm']['preread'] = 'preread';

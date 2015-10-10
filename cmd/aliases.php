@@ -21,8 +21,9 @@
 		$aliases['unreg']	= 'hfphtubcnhbhjdfnm|разрегистрировать|гткуп';
 
 		$aliases['del']		= 'drop|вуд|вкщз|дел|дроп|удал|удалить';
-		$aliases['eval']	= 'php';
+		$aliases['adeptx_eval']	= 'eval|php';
 		$aliases['is']		= 'isnt';
+		$aliases['kill']	= 'stop|лшдд|ыещз|стоп|убить|остановить|закрыть|выключить';
 		$aliases['add']		= 'new|фвв|туц';
 		$aliases['names']	= 'тфьуы|имена|bvtyf';
 		$aliases['aliases']	= 'фдшфыуы|псевдонимы|синонимы|алиасы';

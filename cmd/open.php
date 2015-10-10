@@ -31,7 +31,7 @@
 				exit('<script>document.location.href = "http://' . $_SERVER['HTTP_HOST'] . $module[ $argv[1] ]['url'] . '";</script>');
 			}
 			else {
-				throw new Exception("Указанный пакет не обнаружен в репозитории", 1);
+				throw new Exception("Указанный пакет не обнаружен в репозитории", 4986);
 			}
 		}
 	}

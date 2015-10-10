@@ -2396,3 +2396,594 @@ linux git commit -m "Add `linux ...` command, `open ...` command, db phrase etc"
 linux git push
 linux git push origin master
 help
+hello
+select mail
+dump
+dump
+get last dump
+dump
+dump
+dump
+echo 123
+phpinfo
+php_info
+php_info
+php_info
+hello
+hello
+hello
+hello
+php_info
+php_info
+hello
+php_info
+php_info
+php_info
+php_info
+php_info
+hello
+hello
+hello
+select mail
+hello
+hello
+php_info
+php_info
+php_info
+hello
+hello
+php_info
+hello
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+php_info
+hello
+select mail
+php_info
+php_info
+php_info
+php_info
+hello
+hello
+select mail
+hello
+select mail
+linux ls
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+php 123
+php echo 123
+php echo 14/2
+linux php
+linux php 123
+linux ls
+linux cd user/1
+linux pwd
+linux cd user
+linux pwd
+linux touch test.php
+linux cat test.php
+linux ls
+linux nano test.php
+ls
+ls
+ls
+ls
+ls
+sql SELECT * FROM adeptx_user_messages
+sql SELECT * FROM `adeptx_user_messages`
+sql "SELECT * FROM `adeptx_user_messages`"
+sql "SELECT * FROM `adeptx_user_message`"
+sql "SELECT * FROM `adeptx_user_message`" -v -a
+sql "SELECT * FROM `adeptx_user_message`" -v -f
+sql "SELECT * FROM `adeptx_user_message`" -f
+sql -q "SELECT * FROM `adeptx_user_message`" -f
+sql -q "SELECT * FROM `adeptx_user_message`" -fa
+sql -q "SELECT * FROM `adeptx_user_message`" -fa
+sql -q "SELECT * FROM `adeptx_user_message`" -fa
+sql "SELECT * FROM `adeptx_user_message`" -f
+sql -q "SELECT * FROM `adeptx_user_message`" -fa
+sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa
+sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa
+sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa
+sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa
+sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa
+hello
+select mail
+sql -q "SELECT * FROM adeptx_user_message" -fa
+sql -q "SELECT * FROM adeptx_user_message" -fa
+sql -q "SELECT * FROM adeptx_user_message" -fa
+sql -q "SELECT * FROM adeptx_user_message" -fa
+hello
+select mail
+sql -q "SELECT * FROM adeptx_user_message" -fa
+sql -query "SELECT * FROM adeptx_user_message" -fetch-assoc
+sql -query "SELECT * FROM adeptx_user_message" -fetch-assoc 1
+sql -query "SELECT * FROM adeptx_user_message" -fetch-assoc
+hello
+select mail
+hello
+select mail
+epigraph 1
+epigraph 1
+epigraph 2
+epigraph 50
+epigraph 60
+epigraph 60
+epigraph 60
+epigraph 60
+epigraph 2
+select mail
+hello
+select mail
+hello
+select mail
+hello
+eval sleep(2); echo 111;
+eval sleep(2); echo 111;
+hello
+select mail
+eval sleep(2); echo 23;
+eval sleep(2); echo 23;
+eval sleep(2); echo 23;
+eval sleep(2); echo 23;
+hello
+select mail
+eval sleep(2); echo 123;
+eval sleep(2); echo 123;
+eval sleep(2); echo 123;
+eval sleep(2); echo 123;
+eval sleep(5); echo 123;
+eval sleep(5); echo 123;
+eval sleep(15); echo 123;
+eval sleep(15); echo 123;
+hello
+select mail
+eval sleep(3); echo 123;
+eval sleep(3); echo 123;
+hello
+select mail
+eval sleep(2);
+hello
+select mail
+eval sleep(2);
+hello
+select mail
+eval sleep(2);
+hello
+select mail
+eval sleep(3);
+hello
+select mail
+eval sleep(3)
+eval sleep(7)
+hello
+select mail
+eval sleep(7);
+hello
+select mail
+eval sleep(5); echo 1234;
+eval sleep(5); echo 1234;
+eval sleep(2); echo 1234;
+eval sleep(2); echo 1234;
+eval sleep(1); echo 1234;
+eval sleep(1); echo 1234;
+eval sleep(1); echo 1234;
+eval sleep(1); echo 1234;
+eval sleep(20); echo 1234;
+eval sleep(20); echo 1234;
+hello
+select mail
+hello
+select mail
+eval sleep(5);
+eval sleep(5);
+hello
+select mail
+hello
+select mail
+eval sleep(5);
+hello
+select mail
+eval sleep(2)
+eval sleep(2)
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+get my status
+hello
+select mail
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+hello
+select mail
+select mail
+hello
+hello
+select mail
+hello
+select mail
+hello
+select mail
+select mail
+hello
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+select mail
+hello
+hello
+select mail
+hello
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail
+cloud calc
+cloud calc
+hello
+select mail
+cloud calc
+hello
+select mail
+cloud calc
+hello
+select mail
+hello
+select mail
+cloud calc
+hello
+select mail
+cloud calc
+cloud calc
+hello
+select mail
+cloud calc
+cloud calc
+cloud calc
+hello
+select mail
+cloud calc
+hello
+select mail
+cloud calc
+cloud calc
+cloud calc
+hello
+select mail
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+hello
+select mail
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+hello
+select mail
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+kill 3
+hello
+select mail
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+cloud calc
+kill 1
+kill 4
+kill 5
+kill 10
+kill 8
+cloud calc
+hello
+select mail
+get my status
+hello
+select mail
+hello
+select mail
+exit
+select mail
+hello
+select mail
+hello
+select mail
+select mail
+hello
+select mail
+hello
+select mail
+hello
+select mail

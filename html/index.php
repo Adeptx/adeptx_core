@@ -80,11 +80,13 @@
 			// 	?-></header><?
 			// }
 			// elseif ($page['header']['globality'] == 'local') {
+			if (isset($GLOBALS['site']['path']['header'])) {
 				?><header><?include_once $GLOBALS['site']['path']['header'];?></header><?
+			}
 			// }
 		?>
 		<main id="container">
-			<?include_once $GLOBALS['site']['path']['index'];?>
+			<? include_once $GLOBALS['site']['path']['index'];?>
 		</main>
 		<?
 			// if ($page['footer']['globality'] == 'global') {
@@ -93,14 +95,16 @@
 			// 	?-></footer><?
 			// }
 			// elseif($page['footer']['globality'] == 'local') {
+			if (isset($GLOBALS['site']['path']['footer'])) {
 				?><footer><?include_once $GLOBALS['site']['path']['footer'];?></footer><?
+			}
 			// }
 		?>
 
 		<? if (!empty($page['system-message'])) { ?>
 			<div class="system-message"></div>
 		<? } ?>
-		<? if (!empty($page['cmd'])) { ?>
+		<? /* if (!empty($page['cmd'])) { */ ?>
 			<aside id="cmd">
 				<div id="<?=$ajax['id']['cmd']['answer']?>"></div>
 				<div id="cmd-line">
@@ -109,7 +113,7 @@
 					<div class="float-right">&times;</div>
 				</div>
 			</aside>
-		<? } ?>
+		<? /* } */ ?>
 		<? if (!empty($page['system-taskbar'])) { /* для того, чтобы панель быва всегда сверху я поместил её в конец*/ ?>
 			<div id="taskbar" class="auth-service">
 				<nav><? /*foreach($page['nav'] as list($href, $title, $inner)) { ?><a href="<?=$href?>" class="<?=$href?>" title="<?=$title?>"><?=$inner?></a><? }*/ ?></nav>

@@ -5,9 +5,9 @@
 	return cat($argv, $argc);
 
 	function cat($argv, $argc) {
-		if ($_SESSION['status'] == 'ghost') {
-			throw new Exception('Эта операция доступна только авторизованным пользователям', 403);
-		}
+		// if ($_SESSION['status'] == 'ghost') {
+		// 	throw new Exception('Эта операция доступна только авторизованным пользователям', 403);
+		// }
 		if ($argc < 1) {
 			throw new Exception('Указано слишком мало аргументов', 1007);
 		}
@@ -23,6 +23,7 @@
 		# 
 		# if ($arg[0] == 'cat') ...
 		# в общем если из командной строки вызов, а не из другого скрипта, то
-		# echo $file = htmlentities($file);
+		$file = htmlentities($file);
+		// echo $file;
 		return "$real_file:<br> $file";
 	}

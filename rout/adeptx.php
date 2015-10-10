@@ -23,13 +23,19 @@ switch($page['url']) {
 			$page['alias'] = 'home';
 			$page['path'] = $fold['templates'] . $site['alias'] . '/' . $page['alias'] . $site['extensions'];
 		break;
+	case 'calc':
+			$page['title'] = "Калькулятор | Grinec.tk";
+			// $page['css'][] = "feedback/feedback.css";
+
+			$page['path'] = $fold['repository'] . '/calc' . $site['extensions'];
+		break;
 	case 'feedback':
 			$page['title'] = "Обратная связь | Grinec.tk";
 			$page['css'][] = "feedback/feedback.css";
 
 			$page['path'] = $fold['templates'] . 'feedback/feedback' . $site['extensions'];
 		break;
-	case 'elfinder':			
+	case 'elfinder':
 			$page['path'] = $_SESSION['permissions']['fm']['elfinder'] ? $fold['templates'] . 'elfinder/elfinder' . $site['extensions']:'403';
 		break;
 	case 'fm':
@@ -78,7 +84,6 @@ switch($page['url']) {
 			$page['favicon'] = 'img/16x16/ps.png';
 	
 			$page['path'] = $fold['templates'] . 'ps/ps' . $site['extensions'];
-			exit('<iframe frameborder="0" height="768" width="100%" src="http://pixlr.com/editor/"></iframe>');
 		break;
 	case 'vk':
 			$page['title'] = 'ВКонакте';
@@ -228,6 +233,11 @@ switch($page['url']) {
 		# $mysqli->query('INSERT INTO `' . $database['prefix'] . 'user` (email, hash, salt) VALUES 
 	}
 	
+	if (isset($_POST['page'])) {
+		include_once $page['path'];
+		exit;
+	}
+
 	# ajax - main controller
 	# файл ajax это главный обработчик запросов, контроллер, обрабатывающий любой запрос поступивший со страницы. запросы со страниц должны поступать в том же виде, как запросы с командной строки, в виде команд, которые необходимо выполнить, ajax перенаправит любую команду или набор команд на неоьходимые исполняемые файлы.
 

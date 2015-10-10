@@ -4,9 +4,9 @@
 	function select($argv, $argc) {
 		global $database, $db;
 
-		if ($_SESSION['status'] == 'ghost') {
-			throw new Exception('Эта операция доступна только авторизованным пользователям', 403);
-		}
+		// if ($_SESSION['status'] == 'ghost') {
+		// 	throw new Exception('Эта операция доступна только авторизованным пользователям', 403);
+		// }
 		if ($argc < 1) {
 			throw new Exception('Указано слишком мало аргументов', 1007);
 		}

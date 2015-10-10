@@ -62,6 +62,9 @@
 		foreach ($global as $var) {
 			global $$var;
 		}
+		$_SESSION['cmds_counter']++;
+
+		ob_start();
 
 		# для однострочных запросов с несколькими командами разделёнными точкой с запятой и пробелом после неё
 		# в идеале нужно пробежаться такой же функцией как это сделано чуть ниже, str_split, чтобы учесть влияние кавычек
@@ -251,6 +254,7 @@
 					catch(Exception $e) {
 						# элементарная многоязычеость ошибок: заменяем $e->getMessage() на выборку из БД по этой фразе в текущей языковой таблице
 						# как вариант ещё можно сделать двойной запрос - сначала получать значение ID для фразы на разных языках, а потом по ID найти перевод на соответствующий язык. Ну, это требует и соотв. структуры БД
+						global $db, $database;
 						$query = sprintf('SELECT `%s` FROM `%s` WHERE noconflict_hash="adeptx.cmd.exception" AND unique_key="%s" OR ru="%s" limit 1',
 							$db->escape($_SESSION['lang']),
 							$database['prefix'] . $database['table']['phrase'],
@@ -258,7 +262,9 @@
 							$db->escape($e->getMessage())
 						);
 						$db->call($query);
-						$res = $db->fetch_assoc($res);
+						if ($res) {
+							$res = $db->fetch_assoc($res);
+						}
 
 						$msg = $res[0][ $_SESSION['lang'] ];
 						if (!$msg) {
@@ -284,6 +290,17 @@
 			// 	$result .= "\n";
 			// }
 		}
+
+		$result = 	'<div id="cmd-' . $_SESSION['cmds_counter'] . '-result-output">' .
+						ob_get_contents() . $result .
+					'</div>';
+
+		# только для почты, вот эту часть категорически надо переписать (не только из-за трафика, но мы ещё и при каждом запросе смотрим "а не почтой ли интересуются", а надо чтобы нам говорили "покажите почту", а до того не шевелиться)
+		if ($_POST['cmd'] == 'select mail') {
+			$echo['#user-new-messages'] = $echo['#'.$ajax['id']['cmd']['answer']];		# так мы посылаем одни и те же данные дважды, нагружая траффик в двойной мере! нужно предпринять что-то, чтобы не дублировать данные
+		}
+		ob_end_clean();
+
 		return $result;
 	}
 
@@ -305,15 +322,36 @@
 	}
 
 	if (isset($_POST['cmd'])) {
-		ob_start();
-		$echo['#'.$ajax['id']['cmd']['answer']] = run($_POST['cmd']);
-		$echo['#'.$ajax['id']['cmd']['answer']] = ob_get_contents() . $echo['#'.$ajax['id']['cmd']['answer']];
-
 		# только для почты, вот эту часть категорически надо переписать (не только из-за трафика, но мы ещё и при каждом запросе смотрим "а не почтой ли интересуются", а надо чтобы нам говорили "покажите почту", а до того не шевелиться)
-		if ($_POST['cmd'] == 'select mail') {
-			$echo['#user-new-messages'] = $echo['#'.$ajax['id']['cmd']['answer']];		# так мы посылаем одни и те же данные дважды, нагружая траффик в двойной мере! нужно предпринять что-то, чтобы не дублировать данные
+		// if ($_POST['cmd'] == 'select mail') {
+		// 	$echo['#user-new-messages'] = $echo['#'.$ajax['id']['cmd']['answer']];		# так мы посылаем одни и те же данные дважды, нагружая траффик в двойной мере! нужно предпринять что-то, чтобы не дублировать данные
+		// }
+		// ob_end_clean();
+		# перед тем как вывести html-код было бы очень здорово предварительно пропарсить его на наличие, например, блоков со стилями, в этих блоках всем селекторам добавить предваряющий элемент #cmd-123-result-output, а сам выводимый код каждой отдельно взятой команды заключать в блок с уникальным id. изолировать стили в общем, понимаете ли
+		$echo['#'.$ajax['id']['cmd']['answer']] = run($_POST['cmd']);
+
+
+		preg_match_all('!<style.*>(.*)</style>!Us', $echo['#'.$ajax['id']['cmd']['answer']], $style_blocks);
+
+		foreach($style_blocks[1] as $j=>$style_block) {
+			preg_match_all('!.*\{.*\}!Us', $style_block, $selectors);
+
+			foreach($selectors[0] as $i => $selector) {
+				$selectors[0][$i] = '#cmd-' . $_SESSION['cmds_counter'] . '-result-output ' . trim($selector);
+			}
+			$new_style_block = implode($selectors[0]);
+			# просто сбрасываем наследуемые от темы значения...
+			$new_style_blocks[$j] = '#cmd-' . $_SESSION['cmds_counter'] . '-result-output{color:#000}' . $new_style_block;
+			// $echo['#'.$ajax['id']['cmd']['answer']] .= $new_style_block;
 		}
-		ob_end_clean();
+
+		# надо продумать момент с выводом значений разных форматов, мол, если вернулся массив - вывести все значения из массива или что-то в этом духе
+		
+		$echo['#'.$ajax['id']['cmd']['answer']] = str_replace($style_blocks[1], $new_style_blocks, $echo['#'.$ajax['id']['cmd']['answer']]);
+		// preg_replace('!<style.*>(.*\{.*\})*</style>!Us', '#cmd-' . $_SESSION['cmds_counter'] . '-result-output ' . trim('\\2'), $echo['#'.$ajax['id']['cmd']['answer']]);
+
+		// $echo['#'.$ajax['id']['cmd']['answer']] .= $style_block;
+
 		exit(JSON_encode($echo));
 	}
 

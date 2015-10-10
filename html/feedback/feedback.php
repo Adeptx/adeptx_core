@@ -1,7 +1,8 @@
 <?
 	# ! В этом файле проверяется $_POST и если есть инфа и она корректна, отправляет письмо на указанный почтовый ящик
 	if (!empty($_POST)) {
-		include_once 'html/mail/adeptx_feedback_mail.php';
+		// run('mail ...');
+		// include_once 'html/mail/adeptx_feedback_mail.php';
 	}
 ?>
 

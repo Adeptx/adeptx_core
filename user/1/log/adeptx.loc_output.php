@@ -4344,4 +4344,4244 @@ to read about a specific subcommand or concept.
 Перечень всех доступных скриптов (в квадратных скобках указываются необязательные параметры):
 
 <table class="help_table"><tbody valign="top"><tr style="color:green"><td><b>Имя&nbsp;скрипта</b></td><td><b>Параметры</b></td><td><b>Краткое&nbsp;описание</b></td></tr><tr><td>about</td><td>[$command]</td><td>Посмотреть справку по конкретному скрипту (на самом деле это псевдоним команды help)</td></tr><tr><td>add</td><td>$arg1 $arg2 $arg3 [$arg4] [$arg5] [$arg6]</td><td>Просто приведу примеры использования команды: `add hotkey "Ctrl + V" paste`, `add hotkey Ctrl+L ls`, `add alias pro about`, `add user test@test.com qwerty123`. Данная команда первая и пока единственная оснащена синтаксическим сахаром (можно ввести `add new alias "my_alias_name" for command help` или `add user alex with password qwerty321` и несколько ещё вариантов в том же духе)</td></tr><tr><td>aliases</td><td>$command</td><td>Посмотреть все возможные синонимы (алиасы) команды</td></tr><tr><td>auth</td><td>$email $pass</td><td>Авторизация в системе. Эта команда относится к командам со вводом пароля. Такие команды проводятся в два этапа: 1. Ввод команды со всеми параметрами и отправка на исполнение (Enter). 2. Ввод и отправка пароля (пароль при вводе отображаться не будет)</td></tr><tr><td>cal</td><td>[$year]</td><td>RU: Выводит календарь на $year год (по умолчанию на текущий год). EN: show calendar on YYYY year</td></tr><tr><td>cat</td><td>$file</td><td>RU: Вывести содержимое файла. Синтаксис: cat $file. EN: print $file content</td></tr><tr><td>cd</td><td>[$dir]</td><td>RU: Устанавливает $dir текущей директорией. Если $dir не указана делает текущим корневой каталог (каталог, в который установлен движок). Синтаксис: cd [$dir]. Посмотреть текущий каталог можно командой pwd. EN: go to home dir or change dir to [..|../..|-|/dir|dir/dir|~user]</td></tr><tr><td>chmod</td><td>$file $mode.</td><td>Осуществляет попытку изменения режима доступа файла $file на режим $mode. Синтаксис: chmod $file $mode.</td></tr><tr><td>copy</td><td>$file $copyname</td><td>RU: Создаёт копию файла $file с именем $copyname. Не забывайте, что второй параметр содержит не только путь, куда сохранить копию файла, но и содержит новое имя создаваемой копии! Синтаксис: copy $file $copyname. EN: copy file $from to file $to</td></tr><tr><td>create_backup</td><td></td><td>RU: Создает в папке  архив с дампом базы и файлами всего сайта (полный бекап), после создания архив отправляет на скачивание.</td></tr><tr><td>date</td><td>[$format]</td><td>RU: Выводит текущую дату, время и часовой пояс (селектором, позволяющим его изменить) в заданном формате. Синтаксис: date [$format]. EN: Show current date and time or set the $format of date</td></tr><tr><td>dump</td><td></td><td>Создание дампа текущей базы данных. Дамп создаётся в текущем каталоге. Просмотр содержимого последнего созданного дампа: `get last dump`. Создание дампа с просмотром содержимого в консоли: `get new dump`</td></tr><tr><td>epigraph</td><td>[$id]</td><td>Выводит случайную цитату или цитату с номером $id (для использования в качестве эпиграфа, но впринципе не только)</td></tr><tr><td>eval</td><td>$code</td><td>Временное решение нехватки функционала путём дыры в уязвимости - все недостающие команды можно выполнить через eval. Но при каждом применении не забывайте создать скрипт, который решает ту же задачу и тогда нехватка функционала быстро ликвидируется и можно будет не прибегать к прямому выполнени кода, достаточно будет использовать внутренне API. Подсказака: можно использовать eval также в качестве калькулятора, достаточно начать ввод с eval echo и можно писать любую математическую операцию на PHP, например: eval echo pow(398/4, 2);</td></tr><tr><td>exit</td><td></td><td>Обратный авторизации процесс, переход в режим стороннего наблюдателя (ghost-статус. Всего на сайте сейчас три статуса: ghost, staff, admin. Неавторизованные пользователи имеют статус ghost, авторизованные staff или admin, разница между которыми лишь в том, что admin может выполнять действия с профилями участников staff</td></tr><tr><td>get</td><td>$obj $info</td><td>RU: Выводит запрошенную информацию $info об объекте $obj. Синтаксис: get $obj $info. Примеры: get my nickname, get my status, get my email, get my id, get new dump, get last dump</td></tr><tr><td>group</td><td></td><td>Выполняет операции над пользовательскими группами</td></tr><tr><td>help</td><td>[$command]</td><td>Вызов этой справки</td></tr><tr><td>history</td><td></td><td>RU: Выводит историю всех введённых команд всеми пользователями. Позже будут добавлены параметры и проверки, чтобы выводить для указанного/текущего пользователя. Из списка удаляются дубли команд, пустые строки, некорректные команды записываются в отдельный лог и не выводятся здесь. Все команды сортируются и выводится первое вхождение команды, если требуется посмотреть историю без изменений, вводите cat </td></tr><tr><td>killallprocesses</td><td></td><td>RU: Собственно, название говорит само за себя: принудительно завершает все процессы.</td></tr><tr><td>lang</td><td></td><td>Указать предпочтительный язык</td></tr><tr><td>ls</td><td>[$dir]</td><td>RU: Выводит список файлов и папок в директории $dir (если не указано, то содержимое текущей директории). Синтаксис: ls [$dir] EN: Show content of current dir with some $regular expression or options</td></tr><tr><td>message</td><td>$user $subject $message</td><td>RU: Отправляет письмо пользователю $user с темой $subject. Синтаксис: message $user $subject $message. Отправленное письмо может быть прочитано любым ридером из репозитория. EN: send message to $user</td></tr><tr><td>names</td><td></td><td>Выводит список мужских и женских русских имён</td></tr><tr><td>permission</td><td>$user_id $key $value</td><td>Устанавливает параметр доступа $key в значение $value для пользователя с ID $user_id</td></tr><tr><td>pwd</td><td></td><td>RU: Выводит текущий каталог. EN: present working directory.</td></tr><tr><td>reg</td><td>$email $pass [$nickname]</td><td>Регистрация нового пользователя, некорректная запись email воспринимается как nickname, при этом символ @ вырезается, если он был включен. Эта команда относится к командам со вводом пароля, см. `about auth`</td></tr><tr><td>rename</td><td>$oldname $newname</td><td>RU: Пытается переименовать файл или директорию $oldname в $newname, переместив в конечную директорию, если необходимо. Если $newname существует, то он будет перезаписан. Синтаксис: rename $oldname $newname. EN: rename $oldname to $newname</td></tr><tr><td>select</td><td>mail</td><td>RU: Команда для получения данных из БД. На данный момент полный функционал не реализован, стоит плашка select mail для выборки LIMIT 50 последних непрочитанных писем.</td></tr><tr><td>source</td><td>$command</td><td>Выводит исходный код исполняемого файла программы</td></tr><tr><td>tail</td><td>$n $file</td><td>RU: Выводит $n последних строк файла $file. Синтаксис: tail $n $file. show $n last lines of $file.</td></tr><tr><td>tree</td><td>[$dir]</td><td>RU: Выводит дерево файлов и каталогов в директории $dir. Синтаксис: tree [$dir]. EN: show files tree from /</td></tr><tr><td>unreg</td><td>$email $pass [$nickname]</td><td>Удалить свою учётную запись пользователя, требуется указать свой пароль также как и при регистрации/авторизации. Польностью удаляет все данные пользователя из системы</td></tr><tr><td>unzip</td><td>$source_archive $destination_path [$file1 $file2 $fileN]</td><td>RU: Распаковывает содержимое архива pwd().$zip_archive.zip в директорию pwd().$destination (по умолчанию текущая директория). Если указаны дополнительные параметры $file1, $file2..$fileN то распакует только перечисленные файлы.</td></tr><tr><td>user</td><td>$user_id $act $param</td><td>Выполняет действие $act с пользователем $user_id. Позволяет выполнить блокировку пользователей, удалять пользователей, менять их профили и т.п.</td></tr><tr><td>zip</td><td>$source_path $destination_path</td><td>RU: Создает в произвольной директории архив из заданного файла или директории, после создания архив отправляет на скачивание. Известный баг: архив создается корректно из файла, но из папки создаётся пустой архив.</td></tr></tbody></table>
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>dump<hr>
+
+Дамп _2015-10-05_03-41-20.sql успешно создан в папку дампов и бекапов "sql/". Просмотр содержимого: `get last dump`. Создание дампа с просмотром осуществляется командой get mysql dump.
+
+<hr>dump<hr>
+
+Дамп _2015-10-05_03-44-17.sql успешно создан в папку дампов и бекапов "sql/". Просмотр содержимого: `get last dump`. Создание дампа с просмотром осуществляется командой get mysql dump.
+
+<hr>get last dump<hr>
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- 
+-- Table structure for table `adeptx_epigraph` 
+-- 
+
+DROP TABLE IF EXISTS `adeptx_epigraph`;
+CREATE TABLE `adeptx_epigraph` (
+`id` int(15) NOT NULL auto_increment,
+`epigraph` varchar(255) NOT NULL,
+`utter` varchar(255),
+`footnote` varchar(255),
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=66;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `adeptx_session` 
+-- 
+
+DROP TABLE IF EXISTS `adeptx_session`;
+CREATE TABLE `adeptx_session` (
+`id` bigint(255) NOT NULL auto_increment,
+`user_id` bigint(255) NOT NULL,
+`line_desc` varchar(255) NOT NULL,
+`line_value` varchar(255) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `adeptx_user` 
+-- 
+
+DROP TABLE IF EXISTS `adeptx_user`;
+CREATE TABLE `adeptx_user` (
+`id` bigint(255) NOT NULL auto_increment,
+`nickname` varchar(255) NOT NULL,
+`email` varchar(255) NOT NULL,
+`hash` varchar(255) NOT NULL,
+`salt` varchar(255) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=32;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `adeptx_user_message` 
+-- 
+
+DROP TABLE IF EXISTS `adeptx_user_message`;
+CREATE TABLE `adeptx_user_message` (
+`id` int(15) NOT NULL auto_increment,
+`to_uid` int(9) NOT NULL,
+`subject` varchar(255) NOT NULL,
+`message` text,
+`from_uid` int(9) NOT NULL,
+`sender_ip` varchar(255),
+`date_sent` timestamp DEFAULT '2015-09-25 19:14:43' NOT NULL,
+`was_read` tinyint(1),
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=8;
+
+-- --------------------------------------------------------
+
+-- 
+-- Dumping data for table `adeptx_epigraph` 
+-- 
+
+INSERT INTO `adeptx_epigraph` (`id`, `epigraph`, `utter`, `footnote`) VALUES ('1','Машины должны работать. Люди должны думать.','Лозунг IBM',''),
+ ('2','Почта должна доставляться вовремя.','Из причины запрета на учебник математики в РФ',''),
+ ('3','Вам были даны другие качества.\nВы тот, кто не может сыграть то, чего на самом деле не чувствует.','Мария Герасимова',''),
+ ('4','Вы вызываете у меня искреннюю улыбку...\nВ этом есть романтика нашего времени, Вы не находите?','Мария Герасимова',''),
+ ('5','Smile! Why? Becouse you can.','',''),
+ ('6','Никогда не заставляйте родителей сомневаться в однажды принятом решении.','',''),
+ ('7','Тот, кто лишен чувства юмора, может быть абсолютно свободен и ничего не бояться, так как самое страшное с ним уже произошло.','',''),
+ ('8','Фразы бесподобны, только они вторичны. Мой дорогой человек, я желаю Вам меньше думать о том, как произвести впечатление, Вы — стоящее доказательство всему вышесказанному.','Мария Герасимова',''),
+ ('9','Не принимай подачки, а бьют — давай сдачи.','Мария Малиновская aka Mizz Paper',''),
+ ('10','Никогда не благодарите за искренность.','Мария Герасимова',''),
+ ('11','Вы слишком интересны и идеальны, будто искусственные.','Мария Герасимова',''),
+ ('12','Если не любите рисковать, не начинайте свое дело. Наймитесь к тем людям, которые рисковать готовы.','<a href="http://habrahabr.ru/company/yandex/blog/208886/#comment_7198828">Ксения Елкина</a>',''),
+ ('13','Каждый охотник знать желает, где фазаны обитают.','Не помогло',''),
+ ('14','Мы все притворщики.\nКто-то маски носит лучше, кто-то - хуже.','Мария Герасимова',''),
+ ('15','Дисциплина — это не ограничение свободы.\nЭто отсечение всего лишнего.','Брюс Ли',''),
+ ('16','Оболочка не важна, никогда.','Яна Толмачева',''),
+ ('17','Слова пусты, но суть велика и значительна.','Мария Малиновская',''),
+ ('18','Хочешь популярности — научись удивлять, хочешь познать — умей удивляться.','',''),
+ ('19','Не все парни забывают.','Виталий Омельченко',''),
+ ('20','Успешные люди меняются сами, остальных меняет жизнь.','Джим Рон',''),
+ ('21','никогда свобода суицид','Марти Кан',''),
+ ('22','If all objects and people in daily life were equipped with identifiers,\nthey could be managed and inventoried by computers','Концепция IoT',''),
+ ('23','Раз все объекты и люди в быту оснащены идентификаторами,\nих можно регулировать и инвентаризовать компьютерами.','Концепция «Интернета вещей»',''),
+ ('24','Если не можешь простить, вспомни, сколько прощено тебе.','',''),
+ ('25','Если вы до сих пор не поняли, чем мы занимаемся, значит мы хорошо справляемся.','',''),
+ ('26','Наши любимые игры: Business, Development, Sales & Marketing.','',''),
+ ('27','Вся проблема современной системы образования в том, что учителя преимущественно женщины, при том, что парни и девушки учатся вместе.','',''),
+ ('28','Любящий многих — познает женщин.\nЛюбящий одну — познает любовь.','',''),
+ ('29','Когда молчание вдвоем не напрягает, ты понимаешь, что нашел кого-то особенного.','',''),
+ ('30','Богатство — это состояние ума.','',''),
+ ('31','Все так бояться остаться никем в этой жизни, что становятся кем попало.','',''),
+ ('32','Люди действительно готовы продать все, если цена их устроит.','Чак Паланик',''),
+ ('33','Там, где все горбаты, стройность становится уродством.','Оноре де Бальзак',''),
+ ('34','Неважно сколько у вас ресурсов. Если вы не умеете их правильно использовать, их никогда не будет достаточно.','Анна Бурхович',''),
+ ('35','Нельзя приходить и уходить, когда вздумается.\nНельзя просто оставлять человека на улице в дождь, а на следующее утро ждать, что он бросится к тебе на шею.','',''),
+ ('36','Если вы думаете, что сможете — вы сможете,\nесли думаете, что нет — вы правы.','Мао Цзэдун',''),
+ ('37','Если вы думаете, что вы способны на что-то, вы правы, если вы думаете, что у вас не получится что-то, вы тоже правы.','Генри Форд',''),
+ ('38','Пройдёмте в сад?\nЯ покажу Вас розам...','Ричард Шеридан',''),
+ ('39','Да не о том думай, что спросили, а о том, для чего?\nДогадаешься, для чего, тогда и поймешь, как надо ответить.','Максим Горький',''),
+ ('40','Будьте добрее, когда это возможно.\nА это возможно всегда.','',''),
+ ('41','Практикуйте хаотичное добро!','Антон Громов',''),
+ ('42','Будьте добрее, а то как лохи.','Даша Солнцева',''),
+ ('43','Жизнь пролетает моментально,\nА мы живем, как будто пишем черновик,<br>Не понимая в суете скандальной,\nЧто наша жизнь — всего лишь только миг.','',''),
+ ('44','Неуверенность разрушила столько возможностей.','Эрих Мария Ремарк',''),
+ ('45','Вчера я бежал запломбировать зуб\nИ смех меня брал на бегу:\nВсю жизнь я таскаю свой будущий труп\nИ рьяно его берегу.','Губерман',''),
+ ('46','Лучшее что нам доступно, это самопознание.','',''),
+ ('47','Спрашивать: «Кто должен быть боссом?» — всё равно, что спрашивать: «Кто должен быть тенором в этом квартете?». Конечно тот, кто может петь тенором.','Генри Форд',''),
+ ('48','Боссами становятся те, кто может быть боссом.','',''),
+ ('49','Гимнастика — это полная чушь. Здоровым она не нужна, а больным противопоказана.','Генри Форд',''),
+ ('50','Когда я не могу управлять событиями, я представляю им самим управлять собой.','Генри Форд',''),
+ ('51','Думать — самая трудная работа; вот, вероятно, почему этим занимаются, столь не многие.','Генри Форд',''),
+ ('52','Я не знаю какой результат принесёт мне реклама, но даже если я заработаю доллар — я вложу его в рекламу.','Генри Форд',''),
+ ('53','Я никогда не говорю: «Мне нужно, чтоб вы это сделали». Я говорю: «Мне интересно, сумеете ли вы это сделать».','Генри Форд',''),
+ ('54','Когда кажется, что весь мир настроен против тебя, помни, что самолёт взлетает против ветра.','Генри Форд',''),
+ ('55','Nothing is particularly hard if you divide it into small jobs.','Генри Форд',''),
+ ('56','Время не любит, когда его тратят впустую.','Генри Форд',''),
+ ('57','Всё можно сделать лучше, чем делалось до сих пор.','Генри Форд',''),
+ ('58','Если бы я спросил людей, чего они хотят, они бы попросили более быструю лошадь.','Генри Форд',''),
+ ('59','Если у тебя есть энтузиазм, ты можешь совершить всё, что угодно. Энтузиазм — это основа любого прогресса.','Генри Форд',''),
+ ('60','Женщина — это не только вагон удовольствий, но и три, а то и четыре тонны проблем.','Генри Форд',''),
+ ('61','Более одаренные люди ведут общество вперед, облегчая остальным условия жизни.','Генри Форд',''),
+ ('62','Успешные люди вырываются вперёд, используя то время которое остальные используют в пустую.','Генри Форд',''),
+ ('63','Гораздо больше людей сдавшихся, чем побежденных.','Генри Форд',''),
+ ('64','Мой секрет успеха заключается в умении понять точку зрения другого человека и смотреть на вещи и с его и со своей точек зрения.','Генри Форд',''),
+ ('65','Когда часто выходишь за зону комфорта, становится скучно, а спастись от скуки ещё сложнее, чем почувствовать себя свободным','Евгения Матросова','');
+
+-- --------------------------------------------------------
+
+-- 
+-- Dumping data for table `adeptx_session` 
+-- 
+
+INSERT INTO `adeptx_session` (`id`, `user_id`, `line_desc`, `line_value`) VALUES ('1','1','cloud','fm'),
+ ('2','2','cloud','diff');
+
+-- --------------------------------------------------------
+
+-- 
+-- Dumping data for table `adeptx_user` 
+-- 
+
+INSERT INTO `adeptx_user` (`id`, `nickname`, `email`, `hash`, `salt`) VALUES ('1','x-positive','e.grinec@gmail.com','6ab39c41030d3888846c4ecb11375bb3ad7138f7879ac19f2f9e192f7614cf1523f1b3ac951eea304b09d911d3797f32','5024467d5acfd9d9d3592340ee2800cf'),
+ ('2','gcorp','gcorp.gcorp@gmail.com','0359ac6aa8df54fe9dad42ef88a5134e5d2389e4339cdc91330de5f6bdf24e8f1c2081763a03d00838c1aa16f18db61e','0cc27475046ec987dfc168c0669b6323'),
+ ('30','test','','74be16979710d4c4e7c6647856088456098f6bcd4621d373cade4e832627b4f6ad9402f64107cd7857359e6849622ce2','d41d8cd98f00b204e9800998ecf8427e'),
+ ('31','','ts@ts.ts','68573ec824e9776f703711b20ed25c8f6120ebabcd02e35082049723d85f6a08dc3e3bfae317af2346b20a4fb086cf48','284e699af555e280e7e2c9ed3578e575');
+
+-- --------------------------------------------------------
+
+-- 
+-- Dumping data for table `adeptx_user_message` 
+-- 
+
+INSERT INTO `adeptx_user_message` (`id`, `to_uid`, `subject`, `message`, `from_uid`, `sender_ip`, `date_sent`, `was_read`) VALUES ('1','2','Тест 1','Тестовое сообщение 1','1','127.0.0.1','2009-09-09 22:22:22','1'),
+ ('2','2','Тест 2','Тестовое сообщение 2 (непрочитанное сообщение. первое прочитано)','1','127.0.0.1','2015-09-10 22:29:10','0'),
+ ('3','1','Simple 1','Пример прочитанного сообщения','2','127.0.0.1','2015-09-10 22:42:10','1'),
+ ('4','0','Тестовое сообщение','Так будут выглядеть ваши новые непрочитанные сообщения когда вы зарегистрируетесь.<br>Это лишь один из многих мессенджеров, вы можете подключать любой мессенджер, в том числе писать свой собственный. <br>Как следствие темы оформления могут быть любыми, как и настройки считывания сообщений.','2','127.0.0.1','2015-09-10 23:41:11','0'),
+ ('5','1','Simple 2','Simple letter 2','2','127.0.0.1','2015-09-10 23:44:11','0'),
+ ('6','1','Simple 3','Simple letter 3','0','127.0.0.1','2015-09-10 23:49:11','0'),
+ ('7','1','Simple 4','Simple letter 3','0','127.0.0.1','2015-09-10 23:50:11','0');
+
+-- --------------------------------------------------------
+
+SET FOREIGN_KEY_CHECKS = 1;
+
+
+<hr>dump<hr>
+
+Дамп _2015-10-05_03-44-59.sql успешно создан в папку дампов и бекапов "sql/". Просмотр содержимого: `get last dump`. Создание дампа с просмотром осуществляется командой get mysql dump.
+
+<hr>dump<hr>
+
+Дамп _2015-10-05_03-46-34.sql успешно создан в папку дампов и бекапов "sql/". Просмотр содержимого: `get last dump`. Создание дампа с просмотром осуществляется командой get mysql dump.
+
+<hr>dump<hr>
+
+Дамп _2015-10-05_03-47-02.sql успешно создан в папку дампов и бекапов "sql/". Просмотр содержимого: `get last dump`. Создание дампа с просмотром осуществляется командой get mysql dump.
+
+<hr>echo 123<hr>
+
+
+<hr>phpinfo<hr>
+
+
+<hr>php_info<hr>
+
+1
+<hr>php_info<hr>
+
+1
+<hr>php_info<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>php_info<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>php_info<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>linux ls<hr>
+
+README.md
+ajax
+class
+cmd
+conf
+css
+db
+extra
+font
+handler
+html
+img
+index-2.php
+index.php
+index.php~
+js
+lang
+log
+repo
+robots.txt
+rout
+setup
+sftp-config.json
+sql
+temp
+theme
+user
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>php 123<hr>
+
+
+<hr>php echo 123<hr>
+
+
+<hr>php echo 14/2<hr>
+
+
+<hr>linux php<hr>
+
+
+<hr>linux php 123<hr>
+
+Could not open input file: 123
+
+<hr>linux ls<hr>
+
+README.md
+ajax
+class
+cmd
+conf
+css
+db
+extra
+font
+handler
+html
+img
+index-2.php
+index.php
+index.php~
+js
+lang
+log
+repo
+robots.txt
+rout
+setup
+sftp-config.json
+sql
+temp
+theme
+user
+
+<hr>linux cd user/1<hr>
+
+
+<hr>linux pwd<hr>
+
+/home/x-positive/srv/adeptx
+
+<hr>linux cd user<hr>
+
+
+<hr>linux pwd<hr>
+
+/home/x-positive/srv/adeptx
+
+<hr>linux touch test.php<hr>
+
+
+<hr>linux cat test.php<hr>
+
+
+<hr>linux ls<hr>
+
+README.md
+ajax
+class
+cmd
+conf
+css
+db
+extra
+font
+handler
+html
+img
+index-2.php
+index.php
+index.php~
+js
+lang
+log
+repo
+robots.txt
+rout
+setup
+sftp-config.json
+sql
+temp
+test.php
+theme
+user
+
+<hr>linux nano test.php<hr>
+
+
+<hr>ls<hr>
+
+Содержимое текущей директории:
+
+./README.md
+./ajax/
+./class/
+./cmd/
+./conf/
+./css/
+./db/
+./extra/
+./font/
+./handler/
+./html/
+./img/
+./index-2.php
+./index.php
+./index.php~
+./js/
+./lang/
+./log/
+./repo/
+./robots.txt
+./rout/
+./setup/
+./sftp-config.json
+./sql/
+./temp/
+./test.php
+./theme/
+./user/
+
+<hr>ls<hr>
+
+Содержимое текущей директории:
+
+./README.md
+./ajax/
+./class/
+./cmd/
+./conf/
+./css/
+./db/
+./extra/
+./font/
+./handler/
+./html/
+./img/
+./index-2.php
+./index.php
+./index.php~
+./js/
+./lang/
+./log/
+./repo/
+./robots.txt
+./rout/
+./setup/
+./sftp-config.json
+./sql/
+./temp/
+./test.php
+./theme/
+./user/
+
+<hr>ls<hr>
+
+Содержимое текущей директории:
+
+./README.md
+./ajax/
+./class/
+./cmd/
+./conf/
+./css/
+./db/
+./extra/
+./font/
+./handler/
+./html/
+./img/
+./index-2.php
+./index.php
+./index.php~
+./js/
+./lang/
+./log/
+./repo/
+./robots.txt
+./rout/
+./setup/
+./sftp-config.json
+./sql/
+./temp/
+./test.php
+./theme/
+./user/
+
+<hr>ls<hr>
+
+Содержимое текущей директории:
+
+./README.md
+./ajax/
+./class/
+./cmd/
+./conf/
+./css/
+./db/
+./extra/
+./font/
+./handler/
+./html/
+./img/
+./index-2.php
+./index.php
+./index.php~
+./js/
+./lang/
+./log/
+./repo/
+./robots.txt
+./rout/
+./setup/
+./sftp-config.json
+./sql/
+./temp/
+./test.php
+./theme/
+./user/
+
+<hr>ls<hr>
+
+Содержимое текущей директории:
+
+./README.md
+./ajax/
+./class/
+./cmd/
+./conf/
+./css/
+./db/
+./extra/
+./font/
+./handler/
+./html/
+./img/
+./index-2.php
+./index.php
+./index.php~
+./js/
+./lang/
+./log/
+./repo/
+./robots.txt
+./rout/
+./setup/
+./sftp-config.json
+./sql/
+./temp/
+./test.php
+./theme/
+./user/
+
+<hr>sql SELECT * FROM adeptx_user_messages<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql SELECT * FROM `adeptx_user_messages`<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql "SELECT * FROM `adeptx_user_messages`"<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql "SELECT * FROM `adeptx_user_message`"<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql "SELECT * FROM `adeptx_user_message`" -v -a<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql "SELECT * FROM `adeptx_user_message`" -v -f<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql "SELECT * FROM `adeptx_user_message`" -f<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message`" -f<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message`" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message`" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message`" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql "SELECT * FROM `adeptx_user_message`" -f<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message`" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM `adeptx_user_message` WHERE id=0" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>sql -q "SELECT * FROM adeptx_user_message" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM adeptx_user_message" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM adeptx_user_message" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -q "SELECT * FROM adeptx_user_message" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>sql -q "SELECT * FROM adeptx_user_message" -fa<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -query "SELECT * FROM adeptx_user_message" -fetch-assoc<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -query "SELECT * FROM adeptx_user_message" -fetch-assoc 1<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>sql -query "SELECT * FROM adeptx_user_message" -fetch-assoc<hr>
+
+
+=== КОНЕЦ РЕЗУЛЬТАТОВ SQL ЗАПРОСА ===
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>epigraph 1<hr>
+
+Машины должны работать. Люди должны думать.
+<hr>epigraph 1<hr>
+
+Машины должны работать. Люди должны думать.
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>eval sleep(2); echo 111;<hr>
+
+
+<hr>eval sleep(2); echo 111;<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(2); echo 23;<hr>
+
+
+<hr>eval sleep(2); echo 23;<hr>
+
+
+<hr>eval sleep(2); echo 23;<hr>
+
+
+<hr>eval sleep(2); echo 23;<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(2); echo 123;<hr>
+
+
+<hr>eval sleep(2); echo 123;<hr>
+
+
+<hr>eval sleep(2); echo 123;<hr>
+
+
+<hr>eval sleep(2); echo 123;<hr>
+
+
+<hr>eval sleep(5); echo 123;<hr>
+
+
+<hr>eval sleep(5); echo 123;<hr>
+
+
+<hr>eval sleep(15); echo 123;<hr>
+
+
+<hr>eval sleep(15); echo 123;<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(3); echo 123;<hr>
+
+
+<hr>eval sleep(3); echo 123;<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(2);<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(2);<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(2);<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(3);<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(3)<hr>
+
+
+<hr>eval sleep(7)<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(7);<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(5); echo 1234;<hr>
+
+
+<hr>eval sleep(5); echo 1234;<hr>
+
+
+<hr>eval sleep(2); echo 1234;<hr>
+
+
+<hr>eval sleep(2); echo 1234;<hr>
+
+
+<hr>eval sleep(1); echo 1234;<hr>
+
+
+<hr>eval sleep(1); echo 1234;<hr>
+
+
+<hr>eval sleep(1); echo 1234;<hr>
+
+
+<hr>eval sleep(1); echo 1234;<hr>
+
+
+<hr>eval sleep(20); echo 1234;<hr>
+
+
+<hr>eval sleep(20); echo 1234;<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(5);<hr>
+
+
+<hr>eval sleep(5);<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(5);<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>eval sleep(2)<hr>
+
+
+<hr>eval sleep(2)<hr>
+
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
+<hr>hello<hr>
+
+Добро пожаловать в Adeptx Driver, x-positive!
+
+<hr>select mail<hr>
+
+Последние непрочитанные сообщения (LIMIT 50):
+
+Отправитель: #2 $from_nickname ($from_email)
+Тема: Simple 2
+Сообщение: Simple letter 2
+Дата: 2015-09-10 23:44:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 3
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:49:11
+
+Отправитель: #0 $from_nickname ($from_email)
+Тема: Simple 4
+Сообщение: Simple letter 3
+Дата: 2015-09-10 23:50:11
+
 <hr>

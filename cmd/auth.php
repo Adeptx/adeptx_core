@@ -37,7 +37,7 @@
 			$nickname = $login;
 		}
 		$query = sprintf('SELECT * FROM `%s` WHERE email="%s" OR nickname="%s" limit 1',
-			$database['prefix']. 'user',
+			$database['prefix'] . $database['table']['user'],
 			$db->escape($email),
 			$db->escape($nickname)
 		);
@@ -83,7 +83,7 @@
 		}
 		$_SESSION['id'] = $id;
 		if (empty($id)) {
-			echo 'Для вашего профиля не заполнен nickname, при необходимости вы сможете заполнить его командой set my nickname';
+			echo 'Для вашего профиля не заполнен nickname, при необходимости вы сможете заполнить его командой set my nickname $newnickname';
 		}
 		$_SESSION['nickname'] = $nickname;
 		$_SESSION['email'] = $email;
