@@ -43,7 +43,7 @@ function context(e){
  <li class="context_line ajax plug" id="add_link">'+$Adeptx.global.dic.adeptx['create link']+'</li>\
  <li class="context_line ajax write" id="add_note">'+$Adeptx.global.dic.adeptx['create note']+'</li>\
  <li class="context_line ajax feedback" id="feedback">'+$Adeptx.global.dic.adeptx['feedback']+'</li>\
- <li class="context_line ajax cloud" id="change_bg">'+$Adeptx.global.dic.adeptx['change background']+'</li>\
+ <li class="context_line ajax_cloud" id="change_bg">'+$Adeptx.global.dic.adeptx['change background']+'</li>\
  <!--li class="context_line ajax cloud" id="clear_bg">'+$Adeptx.global.dic.adeptx['clear background']+'</li-->\
  <li class="context_line ajax java" id="clear_desktop">'+$Adeptx.global.dic.adeptx['minimalism']+'</li>\
 </ul>\
@@ -51,7 +51,7 @@ function context(e){
 	$('body').append($context_main);
 	$('#refresh').click(function(){document.location.reload();});
 	$('#add_link').click(function(){add_link(++links.count);});
-	$('#add_note').click(function(){add_note(++notes.count);});
+	$('#add_note').click(function(){note.create(++notes.count);});
 	$('#change_bg').click(function(){change_bg();});
 	$('#clear_bg').click(function(){clear_bg();});
 	$('#clear_desktop').click(function(){clear_desktop();});

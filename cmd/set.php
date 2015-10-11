@@ -79,5 +79,8 @@
 				}
 				return 'Success';
 				break;
+			case 'date':
+				$new_date = $argv[1];
+				break;
 		}
 	}

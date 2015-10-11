@@ -30,6 +30,8 @@ function update(data, options){
 	$.ajax({
 		data: data,
 		success: function (up) {
+			$('#connection-status').addClass('fa-wifi').removeClass('fa-warning');
+			
 			// systemMessage(up);
 			if (up["#user-new-messages-count"] > $('#user-new-messages-count').html()) {
 				run('select mail', 'append');
@@ -69,6 +71,8 @@ function update(data, options){
 			$('#cmd-line-input').prop({'disabled':false});
 		},
 		error: function (er) {
+			$('#connection-status').addClass('fa-warning').removeClass('fa-wifi');
+
 			systemMessage('ajax.js:error1\nОшибка отправки данных на сервер, подробности в консоли (используйте Ctrl+Enter для открытия консоли).\n' + er);
 			console.log(er.responseText);
 			append_line(er.responseText);

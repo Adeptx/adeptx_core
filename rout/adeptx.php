@@ -29,6 +29,12 @@ switch($page['url']) {
 
 			$page['path'] = $fold['repository'] . '/calc' . $site['extensions'];
 		break;
+	case 'ps':
+			$page['title'] = 'Photoeditor Online';
+			$page['favicon'] = 'img/16x16/ps.png';
+	
+			$page['path'] = $fold['repository'] . 'ps' . $site['extensions'];
+		break;
 	case 'feedback':
 			$page['title'] = "Обратная связь | Grinec.tk";
 			$page['css'][] = "feedback/feedback.css";
@@ -78,12 +84,6 @@ switch($page['url']) {
 			$page['path'] = $_SESSION['permissions']['view'][$page['url']] ? $page['dir'] . $page['url']:'403';
 	case 'tool':
 			$page['path'] = $_SESSION['permissions']['view'][$page['url']] ? $page['dir'] . 'index' : '403';
-		break;
-	case 'ps':
-			$page['title'] = 'Photoeditor Online';
-			$page['favicon'] = 'img/16x16/ps.png';
-	
-			$page['path'] = $fold['templates'] . 'ps/ps' . $site['extensions'];
 		break;
 	case 'vk':
 			$page['title'] = 'ВКонакте';

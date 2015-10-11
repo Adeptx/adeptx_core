@@ -23,6 +23,7 @@
 		# такая запись не оставляет записи в истории браузера:
 		// exit('<meta http-equiv="refresh" content="0;URL=' . $module[ $module['prefer']['file-manager'] ]['url'] . '">');
 		if (!empty($module[ $module['prefer'][ $argv[1] ] ]['url'])) {
+			// run('cloud ' . $module[ $module['prefer'][ $argv[1] ] ]['url']);
 			exit('<script>document.location.href = "http://' . $_SERVER['HTTP_HOST'] . $module[ $module['prefer'][ $argv[1] ] ]['url'] . '";</script>');
 		} else {
 			if (!empty($module[ $argv[1] ]['url'])) {

@@ -117,10 +117,19 @@
 		<? if (!empty($page['system-taskbar'])) { /* для того, чтобы панель быва всегда сверху я поместил её в конец*/ ?>
 			<div id="taskbar" class="auth-service">
 				<nav><? /*foreach($page['nav'] as list($href, $title, $inner)) { ?><a href="<?=$href?>" class="<?=$href?>" title="<?=$title?>"><?=$inner?></a><? }*/ ?></nav>
+				<div id="connection-status" class="omen fa fa-wifi"></div>
 				<div id="user-new-messages-count" class="omen user-data fa fa-envelope-o">$new_msgs</div>
-				<div id="user-new-messages" class="sweetok">
-					<img src="<?=$base['href'].$fold['images'].'loading/mail.jpg'?>">
+				<div id="user-new-messages" class="sweetok" style="background:url(<?=$base['href'].$fold['images'].'loading/mail.jpg'?>)">
 				</div>
+				<input class="datepicker" style="position: fixed; right: 0; display: none;">
+				<style>
+					.datepicker + .ui-datepicker-trigger {
+						position: fixed;
+						top: 40px;
+						right: 200px;
+						visibility: hidden;
+					}
+				</style>
 				<div class="date">$date</div>
 			</div>
 		<? } ?>

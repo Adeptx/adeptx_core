@@ -13,7 +13,7 @@ if ($drop_if_exist) {
 } else {
 	$report .= "без перезаписи текущей базы данных. Если база данных {$database['name']} уже существует, в соответствующие таблицы будет добавлена тестовая информация (если она присутствует). Возможно, вы захотите выполнить чистку тестовой информации из базы {$database['name']}, если вы не отключили запись тестовой информации ранее.";
 }
-$error->report($report, __LINE__, 'Database Information', __FILE__);
+$error->report($report, __LINE__, 'Database Information', __FILE__, 3264);
 
 $query = "SET FOREIGN_KEY_CHECKS = 0;";
 $db->call($query);

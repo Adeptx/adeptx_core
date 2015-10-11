@@ -1,1 +1,0 @@
-<iframe frameborder="0" height="768" width="100%" src="http://pixlr.com/editor/"></iframe>

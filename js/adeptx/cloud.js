@@ -15,29 +15,26 @@ function cloude_close($cid) {
 function cloud(url){
 	if (url == '/') url = '';
 	
-	$('#taskbar nav').append('<div data-pid="' + window.process + '" class="puddle ' + url + '"></div>');
+	$('#taskbar nav').append('<div data-pid="' + window.process + '" class="puddle sortable ' + url + '"></div>');
 						 
-	$('body').append('<section data-pid="' + window.process + '" class="cloud resizable"><div class="top">Adeptx ' + url + '<div class="weather close"></div><div class="weather maximize"></div><div class="weather minimize"></div></div><div class="steam"></div></section>');	// <div class="resize"></div>
+	$('body').append('<section data-pid="' + window.process + '" class="cloud draggable resizable"><div class="top">Adeptx ' + url + '<div class="weather close"><i class="fa fa-close"></i></div><div class="weather maximize"><i class="fa fa-arrows"></i></div><div class="weather minimize"><i class="fa fa-ellipsis-h"></i></div></div><div class="steam"></div></section>');	// <div class="resize"></div>
 	$cloud = $('section.cloud[data-pid="' + window.process + '"]');
 	$cloud.css({top: $('body').scrollTop() + 40 + 'px', left: $('body').scrollLeft() + 'px'});
-	
-	// $cloud.resizable();
 
-	$(function() {
-		$(".cloud").draggable();
-		$(".cloud").resizable();
-    // $( "#resizable" ).resizable();
-	});
-	
 	$.ajax({
 		type: 'post',
 		data: {page: url},
 		dataType: 'html',
 		error: function(error) {
+			$('#connection-status').addClass('fa-warning').removeClass('fa-wifi');
+			
 			systemMessage('cloud.js:error1<br>Ошибка запроса. Подробности в консоли.');
 			console.error(error);
+			// вывести иконку возле даты с уведомлением о проблеме с подключением
 		},
 		success: function(cloud) {
+			$('#connection-status').addClass('fa-wifi').removeClass('fa-warning');
+
 			// ajax - async func, you must process++ only on SUCCESS
 			$steam = $('.cloud[data-pid="' + (window.process++) + '"] .steam');
 			$steam.html(cloud);

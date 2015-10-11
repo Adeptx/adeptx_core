@@ -34,7 +34,7 @@
     	font-weight: 500;
 	}
 
-	#taskbar #<?=$ajax['id']['user']['messages']['new']?> {
+	#taskbar .omen {
 		display: inline-block;
 		min-width: 40px;
 		float: right;
@@ -201,12 +201,18 @@
 		color: #fff;
 		cursor: pointer;
 		/*background-color: #fff;*/	/* #0C6C85 */
+	    background-position: center;
+	    background-repeat: no-repeat;
 	}
 	nav a:hover, .puddle:hover {
-		background-color: transparent;
+		/*background-color: transparent;*/
+    	background-color: #9F4EAB;
+	}
+	nav a:active, .puddle:active {
+	    background-color: #6E0080;
 	}
 	.puddle.calc {
-	    background: url(/img/32x32/white/calc.png) center no-repeat;
+	    background-image: url(/img/32x32/white/calc.png);
 	}
 	
 <? foreach($bgs as $i=>$bg){ ?>

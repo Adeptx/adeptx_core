@@ -176,37 +176,35 @@ $(document).on('mousedown', function(e){
 
 
 
+$(document).on('mouseover', function(e){
+	var me = $(e.target);
 
-		$(document).on('mouseover', function(e){
-			var me = $(e.target);
+	if ( me.is('header nav a[href^="#"]') || me.is('header nav a[href^="#"] > span') ) {
+		if ( me.is('header nav a[href^="#"] > span') ) me = me.closest('a[href^="#"]');
+		var target = me.attr('href');
+		$( target ).css({display:'block'});
+		e.preventDefault();
+	}
+	else if ( me.is('.popup') ) {
+		me.css({display:'none'});
+		e.preventDefault();
+	}
+	else if ( me.is('.checkbox') ) {
+		var target = me.attr('data-name');
+		var value = me.attr('data-value');
+		switch ( value ) {
+			case 'true':
+				me.attr('data-value','false');
+				$('input[name="'+target+'"]').prop("checked", false);
+				break;
+			case 'false':
+				me.attr('data-value','true');
+				$('input[name="'+target+'"]').prop("checked",true);
+				break;
+		}
+	}
 
-			if ( me.is('header nav a[href^="#"]') || me.is('header nav a[href^="#"] > span') ) {
-				if ( me.is('header nav a[href^="#"] > span') ) me = me.closest('a[href^="#"]');
-				var target = me.attr('href');
-				$( target ).css({display:'block'});
-				e.preventDefault();
-			}
-			else if ( me.is('.popup') ) {
-				me.css({display:'none'});
-				e.preventDefault();
-			}
-			else if ( me.is('.checkbox') ) {
-				var target = me.attr('data-name');
-				var value = me.attr('data-value');
-				switch ( value ) {
-					case 'true':
-						me.attr('data-value','false');
-						$('input[name="'+target+'"]').prop("checked", false);
-						break;
-					case 'false':
-						me.attr('data-value','true');
-						$('input[name="'+target+'"]').prop("checked",true);
-						break;
-				}
-			}
-
-		});
-
+});
 
 
 
@@ -216,10 +214,18 @@ $(document).on('mousedown', function(e){
 
 
 
+$(document).on('change', function(e) {
+	var $aim = $(e.target);
+	var $darts = $aim.parents();
 
+	if ($aim.is('.datepicker')) {
+		run('set date ' + $aim.val());
+	}
+});
 
 $(document).on('click', function(e){
 	var $aim = $(e.target);
+	var $darts = $aim.parents();
 
 	if ($aim.is('#cmd-line .float-left')) {
 		run();
@@ -227,6 +233,8 @@ $(document).on('click', function(e){
 		clr_line();
 	} else if ($aim.is('.system-message')){
 		$(this).hide();
+	} else if ($aim.is('.date') || $darts.is('.date')){
+		$(".datepicker + .ui-datepicker-trigger").click();
 	}
 });
 

@@ -52,4 +52,18 @@ $(function(){
 
 	/* CLOUD.js */
 
+	// $cloud.resizable();
+
+	$(".draggable").draggable();
+	$(".resizable").resizable();
+	$(".sortable").sortable();
+
+	// $( "#resizable" ).resizable();
+	$(".datepicker").datepicker({
+		showOn: "both",
+		firstDay: 1,
+		dayNamesMin: ['В', 'П', 'В', 'С', 'Ч', 'П', 'С'],
+		monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+	});
+	// console.log($.datepicker.regional);
 });

@@ -36,7 +36,7 @@ RewriteRule ^(.*)/?$ http://grinec.tk/$1 [R=301,L]
 
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} -d
-RewriteCond $1 !^(js/(.*)\.js|img/|user/|repo/|font/.+|robots\.txt$|sitemap\.xml$|favicon\.ico$|.*\.php([\?\&]page=.*)*$) [NC]
+RewriteCond $1 !^(js/(.*)\.js|img/|user/|font/.+|robots\.txt$|sitemap\.xml$|favicon\.ico$|.*\.php([\?\&]page=.*)*$) [NC]
 RewriteRule ^(.*)$ /index.php?page=$1 [L,QSA]
 
 # now it's fail with duplicated of pages:

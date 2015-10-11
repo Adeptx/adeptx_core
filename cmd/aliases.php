@@ -16,40 +16,41 @@
 	return aliases($arg[1], ($arg[0] == 'aliases'));
 
 	function aliases($command, $direct_request) {
-		$aliases['auth']	= 'login|дщпшт|фгер|enter|вход|d[jl';
-		$aliases['reg']		= 'куп|signin|ыышптшт|регистрация|зарегистрировать|рег';
-		$aliases['unreg']	= 'hfphtubcnhbhjdfnm|разрегистрировать|гткуп';
+		$aliases['auth']		= 'login|дщпшт|фгер|enter|вход|d[jl';
+		$aliases['reg']			= 'куп|signin|ыышптшт|регистрация|зарегистрировать|рег';
+		$aliases['unreg']		= 'hfphtubcnhbhjdfnm|разрегистрировать|гткуп';
 
-		$aliases['del']		= 'drop|вуд|вкщз|дел|дроп|удал|удалить';
+		$aliases['del']			= 'drop|вуд|вкщз|дел|дроп|удал|удалить';
 		$aliases['adeptx_eval']	= 'eval|php';
-		$aliases['is']		= 'isnt';
-		$aliases['kill']	= 'stop|лшдд|ыещз|стоп|убить|остановить|закрыть|выключить';
-		$aliases['add']		= 'new|фвв|туц';
-		$aliases['names']	= 'тфьуы|имена|bvtyf';
-		$aliases['aliases']	= 'фдшфыуы|псевдонимы|синонимы|алиасы';
-		$aliases['help']	= 'about|man|info|штащ|ьфт|рудз|manual|про|о|об|?|tutorial|hotkeys|keys|reference|inquiry|enquiry|помощь|справка|руковоство|мануал|мануэль|мануил|эмануэль|исмаил|измаил|иммануил|ман|мэн|чаво|faq|факью|omg|motherofgod|godhelpme|helpme|sos|introduce';
-		$aliases['logout']	= 'exit|quit|учше|signout|sign-out|выход|ds[jl';
-		$aliases['cat']		= 'file_get_contents|content|file_content|file_get_content|содержимое|cjlth;bvjt|сфе|fopen|read|fread';
-		$aliases['open']	= 'run';
-		$aliases['fm']		= 'file-manager|файловый менеджер|фм|explorer|проводник|файлы';
-		$aliases['ace']		= 'text-editor|code-editor|code|editor';
-		$aliases['pma']		= 'phpmyadmin|пма|пхпмойадмин|пшп мой администратор|мой администратор php';
-		$aliases['cd']		= 'chdir|св|change_dir|current_dir|путь|genm';
-		$aliases['output']	= 'щгезге|усрщ|print|зкште|вывести|dsdtcnb|сказать';
-		$aliases['ls']		= 'glob|dir|scandir|ысфтвшк|ды|пдщы|файлы|пути|pathes|afqks|genb';
-		$aliases['message']	= 'msg|letter|дуееук|ьуыыфпу|ьып|сообщение|написать|cjj,otybt|yfgbcfnm';
-		$aliases['cal']		= 'calendar|календарь|rfktylfhm|сфд|сфдутвфк';
-		$aliases['calc']	= 'calculator|калькуль|калькулятор|rfkmrekznjh|rfkmrekm|rfkmr|сфдс';
-		$aliases['pwd']		= 'getcwd|пуесцв|зцв';
-		$aliases['copy']	= 'сщзн|cp|сз|ср|коп|копи|копия|копировать|копипаст|rjgbgfcn|цп';	# рус. ср [eser], англ. cp [sipi]
-		$aliases['tree']	= 'lstree';
+		$aliases['is']			= 'isnt';
+		$aliases['translate']	= 'перевести|перевод|trnslt|trans';
+		$aliases['kill']		= 'stop|лшдд|ыещз|стоп|убить|остановить|закрыть|выключить';
+		$aliases['add']			= 'new|фвв|туц';
+		$aliases['names']		= 'тфьуы|имена|bvtyf';
+		$aliases['aliases']		= 'фдшфыуы|псевдонимы|синонимы|алиасы';
+		$aliases['help']		= 'about|man|info|штащ|ьфт|рудз|manual|про|о|об|?|tutorial|hotkeys|keys|reference|inquiry|enquiry|помощь|справка|руковоство|мануал|мануэль|мануил|эмануэль|исмаил|измаил|иммануил|ман|мэн|чаво|faq|факью|omg|motherofgod|godhelpme|helpme|sos|introduce';
+		$aliases['logout']		= 'exit|quit|учше|signout|sign-out|выход|ds[jl';
+		$aliases['cat']			= 'file_get_contents|content|file_content|file_get_content|содержимое|cjlth;bvjt|сфе|fopen|read|fread';
+		$aliases['open']		= 'run';
+		$aliases['fm']			= 'file-manager|файловый менеджер|фм|explorer|проводник|файлы';
+		$aliases['ace']			= 'text-editor|code-editor|code|editor';
+		$aliases['pma']			= 'phpmyadmin|пма|пхпмойадмин|пшп мой администратор|мой администратор php';
+		$aliases['cd']			= 'chdir|св|change_dir|current_dir|путь|genm';
+		$aliases['output']		= 'щгезге|усрщ|print|зкште|вывести|dsdtcnb|сказать';
+		$aliases['ls']			= 'glob|dir|scandir|ысфтвшк|ды|пдщы|файлы|пути|pathes|afqks|genb';
+		$aliases['message']		= 'msg|letter|дуееук|ьуыыфпу|ьып|сообщение|написать|cjj,otybt|yfgbcfnm';
+		$aliases['cal']			= 'calendar|календарь|rfktylfhm|сфд|сфдутвфк';
+		$aliases['calc']		= 'calculator|калькуль|калькулятор|rfkmrekznjh|rfkmrekm|rfkmr|сфдс';
+		$aliases['pwd']			= 'getcwd|пуесцв|зцв';
+		$aliases['copy']		= 'сщзн|cp|сз|ср|коп|копи|копия|копировать|копипаст|rjgbgfcn|цп';	# рус. ср [eser], англ. cp [sipi]
+		$aliases['tree']		= 'lstree';
 		$aliases['create_backup']	= 'makebackup|createbackup|backup|бекап';
 	#	$aliases['cat history']		= 'history';
-		$aliases['dump']	= 'bddump|dbdump|дамп|бд|вгьз|вивгьз|иввгьз';
-		$aliases['remove']	= 'куьщму|unlink|гтдштл|rmdir|кьвшк|delete|вудуеу|rm';
-		$aliases['check']	= 'verify|filter|validate';
-		$aliases['get']		= 'see|show|view|показать|пуе|ырщц|ыуу|мшуц';
-		$aliases['epigraph']= 'узшпкфзр|prase|citation|quote|quotation|сшефешщт|цитата|цитата дня|wbnfnf|wbnfnf lyz';
+		$aliases['dump']		= 'bddump|dbdump|дамп|бд|вгьз|вивгьз|иввгьз';
+		$aliases['remove']		= 'куьщму|unlink|гтдштл|rmdir|кьвшк|delete|вудуеу|rm';
+		$aliases['check']		= 'verify|filter|validate';
+		$aliases['get']			= 'see|show|view|показать|пуе|ырщц|ыуу|мшуц';
+		$aliases['epigraph']	= 'узшпкфзр|prase|citation|quote|quotation|сшефешщт|цитата|цитата дня|wbnfnf|wbnfnf lyz';
 
 		# отдаём массив всех алиасов, если не запрошены псевдонимы только для указанной функции
 		if (!$direct_request) {
